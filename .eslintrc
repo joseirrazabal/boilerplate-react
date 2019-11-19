@@ -1,0 +1,61 @@
+{
+	"parser": "babel-eslint",
+
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true,
+		"jest": true
+	},
+
+	"plugins": ["react", "react-with-styles", "import", "prettier", "react-hooks", "prefer-arrow"],
+
+	"extends": [
+		"standard",
+		"prettier",
+		"prettier/flowtype",
+		"prettier/react",
+		"prettier/standard",
+		"plugin:react-with-styles/recommended"
+	],
+
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"defaultParams": true
+		}
+	},
+
+	"rules": {
+		"react/jsx-uses-react": "error",
+		"react/jsx-uses-vars": "warn",
+		"prettier/prettier": "warn",
+		#"space-before-function-paren": ["error", "never"],
+		"prefer-arrow/prefer-arrow-functions": [
+			"warn",
+			{
+				"disallowPrototype": true,
+				"singleReturnOnly": false,
+				"classPropertiesAllowed": false
+			}
+		],
+		"import/no-absolute-path": "off",
+		"import/export": "error",
+		"import/first": "error",
+		"import/exports-last": "error",
+		"import/newline-after-import": "error",
+		"react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+		"react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
+		"react-with-styles/no-unused-styles": 0
+	},
+
+	"settings": {
+		"import/resolver": {
+			"webpack": {
+				"config": "kit/webpack/webpack.config.client.js"
+			}
+		},
+		"propWrapperFunctions": ["forbidExtraProps", "exact", "Object.freeze"]
+	}
+}

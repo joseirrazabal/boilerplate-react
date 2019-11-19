@@ -1,0 +1,8 @@
+query homeConfig {
+	homeConfig {
+		title
+		image
+		icon
+		vert
+	}
+}

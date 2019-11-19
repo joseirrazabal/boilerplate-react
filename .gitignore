@@ -1,0 +1,7 @@
+# Dependency directories
+.history/
+node_modules/
+.env
+# Build directories
+dist/
+.vscode/

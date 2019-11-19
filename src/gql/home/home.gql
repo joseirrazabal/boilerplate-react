@@ -1,0 +1,16 @@
+query home($vert: Vert) {
+	homeConfig {
+		title
+		image
+		icon
+		vert
+	}
+	home(vert: $vert) {
+		active
+		title
+		image
+		icon
+		vert
+		sections
+	}
+}

@@ -190,7 +190,8 @@ const config = {
 				// NODE_ENV: JSON.stringify(NODE_ENV),
 				// GRAPHQL_HOST: JSON.stringify(process.env.GRAPHQL_HOST),
 				// GRAPHQL_PORT: JSON.stringify(process.env.GRAPHQL_PORT),
-				VERSION: JSON.stringify(process.env.npm_package_version)
+				VERSION: JSON.stringify(process.env.npm_package_version),
+			  BROWSER: false
 			},
 			'process.browser': false
 		}),

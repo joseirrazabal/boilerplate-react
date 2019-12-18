@@ -2,14 +2,30 @@ import React from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
 
 import Layout from 'src/components/Layout'
-import Home from 'src/containers/Home'
+
+import Home from 'src/containers/HomePrueba'
+import Email from 'src/containers/Email'
 
 const routes = [
+	{
+		path: '/email',
+		Component: Email, // pageNotFound
+		Props: { vert: 'air' },
+		useLayout: true,
+		isPrivate: false
+	},
+	{
+		path: '/search',
+		Component: Home, // pageNotFound
+		Props: { vert: 'air' },
+		useLayout: true,
+		isPrivate: false
+	},
 	{
 		path: '*',
 		Component: Home, // pageNotFound
 		Props: { vert: 'air' },
-		useLayout: false,
+		useLayout: true,
 		isPrivate: false
 	}
 ]

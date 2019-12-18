@@ -1,5 +1,5 @@
+import 'isomorphic-unfetch'
 import { HttpLink } from 'apollo-link-http'
-import fetch from 'isomorphic-unfetch'
 import {
 	addMockFunctionsToSchema,
 	makeExecutableSchema,

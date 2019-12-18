@@ -1,9 +1,9 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
+import { config } from '@fortawesome/fontawesome-svg-core'
+
 import theme from './theme'
 import Route from './route'
-
-import { config } from '@fortawesome/fontawesome-svg-core'
 
 config.autoAddCss = false
 

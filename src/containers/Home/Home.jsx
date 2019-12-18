@@ -1,39 +1,92 @@
-import React, { useState } from 'react'
-// import Prueba from '@upate/emmaterial'
-import useForm from 'react-hook-form'
+import React from 'react'
+import { makeStyles } from '@material-ui/core/styles'
+import clsx from 'clsx'
+import { withFocusable } from '@noriginmedia/react-spatial-navigation'
 
-// import { Redirect } from 'react-router-dom'
-// import { withStyles } from '@material-ui/styles'
-// import classNames from 'classnames'
-// import get from 'lodash/get'
-// import Grid from '@material-ui/core/Grid'
-// import HOME from 'gql/home/home.gql'
+const useStyles = makeStyles(theme => ({
+	menuItem: {
+		width: 100,
+		height: 100,
+		backgroundColor: '#f8f258'
+	},
+	focusedBorder: {
+		borderWidth: 6,
+		borderColor: 'red',
+		backgroundColor: 'white'
+	}
+}))
 
-import classes from './styles.scss'
-
-const Home = props => {
-	const [hookState, setHookState] = useState({ num: 0 })
-
-	const { register, handleSubmit, errors } = useForm()
-	const onSubmit = data => console.log(data)
-	console.log('err', errors)
+const MenuItem = props => {
+	const classes = useStyles()
 
 	return (
-		<>
-			{/* <Prueba /> */}
-			<form onSubmit={handleSubmit(onSubmit)}>
-				<input type='text' placeholder='name' name='name' ref={register({ required: true, max: 10 })} />
+		<div
+			className={clsx(classes.menuItem, {
+				[classes.focusedBorder]: props.focused
+			})}
+		>
+			{props.focusKey}
+		</div>
+	)
+}
 
-				<input type='submit' />
-			</form>
+const MenuItemFocusable = withFocusable()(MenuItem)
 
-			<div className={classes.prueba}>prueba de estilos</div>
-			<button onClick={() => setHookState({ num: 0 })}>Prueba</button>
-			<p>
-				{'Will cause a re-render since previous hookState !== new hookState, or {num: 0} !== {num: 0}'}
-			</p>
-			<code>{JSON.stringify({ hookState })}</code>
-		</>
+const Carousel = props => {
+	const obj = [
+		{
+			name: '01'
+		}
+	]
+
+	return (
+		<div
+			style={{
+				display: 'flex'
+			}}
+		>
+			{obj.map((item, i) => {
+				return (
+					<MenuItemFocusable
+						key={i}
+						focusKey={`${props.focusKey}-${item.name}`}
+						onArrowPress={(direction, props02) => {
+							// vuelve al inicio
+							console.log('jose arrow ', props.focusKey, direction, props02)
+							if (direction === 'right' && i === obj.length - 1) {
+								props.setFocus(`${props.focusKey}-${obj[0].name}`)
+								return false
+							} else if (direction === 'RED') {
+								console.log('jose prisiono red')
+							}
+						}}
+						onEnterPress={props.prueba}
+						{...item}
+					/>
+				)
+			})}
+		</div>
+	)
+}
+
+const CarouselFocusable = withFocusable()(Carousel)
+
+const Home = props => {
+	const setFocus = props.setFocus
+
+	React.useEffect(() => {
+		console.log('ultimo')
+		setFocus('HOME')
+	}, [])
+
+	const prueba2 = e => {
+		console.log('jose prueba02', e.name)
+	}
+
+	return (
+		<div>
+			<CarouselFocusable prueba={prueba2} focusKey={'HOME'} />
+		</div>
 	)
 }
 
@@ -41,4 +94,8 @@ const Home = props => {
 
 // Home.propTypes = {}
 
-export default Home
+// export default Home
+export default withFocusable({
+	trackChildren: true,
+	forgetLastFocusedChild: true
+})(Home)

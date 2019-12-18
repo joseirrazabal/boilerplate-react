@@ -17,7 +17,7 @@ const {
 } = require('workbox-webpack-plugin')
 const LoadablePlugin = require('@loadable/webpack-plugin')
 const CompressionPlugin = require('compression-webpack-plugin')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 // const HtmlWebpackPlugin = require('html-webpack-plugin')
 // const HtmlCriticalWebpackPlugin = require('html-critical-webpack-plugin')
@@ -58,7 +58,7 @@ const config = {
 	name: 'client',
 	context: path.join(appRootDir.get()),
 	entry: {
-		client: [...devEntries, './kit/client/index.js']
+    client: [...devEntries, '@babel/polyfill/noConflict', './kit/client/index.js']
 	},
 	output: {
 		path: path.join(appRootDir.get(), DIST_NAME, 'client'),
@@ -72,20 +72,20 @@ const config = {
 	},
 	module: {
 		rules: [
-			{
-				enforce: 'pre',
-				test: /\.(js|jsx)$/,
-				exclude: /node_modules/,
-				loader: 'eslint-loader',
-				options: {
-					reporter: 'consola',
-					formatter: 'codeframe',
-					// formatter: 'stylish',
-					// formatter: 'compact',
-					// formatter: 'table',
-					cache: true
-				}
-			},
+			// {
+			// 	enforce: 'pre',
+			// 	test: /\.(js|jsx)$/,
+			// 	exclude: /node_modules/,
+			// 	loader: 'eslint-loader',
+			// 	options: {
+			// 		reporter: 'consola',
+			// 		formatter: 'codeframe',
+			// 		// formatter: 'stylish',
+			// 		// formatter: 'compact',
+			// 		// formatter: 'table',
+			// 		cache: true
+			// 	}
+			// },
 			{
 				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
@@ -278,7 +278,8 @@ const config = {
 				// GRAPHQL_HOST: JSON.stringify(process.env.GRAPHQL_HOST),
 				// GRAPHQL_PORT: JSON.stringify(process.env.GRAPHQL_PORT),
 				// CAPTCHA_KEY: JSON.stringify(process.env.CAPTCHA_KEY)
-				VERSION: JSON.stringify(process.env.npm_package_version)
+				VERSION: JSON.stringify(process.env.npm_package_version),
+			  BROWSER: true
 			},
 			'process.browser': true
 		}),
@@ -382,14 +383,13 @@ const config = {
 		maxAssetSize: 900000
 	},
 	optimization: {
+    minimize: IS_PRODUCTION,
 		minimizer: [
-			new UglifyJsPlugin({
-				uglifyOptions: {
-					output: {
-						comments: false
-					}
-				}
-			})
+      new TerserPlugin({
+        extractComments: 'all',
+        cache: true,
+        parallel: true
+      }),
 		],
 		noEmitOnErrors: !IS_PRODUCTION,
 		concatenateModules: IS_PRODUCTION,

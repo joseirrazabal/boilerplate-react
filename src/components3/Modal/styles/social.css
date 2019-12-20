@@ -1,0 +1,16 @@
+.modal-social .modal-asset {
+  width: 30%;
+  margin: 0 auto; }
+  .modal-social .modal-asset img {
+    width: 100%; }
+
+.modal-social .modal-buttons-horizontal .modal-button {
+  display: inherit;
+  margin: auto; }
+
+.modal-social modal-content {
+  width: 100%;
+  font-size: 18px; }
+
+.modal-social .modal-content * {
+  padding: 6px 0px; }

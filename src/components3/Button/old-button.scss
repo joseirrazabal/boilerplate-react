@@ -1,0 +1,95 @@
+@import "./../../styles/vars.scss";
+
+@mixin gradient($start-color, $end-color, $orientation) {
+  background: $start-color;
+
+  @if $orientation == 'vertical' {
+    background: -webkit-linear-gradient(top, $start-color, $end-color);
+    background: linear-gradient(to bottom, $start-color, $end-color);
+  }
+  @else if $orientation == 'horizontal' {
+    background: -webkit-linear-gradient(left, $start-color, $end-color);
+    background: linear-gradient(to right, $start-color, $end-color);
+  }
+  @else {
+    background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
+    background: radial-gradient(ellipse at center, $start-color, $end-color);
+  }
+}
+
+@mixin gradientFromColor($finalColor) {
+  background: $finalColor;
+  $substractValue: #333333;
+  $initialColor: $finalColor + $substractValue;
+  @include gradient($start-color:$initialColor, $end-color: $finalColor, $orientation: 'horizontal');
+}
+
+
+.action {
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+  background: none;
+  border: none;
+  border-radius: 18px;
+  padding: 6px 10px;
+  text-decoration: none;
+
+  .back {
+    margin-right: 8px;
+  }
+
+  .stars {
+    margin: 0 2px;
+  }
+
+  .color-ball {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  &.large {
+    width: 100%;
+  }
+
+  &.active {
+    font-weight: 400;
+  }
+}
+
+.blue {
+  background: $btn-blue-color;
+}
+
+.green {
+  background: $btn-green-color;
+}
+
+.red {
+  background: $btn-red-color;
+}
+
+.yellow {
+  background: $btn-yellow-color;
+}
+
+.orange {
+  background: linear-gradient(to right, #ff9900 0%,#ffd400 100%);
+}
+
+/* Colores de botones para Pagos */
+.purchase-btn-container {
+  .purple {
+    @include gradientFromColor($finalColor:$btn-payway-purple);
+  }
+  .blue {
+    @include gradientFromColor($finalColor:$btn-payway-blue);
+  }
+  .gold {
+    @include gradientFromColor($finalColor:$btn-payway-gold);
+  }
+}

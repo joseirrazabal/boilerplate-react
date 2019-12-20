@@ -1,0 +1,139 @@
+@import "./../../../styles/vars.scss";
+@import "./../../../styles/animations.scss";
+
+.modal-overlay {
+    width: $root-width;
+    height: $root-height;
+    position: fixed;
+    z-index: 9999;
+    text-align: center;
+    display: table;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.94);
+    color: $font-color-principal;
+    font-family: $font-family;
+}
+
+.modal-container {
+  display: table-cell;
+  vertical-align: middle;
+  .modal-content{
+    p{
+      b{        
+        padding: 0px 10px 0px 0px;
+      }
+    }
+    .modal_text{
+      text-align: center;
+      font-size: 25px;
+      line-height: 36px;
+    }
+  }
+}
+/* .modal_text{
+  text-align: center;
+  font-size: 25px;
+  line-height: 36px;
+} */
+.modal-container-new {
+  display: flex;
+  .modal-content{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 720px;
+    background: red;
+    left: 0;
+    top: 0;
+  }
+  .modal-buttons-horizontal{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background: $grayGeneric-color;
+    right: 0;
+    top: 0;
+    height: 720px;
+
+    .modal-button{
+      width: 200px;
+      margin: 10px 0;
+    }
+  }
+}
+
+.modal-button {
+    width: 329px;
+    //border: 2px solid hsla(0, 0%, 100%, 0.78);
+    //background-color: rgba(0,0,0,.6);
+    background: $optional-color;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 22px;
+    color: $font-color-principal;
+    margin-right: 23px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    i {
+        float: right;
+        position: relative;
+        right: 20px;
+    }
+}
+
+.modal-button:focus {
+    /* background: #FFFFFF; */
+    @include btn-transition($primary-color);
+    color: #FFF;
+    border: none;
+}
+
+.modal-buttons-vertical > * {
+    display: block;
+    margin: 8px auto;
+}
+
+.modal-content strong {
+  padding: 0px;
+}
+
+.modal-content * {
+    box-sizing: border-box;
+    font-size: 32px;
+    width: $root-width;
+    ul {
+        list-style-type: none;
+    }
+}
+
+.modal-content > p {
+    word-break: normal;
+}
+
+.modal-title * {
+    font-size: $font-size-title;
+    padding: 0px 20px;
+    margin: 40px;
+}
+
+.Title_Renta_or_Subscription {
+  font-size: 29px;
+  margin-bottom: 6px;
+  font-weight: 500;
+  letter-spacing: 0.00735em;
+}
+.modal-rent-expired, .confirm-buy, .error-buy, .not_channels{
+  .modal-asset{
+    img{
+      height: 160px;
+    }
+  }
+}

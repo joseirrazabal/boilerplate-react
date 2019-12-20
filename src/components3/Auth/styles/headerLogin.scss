@@ -1,0 +1,25 @@
+.header-login {
+  /*display: flex;
+  flex-direction: row;
+  //justify-content: center;
+  margin-left: 37%;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0 20px;*/
+  position: absolute;
+  top: 27px;
+  left: 17px;
+  .logo-login{
+    position: absolute;
+    left: 20px;
+    width: 100px;
+  }
+  .title-login{
+    margin: 0;
+    width: 91px;
+    position: absolute;
+    left: 133px;
+    top: 11px;
+    font-weight: 500;
+  }
+}

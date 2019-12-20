@@ -1,0 +1,289 @@
+.root-hisense .invisible-scrollbar, .root-nagra .invisible-scrollbar, .root-samsung .invisible-scrollbar, .root-sony .invisible-scrollbar, .root-opera .invisible-scrollbar, .root-android .invisible-scrollbar, .root-worksation .invisible-scrollbar, .root-tizen .invisible-scrollbar, .root-web0s .invisible-scrollbar, .root-ps4 .invisible-scrollbar {
+  overflow: hidden; }
+
+.root-lg .invisible-scrollbar {
+  overflow: scroll; }
+  .root-lg .invisible-scrollbar::-webkit-scrollbar {
+    display: none; }
+
+.root-hisense .invisible-scrollbar, .root-nagra .invisible-scrollbar, .root-samsung .invisible-scrollbar, .root-sony .invisible-scrollbar, .root-android .invisible-scrollbar, .root-worksation .invisible-scrollbar, .root-tizen .invisible-scrollbar, .root-web0s .invisible-scrollbar, .root-ps4 .invisible-scrollbar {
+  overflow: hidden; }
+
+.root-lg .invisible-scrollbar, .root-opera .invisible-scrollbar {
+  overflow: scroll; }
+  .root-lg .invisible-scrollbar::-webkit-scrollbar, .root-opera .invisible-scrollbar::-webkit-scrollbar {
+    display: none; }
+
+/* FlexBox Variables */
+.flex {
+  display: flex; }
+  .flex.row {
+    flex-direction: row; }
+  .flex.column {
+    flex-direction: column; }
+  .flex.jc-center {
+    justify-content: center; }
+  .flex.ai-center {
+    align-items: center; }
+  .flex.ai-start {
+    align-items: flex-start; }
+  .flex.ai-end {
+    align-items: flex-end; }
+
+.title-name, .info .info-name, .card-info .card-name {
+  font-size: 24px;
+  font-weight: bolder;
+  color: #c7c7c7; }
+
+/* SocialProfile */
+.personal-info_div {
+  padding: 15px; }
+  .personal-info_div .social-avatar {
+    width: 155px;
+    float: left;
+    height: 155px; }
+  .personal-info_div .social-info {
+    width: calc( 100% - 165px);
+    float: left;
+    padding-top: 15px;
+    box-sizing: border-box; }
+
+/* Social Avatar */
+.avatar {
+  width: 30px;
+  height: 30px; }
+  .avatar a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; }
+    .avatar a .icon {
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      background-position: center;
+      background-size: 85%;
+      background-repeat: no-repeat;
+      margin-right: 22px; }
+      .avatar a .icon.icon-profile {
+        background-image: url("../../assets/icons/profile.png"); }
+      .avatar a .icon.focusable:focus, .avatar a .icon.focusable:hover {
+        background-color: #47536b;
+        box-shadow: none; }
+    .avatar a img {
+      width: inherit;
+      height: inherit;
+      border-radius: 50%; }
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+
+/* Social Info */
+.info {
+  padding: 15px 25px; }
+  .info .info-name {
+    padding-bottom: 5px; }
+  .info .info-follows-followers {
+    padding-bottom: 5px; }
+    .info .info-follows-followers span {
+      font-size: 18px;
+      font-weight: lighter;
+      color: #c7c7c7; }
+      .info .info-follows-followers span:nth-of-type(1) {
+        margin-right: 12px; }
+
+/* LEVELS */
+.levels-info {
+  padding-top: 30px; }
+  .levels-info .levels_div {
+    padding: 8px 15px;
+    color: #f3f3f3;
+    font-size: 18px; }
+
+/* progressBar */
+.progressBar {
+  width: 60%;
+  height: 10px;
+  border-radius: 6px;
+  background: #27292a; }
+  .progressBar .progressBar_div {
+    background: #00a5dc;
+    height: 10px;
+    border-radius: 6px; }
+
+/* Ajustes */
+.settings {
+  padding: 5px 0;
+  margin-top: 22px; }
+  .settings a {
+    padding: 7px 11px 8px 20px;
+    border: 2px solid #929292;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.73);
+    color: #c7c7c7;
+    text-decoration: none; }
+    .settings a .settings-text {
+      font-size: 13px;
+      margin-right: 15px; }
+    .settings a .settings-icon {
+      font-size: 20px;
+      margin-right: 6px; }
+
+.tab-frame {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  overflow: hidden; }
+  .tab-frame .panel-1 .panel-2 .panel-3 {
+    display: none;
+    padding: 5px 10px;
+    clear: left; }
+  .tab-frame .panel-2 .followings {
+    padding-left: 4%;
+    padding-top: 1%; }
+  .tab-frame .panel-3 .followers {
+    padding-left: 4%;
+    padding-top: 1%; }
+
+.social-activity {
+  width: 100%;
+  padding: 0;
+  clear: both;
+  height: auto; }
+  .social-activity .social-activity_image-manager {
+    width: 25%; }
+    .social-activity .social-activity_image-manager .image-manager {
+      float: left;
+      width: 287px; }
+      .social-activity .social-activity_image-manager .image-manager .activity-image-manager {
+        padding: 0; }
+        .social-activity .social-activity_image-manager .image-manager .activity-image-manager .box-avatar {
+          width: 100px;
+          height: 100px;
+          margin: 0 auto; }
+  .social-activity .social-activity_text {
+    width: 35%;
+    float: left;
+    padding: 50px 20px;
+    box-sizing: border-box; }
+    .social-activity .social-activity_text .social-activity_text-div {
+      color: #cecece;
+      font-size: 18px; }
+  .social-activity .social-activity_points {
+    width: 35%;
+    float: left;
+    padding: 65px 15px;
+    text-align: right; }
+    .social-activity .social-activity_points .levels-points {
+      float: right;
+      color: #cecece; }
+
+.activity-image img {
+  width: 100%; }
+
+.followings {
+  height: auto;
+  overflow: hidden; }
+
+.social-card {
+  width: 300px;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 5px;
+  display: inline-table;
+  background-color: #242829;
+  -webkit-box-shadow: 2px 3px 17px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 3px 17px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 3px 17px 0px rgba(0, 0, 0, 0.75); }
+  .social-card .social-card-image {
+    width: 90px;
+    height: 90px;
+    float: left;
+    margin-bottom: 20px; }
+  .social-card .social-card-info {
+    width: 200px;
+    float: right;
+    padding-left: 15px;
+    box-sizing: border-box; }
+  .social-card .social-card_div-button {
+    clear: both;
+    padding: 1px; }
+
+.card_button {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 15px;
+  position: relative; }
+  .card_button .card-button_following {
+    font-size: 15px; }
+  .card_button i {
+    font-size: 20px;
+    position: absolute;
+    top: 8px;
+    right: 12px; }
+
+.card-following {
+  background: white;
+  border: 1px solid transparent; }
+  .card-following .card-button_following {
+    color: #000; }
+  .card-following i {
+    color: #25a4da; }
+  .card-following:focus {
+    box-shadow: 0 0 0 3px #000 inset; }
+
+.card-follower {
+  background: transparent;
+  box-sizing: border-box;
+  border: 1px solid #515354; }
+  .card-follower .card-button_following {
+    color: #fff; }
+  .card-follower i {
+    color: #fff; }
+
+.card-info {
+  width: 100%;
+  height: auto;
+  padding: 5px 0;
+  box-sizing: border-box;
+  color: #c7c7c7; }
+  .card-info .card-name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 50px;
+    overflow: hidden;
+    width: 80%; }
+  .card-info .card-follow {
+    font-weight: lighter;
+    font-size: 14px;
+    padding: 5px 0; }
+  .card-info span {
+    font-weight: lighter;
+    font-size: 14px; }
+    .card-info span:first-of-type {
+      margin-right: 15px; }
+
+.levels-points_img {
+  width: 30px;
+  float: left;
+  margin-right: 10px; }
+
+.levels-points_points {
+  padding-top: 5px;
+  float: left; }
+
+.social-messages {
+  padding: 15px; }
+  .social-messages .social-message {
+    padding: 15px 0;
+    border-bottom: 1px solid gray; }
+  .social-messages .social-message_msg {
+    width: 80%; }
+  .social-messages .social-message_date {
+    width: 20%; }
+    .social-messages .social-message_date p {
+      padding-right: 15px;
+      text-align: right; }
+
+.color-message {
+  color: #25a4da; }

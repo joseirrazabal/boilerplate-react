@@ -1,0 +1,333 @@
+.root-hisense .invisible-scrollbar, .root-nagra .invisible-scrollbar, .root-samsung .invisible-scrollbar, .root-sony .invisible-scrollbar, .root-opera .invisible-scrollbar, .root-android .invisible-scrollbar, .root-worksation .invisible-scrollbar, .root-tizen .invisible-scrollbar, .root-web0s .invisible-scrollbar, .root-ps4 .invisible-scrollbar {
+  overflow: hidden; }
+
+.root-lg .invisible-scrollbar {
+  overflow: scroll; }
+  .root-lg .invisible-scrollbar::-webkit-scrollbar {
+    display: none; }
+
+.root-hisense .invisible-scrollbar, .root-nagra .invisible-scrollbar, .root-samsung .invisible-scrollbar, .root-sony .invisible-scrollbar, .root-android .invisible-scrollbar, .root-worksation .invisible-scrollbar, .root-tizen .invisible-scrollbar, .root-web0s .invisible-scrollbar, .root-ps4 .invisible-scrollbar {
+  overflow: hidden; }
+
+.root-lg .invisible-scrollbar, .root-opera .invisible-scrollbar {
+  overflow: scroll; }
+  .root-lg .invisible-scrollbar::-webkit-scrollbar, .root-opera .invisible-scrollbar::-webkit-scrollbar {
+    display: none; }
+
+/* FlexBox Variables */
+.flex {
+  display: flex; }
+  .flex.row {
+    flex-direction: row; }
+  .flex.column {
+    flex-direction: column; }
+  .flex.jc-center {
+    justify-content: center; }
+  .flex.ai-center {
+    align-items: center; }
+  .flex.ai-start {
+    align-items: flex-start; }
+  .flex.ai-end {
+    align-items: flex-end; }
+
+.btnopacity {
+  opacity: 0.2; }
+
+#root {
+  position: absolute; }
+
+.container {
+  height: 720px; }
+
+.player-ui-button {
+  height: 47px !important;
+  border-radius: 50%; }
+  .player-ui-button.transparent {
+    background: transparent !important;
+    height: 55px !important;
+    width: 55px; }
+    .player-ui-button.transparent img {
+      height: 43px !important; }
+  .player-ui-button.absolute {
+    position: fixed;
+    top: 10px;
+    left: -40px;
+    z-index: 5; }
+  .player-ui-button.focusable:focus {
+    background: #47536b; }
+    .player-ui-button.focusable:focus img.default {
+      display: none; }
+    .player-ui-button.focusable:focus img.focusImg {
+      display: block; }
+  .player-ui-button img {
+    height: 33px !important; }
+    .player-ui-button img.icon-back {
+      height: 30px !important;
+      margin-top: 10px;
+      padding: 0 5px; }
+    .player-ui-button img.default {
+      display: block; }
+    .player-ui-button img.focusImg {
+      display: none; }
+
+.player-ui-progress-bar {
+  background: white !important; }
+
+.player-ui-progress-bar-ball {
+  background: #e1251b !important; }
+  .player-ui-progress-bar-ball:focus {
+    border: 1px solid #e1251b; }
+
+#player-ui-progress-bar-sprite {
+  position: fixed;
+  z-index: 100;
+  left: 0px;
+  top: 0px;
+  width: 200px;
+  height: 113px;
+  visibility: hidden; }
+
+.player-ui-current-time-sprite {
+  text-align: center;
+  display: inline-block;
+  width: 10%;
+  z-index: 100;
+  position: fixed;
+  font-size: 17px; }
+
+.player-ui-channel-number {
+  font-size: 50px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 5px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  float: right; }
+
+.player-ui-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  z-index: 10; }
+  .player-ui-container.hide-controls {
+    opacity: 0;
+    display: none; }
+  .player-ui-container.mini-epg-visible .player-ui-wrapper {
+    height: 370px; }
+
+.player-ui-wrapper {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding-top: 8%;
+  padding-bottom: 3%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+  transition: all 0.4s ease-in-out; }
+
+.player-ui-epg {
+  display: block;
+  height: 110px;
+  position: relative; }
+
+.player-ui-time-line {
+  width: 100%; }
+
+.player-ui-current-time {
+  text-align: center;
+  display: inline-block;
+  width: 10%;
+  font-size: 17px; }
+
+.player-ui-duration {
+  text-align: center;
+  display: inline-block;
+  width: 10%;
+  font-size: 17px; }
+
+.player-ui-progress-bar-container {
+  display: inline-block;
+  vertical-align: top;
+  width: 78%;
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 20px; }
+
+.player-ui-progress-bar {
+  background-color: #6D6D6D;
+  height: 6px;
+  border-radius: 2px;
+  width: 100%;
+  margin-top: 7px;
+  position: relative; }
+  .player-ui-progress-bar-load {
+    background-color: #e1251b;
+    width: 0;
+    height: 100%;
+    border-radius: 2px;
+    position: absolute; }
+  .player-ui-progress-bar-time-tick {
+    width: 0;
+    background-color: #e1251b;
+    height: 100%;
+    border-radius: 2px;
+    position: absolute; }
+  .player-ui-progress-bar-ball {
+    float: right;
+    position: absolute;
+    left: 100%;
+    margin-top: -7px;
+    margin-left: -9px;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: #CECECE; }
+    .player-ui-progress-bar-ball:focus {
+      background: #e1251b; }
+
+.player-ui-controls-container {
+  padding: 2% 0;
+  margin: 0;
+  text-align: center; }
+
+.player-ui-button {
+  display: inline-block;
+  min-width: 35px;
+  height: 35px;
+  outline: none;
+  text-decoration: none;
+  color: white;
+  padding: 0;
+  vertical-align: middle;
+  line-height: 35px;
+  margin-left: 3%;
+  margin-right: 3%; }
+  .player-ui-button:focus, .player-ui-button:active {
+    border: none; }
+  .player-ui-button img {
+    height: 18px;
+    margin-top: 7px;
+    margin-left: 6px;
+    margin-right: 6px; }
+
+.player-ui-live .player-ui-controls {
+  padding-left: 27%;
+  position: relative; }
+
+.player-ui-live .player-ui-current-time {
+  font-size: 15px;
+  font-weight: 500;
+  color: #e1251b; }
+
+.player-ui-live .player-ui-duration {
+  display: none; }
+
+.player-ui-live .player-ui-progress-bar-time-tick {
+  width: 0;
+  background-color: #e1251b;
+  height: 100%;
+  border-radius: 2px;
+  position: absolute; }
+
+.player-ui-live.show-mini-epg .player-ui-controls {
+  display: none; }
+
+.player-ui-live.show-mini-epg .player-ui-epg .mini-epg-header {
+  display: none; }
+
+.player-ui-live.show-controls .player-ui-epg .epg-wrapper {
+  display: none; }
+
+.player-ui-container-skip {
+  display: none;
+  z-index: 12;
+  position: absolute;
+  width: auto;
+  height: auto;
+  right: 0; }
+  .player-ui-container-skip.show-skip-intro {
+    display: block; }
+  .player-ui-container-skip.skip-intro-up {
+    bottom: 140px; }
+  .player-ui-container-skip.skip-intro-down {
+    bottom: 40px; }
+  .player-ui-container-skip .skip-control-btn {
+    background: #4E565C;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    padding: 10px;
+    position: absolute;
+    right: 26px;
+    top: -75px;
+    width: 120px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .player-ui-container-skip .skip-control-btn .i {
+      width: 12px;
+      height: 12px;
+      background: yellow;
+      margin-right: 10px;
+      border-radius: 50%; }
+    .player-ui-container-skip .skip-control-btn:focus {
+      background: #47536b;
+      border: 3px solid #47536b; }
+    .player-ui-container-skip .skip-control-btn:focus {
+      box-shadow: none; }
+
+.clv-btn {
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background: transparent;
+  color: white; }
+
+.color-codes > li:first-of-type {
+  padding-left: 6%; }
+
+.color-code-item.ctrls {
+  margin-left: 171px !important; }
+
+.ctrls .yellow {
+  vertical-align: text-top;
+  margin-right: 10px !important;
+  width: 12px !important;
+  height: 12px !important; }
+
+canvas {
+  image-rendering: optimizeQuality;
+  /* Older versions of FF          */
+  image-rendering: -moz-crisp-edges;
+  /* FF 6.0+                       */
+  image-rendering: -webkit-optimize-contrast;
+  /* Safari                        */
+  image-rendering: -o-crisp-edges;
+  /* OS X & Windows Opera (12.02+) */
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE                            */ }
+
+.player-ui-title {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+  position: absolute;
+  width: calc(100% - 40px);
+  height: 260px;
+  top: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 20px; }
+  .player-ui-title h3 {
+    text-align: center;
+    margin: 0;
+    font-weight: 500; }

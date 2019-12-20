@@ -1,0 +1,846 @@
+@import "./../../styles/vars.scss";
+
+.card {
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  width: 25%;
+}
+
+//Fondo con trasparencia para el card component, se usa la cascada para sobreescribir los estilos de cada tipo de card.
+.inner-title{
+  position: absolute;
+  //font-family: 'Myriad Pro';
+  color:white;
+  font-size: 16px;
+  text-indent: 10px;
+  padding: 10px 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 1;
+}
+
+.background-transparent{
+  height: 48px;
+  position: absolute;
+  bottom:  3px;
+  background-image: url('/images/sombra_destacado.png');
+  }
+
+.placeholder-container {
+  display: none;
+}
+
+.card-container {
+  height: auto;
+  position: relative;
+
+  .link {
+    box-sizing: border-box;
+    display: block;
+    height: 162px;
+    padding: 6px;
+    width: 100%;
+  }
+}
+
+.special-ribbon-carousel {
+    .highlight {
+        .card-placeholder {
+        }
+    }
+}
+
+.card-div {
+    width: 100%;
+    height: 100%;
+}
+
+.card-placeholder {
+  background: #000 center no-repeat;
+  background-size: cover;
+  display: block;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  box-shadow: 2px 3px 7px 0px black;
+}
+
+.card-cover {
+  position: absolute;
+  height: 100%;
+  left: 6px;
+  text-indent:-9999px;
+  top: 6px;
+  width: 100%;
+}
+
+.badge-container {
+  position: absolute;
+  top: 6px;
+
+  &.left {
+    left: 6px;
+    right: auto;
+  }
+
+  &.right {
+    left: auto;
+    right: 6px;
+  }
+}
+
+.card-title {
+  box-sizing: border-box;
+  padding: 4px 4px 0;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-label {
+  color: $gray-light;
+  font-size: 14px;
+  text-align: center;
+}
+
+.card.double {
+  overflow: hidden;
+  margin-right: 24px;
+
+  .placeholder-container {
+    display: inline-block;
+    margin-right: 16px;
+    padding: 6px;
+    position: relative;
+    vertical-align: top;
+
+    .sibling-wrapper {
+      background: #4A4A4A;
+      border-radius: 5px;
+      box-sizing: border-box;
+      height: 161px;
+      padding: 11px;
+      width: 115px;
+    }
+
+    .arrow-right {
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid #4A4A4A;
+      height: 0;
+      position: absolute;
+      right: -4px;
+      top: 73px;
+      width: 0;
+    }
+
+    .card-placeholder {
+      height: 139px;
+      position: absolute;
+      top: 17px;
+      width: 93px;
+    }
+
+    .card-cover {
+      display: block;
+      height: 139px;
+      left: 0;
+      position: relative;
+      top: 0;
+      width: 93px;
+    }
+  }
+
+  .card-container {
+    display: inline-block;
+  }
+}
+
+.card.vod {
+  .card-labels-container {
+    width: 287px;
+  }
+}
+
+
+.card.epg_event {
+  width: auto;
+
+  .link {
+    height: 173px;
+    width: 299px;
+  }
+
+  .card-container {
+    a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-weight: 300;
+
+      .channel-number {
+        background-color: rgba(0,0,0,0.5);
+        top: 6px;
+        position: relative;
+        padding: 3px 5px;
+        width: auto;
+        text-align: center;
+        position: absolute;
+        left: 6px;
+        height: 18px;
+      }
+    }
+  }
+
+  .card-cover {
+    height: 161px;
+    width: 287px;
+    background-size: 100% 100%, cover;
+  }
+
+  .inner-title {
+    width: 287px !important;
+    bottom: 5px !important;
+    left: 6px !important;
+  }
+
+  .background-transparent {
+    width: 287px;
+  }
+
+  .card-metadata {
+    &.recording {
+      .inner-title {
+        bottom: 0 !important;
+      }
+
+      .background-transparent {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+    }
+
+    &.is-series {
+      .inner-title {
+        bottom: 5px !important;
+        width: 237px !important;
+      }
+    }
+
+    &.is-recording {
+      .inner-title {
+        width: 237px !important;
+      }
+    }
+  }
+
+  .card-labels-container {
+    .card-title {
+      font-weight: 300;
+      text-align: left;
+    }
+
+    .card-label {
+      color: aliceblue;
+      text-align: left;
+      padding-left: 4px;
+    }
+  }
+}
+
+.card.landscape,
+.card.vod {
+  width: auto;
+
+  .link {
+    height: 173px;
+    width: 299px;
+  }
+
+  .card-cover {
+    height: 161px;
+    width: 287px;
+    background-size: 100% 100%, cover;
+  }
+
+  .inner-title {
+    width:287px !important;
+    bottom: 5px !important;
+    left: 6px !important;
+  }
+  .background-transparent{
+    width: 287px;
+  }
+
+  .card-container {
+    a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-weight:300;
+      .channel-number {
+        background-color: rgba(0,0,0,0.5);
+        top: 6px;
+        position: relative;
+        padding: 3px 5px;
+        width: auto;
+        text-align: center;
+        position: absolute;
+        left: 6px;
+        height: 18px;
+      }
+    }
+  }
+
+  .card-metadata {
+    &.recording {
+      .inner-title {
+        bottom: 0 !important;
+      }
+      .background-transparent {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+    }
+    &.is-series {
+      .inner-title {
+        bottom: 5px !important;
+        width: 237px !important;
+      }
+    }
+    &.is-recording {
+      .inner-title {
+        width: 237px !important;
+      }
+    }
+  }
+}
+
+// portrait
+.card.portrait {
+  width: auto;
+
+  .card-container {
+    a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-weight: 300;
+
+      .channel-number {
+        background-color: rgba(0,0,0,0.5);
+        top: 6px;
+        position: relative;
+        padding: 3px 5px;
+        width: auto;
+        text-align: center;
+        position: absolute;
+        left: 6px;
+        height: 18px;
+      }
+    }
+  }
+
+  .link {
+    height: 252px;
+    width: 167px;
+  }
+
+  .card-cover {
+    height: 240px;
+    width: 155px;
+    background-size: 100% 100%, cover;
+  }
+}
+
+// ribbon highlight
+.card.highlight {
+  width: auto;
+
+  .card-container {
+    a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-weight: 300;
+
+      .channel-number {
+        background-color: rgba(0,0,0,0.5);
+        top: 6px;
+        position: relative;
+        padding: 3px 5px;
+        width: auto;
+        text-align: center;
+        position: absolute;
+        left: 6px;
+        height: 18px;
+      }
+    }
+  }
+
+  .link {
+    height: 181px;
+    width: 459px;
+  }
+
+  .card-cover {
+    height: 169px;
+    width: 447px;
+    background-size: 100% 100%, cover;
+  }
+
+  .inner-title {
+    width: 448px !important;
+    bottom: 5px !important;
+    left: 5px !important;
+  }
+
+  .background-transparent {
+    width: 448px;
+  }
+}
+
+
+.card.superhighlight_title {
+  width: auto;
+
+  .card-container {
+    a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-weight: 300;
+
+      .channel-number {
+        background-color: rgba(0,0,0,0.5);
+        top: 6px;
+        position: relative;
+        padding: 3px 5px;
+        width: auto;
+        text-align: center;
+        position: absolute;
+        left: 6px;
+        height: 18px;
+      }
+    }
+  }
+
+  .link {
+    height: 181px;
+    width: 459px;
+  }
+
+  .card-cover {
+    height: 169px;
+    width: 447px;
+    background-size: 100% 100%, cover;
+  }
+
+  .inner-title {
+    width: 448px !important;
+    bottom: 5px !important;
+    left: 5px !important;
+  }
+
+  .background-transparent {
+    width: 448px;
+  }
+}
+
+.vcard-seasons-carousel {
+
+  .landscape  {
+    .card-title {
+      width: 290px;
+      overflow: hidden;
+      text-align: center;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.card.user-info {
+  width: auto;
+
+  .card-container {
+    a {
+      .card-div {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-size: cover;
+      }
+    }
+  }
+
+  .card-labels-container {
+    position: relative;
+    left: 106px;
+    top: -110px;
+    width: 200px;
+    line-height: 23px;
+
+    .card-title {
+      text-align: left;
+      padding-left: 0px;
+    }
+
+    .card-label {
+      text-align: left;
+      padding-left: 2px;
+
+      .followers {
+        padding-left: 8px;
+      }
+
+      .level {
+        padding-left: 8px;
+      }
+
+      .levels-points_img {
+        width: 20px;
+        text-align: left;
+        float: left;
+      }
+
+      .points {
+        /*background-color: darkblue;*/
+        padding-left: 2px;
+        text-align: left;
+      }
+    }
+  }
+
+  .link {
+    height: 115px;
+    width: 315px;
+  }
+
+  .card-cover {
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px, cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .inner-title {
+    width: 287px !important;
+    bottom: 5px !important;
+    left: 6px !important;
+  }
+
+  .background-transparent {
+    width: 287px;
+  }
+
+  .card-metadata {
+    &.recording {
+      .inner-title {
+        bottom: 0 !important;
+      }
+
+      .background-transparent {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+    }
+
+    &.is-series {
+      .inner-title {
+        bottom: 5px !important;
+        width: 237px !important;
+      }
+    }
+
+    &.is-recording {
+      .inner-title {
+        width: 237px !important;
+      }
+    }
+  }
+}
+
+// profile
+.card.user-profile {
+  width: auto;
+
+  .link {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+  }
+
+  .card-div{
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+  }
+  .card-placeholder {
+    border-radius: 50%;
+  }
+
+  .card-cover {
+    height: auto;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    left:0px;
+    top:0px;
+  }
+
+  .card-title {
+    width: 100px;
+    height: 60px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+  }
+
+
+
+  .inner-title{
+    display: none !important;
+  }
+}
+
+
+// just text
+.card.text {
+  width: auto;
+
+  a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  a.link {
+    /*border-radius: 50%;*/
+    height: 30px;
+    width: 500px;
+
+    .text {
+      font-weight:300;
+    }
+  }
+
+  .card-div {
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+  }
+
+  .card-placeholder {
+    border-radius: 50%;
+  }
+
+  .card-cover {
+    height: auto;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    left: 0px;
+    top: 0px;
+  }
+
+  .card-title {
+    width: 100px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+  }
+
+
+
+  .inner-title {
+    display: none !important;
+  }
+}
+
+// Usando cascada para sobrescribir la clase 'inner-title' principal
+.channel {
+  .inner-title{
+    display: none !important;
+  }
+}
+
+.card.talent {
+  width: auto;
+
+  .link {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+  }
+
+  .card-placeholder {
+    border-radius: 50%;
+  }
+
+  .card-cover {
+    height: 88px;
+    width: 88px;
+  }
+
+  .card-title {
+    width: 100px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+  }
+
+  img {
+    border-radius: 50%;
+  }
+
+}
+
+.card.producer {
+  width: auto;
+
+  .link {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+  }
+
+  .card-placeholder {
+    border-radius: 50%;
+  }
+
+  .card-cover {
+    height: 88px;
+    width: 88px;
+  }
+
+  .card-title {
+    width: 100px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+  }
+
+  img {
+    border-radius: 50%;
+  }
+
+}
+
+.card.circle {
+  width: 143px;
+  margin-right: 20px;
+
+  .card-container {
+    height: 143px;
+    width: 143px;
+  }
+
+  .card-focus-container {
+    border-radius: 50%;
+  }
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+// CD
+.card.cd {
+  width: auto;
+
+  .link {
+    height: 175px;
+    width: 175px;
+  }
+
+  .card-cover {
+    height: 163px;
+    width: 163px;
+  }
+}
+
+.card.channel {
+  padding: 0 9px;
+  width: auto;
+
+  .card-container {
+    a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-weight: 300;
+
+      .channel-number {
+        background-color: rgba(0,0,0,0.5);
+        top: 6px;
+        position: relative;
+        padding: 3px 5px;
+        width: auto;
+        text-align: center;
+        position: absolute;
+        left: 6px;
+        height: 18px;
+      }
+    }
+  }
+
+  .link {
+    height: 114px;
+    width: 222px
+  }
+
+  .card-cover {
+    height: 102px;
+    width: 210px;
+    background-size: cover;
+  }
+}
+
+// Infinite List
+/* .card.infinite {
+
+  .card-container {
+    a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-weight: 300;
+
+      .channel-number {
+        background-color: rgba(0,0,0,0.5);
+        top: 6px;
+        position: relative;
+        padding: 3px 5px;
+        width: auto;
+        text-align: center;
+        position: absolute;
+        left: 6px;
+        height: 18px;
+      }
+    }
+  }
+
+  .link {
+    height: 173px;
+    width: 299px;
+  }
+
+  .card-cover {
+    height: 161px;
+    width: 288px;
+    overflow: hidden;
+  }
+
+  .inner-title {
+    width: 288px !important;
+    bottom: 5px !important;
+    left: 6px !important;
+  }
+
+  .background-transparent {
+    width: 288px;
+  }
+} */
+
+.vcard-talents {
+    .ribbon-items {
+        white-space: normal;
+    }
+}

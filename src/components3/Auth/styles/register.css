@@ -1,0 +1,91 @@
+.root-hisense .invisible-scrollbar, .root-nagra .invisible-scrollbar, .root-samsung .invisible-scrollbar, .root-sony .invisible-scrollbar, .root-opera .invisible-scrollbar, .root-android .invisible-scrollbar, .root-worksation .invisible-scrollbar, .root-tizen .invisible-scrollbar, .root-web0s .invisible-scrollbar, .root-ps4 .invisible-scrollbar {
+  overflow: hidden; }
+
+.root-lg .invisible-scrollbar {
+  overflow: scroll; }
+  .root-lg .invisible-scrollbar::-webkit-scrollbar {
+    display: none; }
+
+.root-hisense .invisible-scrollbar, .root-nagra .invisible-scrollbar, .root-samsung .invisible-scrollbar, .root-sony .invisible-scrollbar, .root-android .invisible-scrollbar, .root-worksation .invisible-scrollbar, .root-tizen .invisible-scrollbar, .root-web0s .invisible-scrollbar, .root-ps4 .invisible-scrollbar {
+  overflow: hidden; }
+
+.root-lg .invisible-scrollbar, .root-opera .invisible-scrollbar {
+  overflow: scroll; }
+  .root-lg .invisible-scrollbar::-webkit-scrollbar, .root-opera .invisible-scrollbar::-webkit-scrollbar {
+    display: none; }
+
+/* FlexBox Variables */
+.flex {
+  display: flex; }
+  .flex.row {
+    flex-direction: row; }
+  .flex.column {
+    flex-direction: column; }
+  .flex.jc-center {
+    justify-content: center; }
+  .flex.ai-center {
+    align-items: center; }
+  .flex.ai-start {
+    align-items: flex-start; }
+  .flex.ai-end {
+    align-items: flex-end; }
+
+.register {
+  width: 85%;
+  margin-left: 5%; }
+  .register > * .terms {
+    /*TODO mejorar implementacion*/
+    top: -55px;
+    left: 80px; }
+  .register > * .tabcontent {
+    display: none;
+    margin-top: 16px; }
+    .register > * .tabcontent .form-group-msg.error {
+      font-size: 11px;
+      width: 545px; }
+  .register > * .password,
+  .register > * .password-hiden {
+    float: left; }
+  .register > * .show_pass div.form-group-value-text .form-group-placeholder {
+    font-size: 25px;
+    font-style: normal;
+    text-transform: uppercase; }
+  .register > * .already_user {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .register .am_user {
+    float: left;
+    padding-top: 5%; }
+  .register .resend_code {
+    float: left;
+    padding-top: 12%; }
+  .register > .form-group:nth-child(2), .register > .form-group:nth-child(3) {
+    width: calc(50% - 10px);
+    display: inline-block;
+    box-sizing: border-box; }
+  .register > .form-group:nth-child(2) {
+    margin-right: 20px; }
+  .register .btn-group {
+    text-align: right;
+    height: 40px; }
+    .register .btn-group a.btn.focusable:nth-of-type(2) {
+      margin-left: 50px; }
+  .register .secure-msg {
+    clear: both;
+    margin-top: 18px;
+    margin-left: 2px; }
+    .register .secure-msg img {
+      width: 16px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 15px; }
+    .register .secure-msg span {
+      vertical-align: middle; }
+  .register .net_cpf h1 {
+    height: 30px; }
+  .register .net_cpf .net_cpf_instrucciones {
+    margin-top: 50px; }
+  .register .net_cpf .net_cpf_hint {
+    margin-top: 50px;
+    margin-bottom: 20px; }

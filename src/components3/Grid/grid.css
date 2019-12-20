@@ -1,0 +1,80 @@
+.root-hisense .invisible-scrollbar, .root-nagra .invisible-scrollbar, .root-samsung .invisible-scrollbar, .root-sony .invisible-scrollbar, .root-opera .invisible-scrollbar, .root-android .invisible-scrollbar, .root-worksation .invisible-scrollbar, .root-tizen .invisible-scrollbar, .root-web0s .invisible-scrollbar, .root-ps4 .invisible-scrollbar {
+  overflow: hidden; }
+
+.root-lg .invisible-scrollbar {
+  overflow: scroll; }
+  .root-lg .invisible-scrollbar::-webkit-scrollbar {
+    display: none; }
+
+.root-hisense .invisible-scrollbar, .root-nagra .invisible-scrollbar, .root-samsung .invisible-scrollbar, .root-sony .invisible-scrollbar, .root-android .invisible-scrollbar, .root-worksation .invisible-scrollbar, .root-tizen .invisible-scrollbar, .root-web0s .invisible-scrollbar, .root-ps4 .invisible-scrollbar {
+  overflow: hidden; }
+
+.root-lg .invisible-scrollbar, .root-opera .invisible-scrollbar {
+  overflow: scroll; }
+  .root-lg .invisible-scrollbar::-webkit-scrollbar, .root-opera .invisible-scrollbar::-webkit-scrollbar {
+    display: none; }
+
+/* FlexBox Variables */
+.flex {
+  display: flex; }
+  .flex.row {
+    flex-direction: row; }
+  .flex.column {
+    flex-direction: column; }
+  .flex.jc-center {
+    justify-content: center; }
+  .flex.ai-center {
+    align-items: center; }
+  .flex.ai-start {
+    align-items: flex-start; }
+  .flex.ai-end {
+    align-items: flex-end; }
+
+.channels-wrapper {
+  display: block;
+  height: 320px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), black); }
+
+.submenu {
+  font-size: 35px;
+  padding-left: 35px;
+  padding-bottom: 5px;
+  padding-top: 15px; }
+
+.channels-wrapper-subnivel {
+  display: block;
+  width: calc(100% - 70px) !important;
+  position: absolute;
+  padding-left: 70px; }
+  .channels-wrapper-subnivel.is-live {
+    top: 0;
+    padding-left: 40px !important; }
+
+.channels-container {
+  display: block;
+  height: 650px;
+  margin: 0px auto 0;
+  overflow: hidden;
+  width: 100%; }
+
+.channels-row {
+  box-sizing: border-box;
+  width: 100%; }
+
+.channels-row-one {
+  box-sizing: border-box;
+  display: flex; }
+
+/*  se hace via Css dado que la modificacion javascript necestaria un refactor para el Homeuser TODO*/
+.channels-wrapper .card .card-title {
+  display: none; }
+
+.image-back {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: 50px; }
+  .image-back:focus {
+    height: 55px; }

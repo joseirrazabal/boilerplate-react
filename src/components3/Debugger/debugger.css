@@ -1,0 +1,30 @@
+#debuggerDiv {
+  background-color: rgba(135, 135, 135, 0.5);
+  border-top: 2px solid #fff;
+  bottom: 0;
+  color: #0e0e0e;
+  font-size: 16px;
+  left: 0;
+  max-height: 480px;
+  overflow-y: scroll;
+  position: absolute;
+  right: 0;
+  z-index: 9999; }
+
+#debuggerDiv div {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  overflow-wrap: break-word;
+  padding: 4px 16px;
+  font-size: 18px; }
+
+.debugger-error {
+  color: red; }
+
+.debugger-warn {
+  color: orangered; }
+
+.debugger-info {
+  color: blue; }
+
+.debugger-log {
+  color: black; }

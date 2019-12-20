@@ -1,0 +1,90 @@
+@charset "UTF-8";
+.root-hisense .invisible-scrollbar, .root-nagra .invisible-scrollbar, .root-samsung .invisible-scrollbar, .root-sony .invisible-scrollbar, .root-opera .invisible-scrollbar, .root-android .invisible-scrollbar, .root-worksation .invisible-scrollbar, .root-tizen .invisible-scrollbar, .root-web0s .invisible-scrollbar, .root-ps4 .invisible-scrollbar {
+  overflow: hidden; }
+
+.root-lg .invisible-scrollbar {
+  overflow: scroll; }
+  .root-lg .invisible-scrollbar::-webkit-scrollbar {
+    display: none; }
+
+.root-hisense .invisible-scrollbar, .root-nagra .invisible-scrollbar, .root-samsung .invisible-scrollbar, .root-sony .invisible-scrollbar, .root-android .invisible-scrollbar, .root-worksation .invisible-scrollbar, .root-tizen .invisible-scrollbar, .root-web0s .invisible-scrollbar, .root-ps4 .invisible-scrollbar {
+  overflow: hidden; }
+
+.root-lg .invisible-scrollbar, .root-opera .invisible-scrollbar {
+  overflow: scroll; }
+  .root-lg .invisible-scrollbar::-webkit-scrollbar, .root-opera .invisible-scrollbar::-webkit-scrollbar {
+    display: none; }
+
+/* FlexBox Variables */
+.flex {
+  display: flex; }
+  .flex.row {
+    flex-direction: row; }
+  .flex.column {
+    flex-direction: column; }
+  .flex.jc-center {
+    justify-content: center; }
+  .flex.ai-center {
+    align-items: center; }
+  .flex.ai-start {
+    align-items: flex-start; }
+  .flex.ai-end {
+    align-items: flex-end; }
+
+#planSelector {
+  width: 100%;
+  height: 555px;
+  display: flex; }
+  #planSelector .container {
+    width: 1000px;
+    justify-content: center;
+    margin: 0 auto; }
+    #planSelector .container .title {
+      text-align: center;
+      font-weight: 500;
+      color: #e9e2e2;
+      display: inline-block;
+      width: 100%;
+      font-size: 40px; }
+    #planSelector .container .row {
+      width: 100%; }
+      #planSelector .container .row .col {
+        float: left;
+        width: 33%;
+        height: 250px; }
+        #planSelector .container .row .col .item {
+          width: 100%;
+          height: 100%;
+          padding: 1em; }
+          #planSelector .container .row .col .item .link:focus {
+            text-decoration: none; }
+            #planSelector .container .row .col .item .link:focus .card-placeholder {
+              z-index: 2;
+              opacity: 0.8; }
+            #planSelector .container .row .col .item .link:focus .card-placeholder:after {
+              display: block;
+              position: relative;
+              top: 60px;
+              content: "ⓘ Mas información";
+              text-align: center;
+              font-size: 30px;
+              color: white; }
+          #planSelector .container .row .col .item .text-span-content {
+            display: block; }
+            #planSelector .container .row .col .item .text-span-content .text {
+              float: left; }
+            #planSelector .container .row .col .item .text-span-content .price {
+              float: right; }
+          #planSelector .container .row .col .item .focusable.action.button {
+            float: left;
+            color: #000000;
+            margin-left: 4px;
+            width: 270px;
+            background: #f59024;
+            background: -moz-linear-gradient(left, #f59024 0%, #f1e765 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, #f59024), color-stop(100%, #f1e765));
+            background: -webkit-linear-gradient(left, #f59024 0%, #f1e765 100%);
+            background: -o-linear-gradient(left, #f59024 0%, #f1e765 100%);
+            background: -ms-linear-gradient(left, #f59024 0%, #f1e765 100%);
+            background: linear-gradient(to right, #f59024 0%, #f1e765 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f59024', endColorstr='#f1e765', GradientType=1 ); }

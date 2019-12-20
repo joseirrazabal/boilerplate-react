@@ -1,0 +1,3 @@
+/*  se hace via Css dado que la modificacion javascript necestaria un refactor para el Homeuser TODO*/
+#end-player .card .card-title {
+  display: none; }

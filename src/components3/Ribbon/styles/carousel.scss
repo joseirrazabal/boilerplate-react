@@ -1,0 +1,58 @@
+@import "../../../styles/vars.css";
+
+.ribbon-root {
+  margin: 8px 0 24px;
+}
+
+.ribbon-title {
+  font-size: 22px;
+  margin-bottom: 8px;
+
+  span{
+    font-size: 26px;
+    font-weight: 100;
+  }
+
+}
+
+.ribbon {
+  position: relative;
+}
+
+.ribbon-items {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ribbon-arrow-left,
+.ribbon-arrow-right {
+  background: blue;
+  border-radius: 50%;
+  height: 20px;
+  padding: 8px;
+  position: absolute;
+  top: 60px;
+  width: 20px;
+  z-index: 10;
+}
+
+.ribbon-arrow-left {
+  left: 0;
+}
+
+.ribbon-arrow-right {
+  right: 0;
+}
+.slick-slide-one {
+  display: left;
+  height: 100%;
+  min-height: 1px;
+  width: 230px !important;
+  margin-left: 26px;
+}
+.ribbon-items-search {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 98%;
+  margin-left: 77px;
+}

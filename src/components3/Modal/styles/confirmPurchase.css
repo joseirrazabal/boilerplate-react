@@ -1,0 +1,55 @@
+.modal-children .payment {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 100px; }
+  .modal-children .payment .left {
+    float: left;
+    height: 170px;
+    width: 48%; }
+    .modal-children .payment .left img {
+      float: right;
+      width: 290px;
+      height: 163px; }
+  .modal-children .payment .rigth {
+    float: right;
+    width: 50%;
+    text-indent: 5px;
+    text-align: left;
+    height: 170px;
+    color: #c7c7c7; }
+    .modal-children .payment .rigth .subtitle {
+      font-size: 25px;
+      margin-bottom: 10px; }
+    .modal-children .payment .rigth .title {
+      font-size: 38px;
+      margin-bottom: 10px;
+      font-weight: bold; }
+    .modal-children .payment .rigth .text {
+      text-indent: 0px;
+      font-size: 20px; }
+      .modal-children .payment .rigth .text .currency {
+        text-indent: 5px;
+        display: inline-block; }
+      .modal-children .payment .rigth .text .price {
+        display: inline-block;
+        font-weight: bold; }
+      .modal-children .payment .rigth .text .tax {
+        text-indent: 10px;
+        display: inline-block; }
+      .modal-children .payment .rigth .text .icon-clock {
+        text-indent: 30px;
+        display: inline-block; }
+      .modal-children .payment .rigth .text .rentType {
+        text-indent: 5px;
+        display: inline-block; }
+  .modal-children .payment div > Hr {
+    opacity: 0.3;
+    display: inline-block;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999; }
+
+.modal-children .modal-button.purchase {
+  display: inline-block; }

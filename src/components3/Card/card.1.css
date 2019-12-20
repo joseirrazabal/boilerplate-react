@@ -1,0 +1,592 @@
+.root-hisense .invisible-scrollbar, .root-nagra .invisible-scrollbar, .root-samsung .invisible-scrollbar, .root-sony .invisible-scrollbar, .root-opera .invisible-scrollbar, .root-android .invisible-scrollbar, .root-worksation .invisible-scrollbar, .root-tizen .invisible-scrollbar, .root-web0s .invisible-scrollbar, .root-ps4 .invisible-scrollbar {
+  overflow: hidden; }
+
+.root-lg .invisible-scrollbar {
+  overflow: scroll; }
+  .root-lg .invisible-scrollbar::-webkit-scrollbar {
+    display: none; }
+
+.root-hisense .invisible-scrollbar, .root-nagra .invisible-scrollbar, .root-samsung .invisible-scrollbar, .root-sony .invisible-scrollbar, .root-android .invisible-scrollbar, .root-worksation .invisible-scrollbar, .root-tizen .invisible-scrollbar, .root-web0s .invisible-scrollbar, .root-ps4 .invisible-scrollbar {
+  overflow: hidden; }
+
+.root-lg .invisible-scrollbar, .root-opera .invisible-scrollbar {
+  overflow: scroll; }
+  .root-lg .invisible-scrollbar::-webkit-scrollbar, .root-opera .invisible-scrollbar::-webkit-scrollbar {
+    display: none; }
+
+/* FlexBox Variables */
+.flex {
+  display: flex; }
+  .flex.row {
+    flex-direction: row; }
+  .flex.column {
+    flex-direction: column; }
+  .flex.jc-center {
+    justify-content: center; }
+  .flex.ai-center {
+    align-items: center; }
+  .flex.ai-start {
+    align-items: flex-start; }
+  .flex.ai-end {
+    align-items: flex-end; }
+
+.card {
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  width: 25%; }
+
+.inner-title {
+  position: absolute;
+  color: white;
+  font-size: 16px;
+  text-indent: 10px;
+  padding: 10px 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 1; }
+
+.background-transparent {
+  height: 48px;
+  position: absolute;
+  bottom: 3px;
+  background-image: url("/images/sombra_destacado.png"); }
+
+.placeholder-container {
+  display: none; }
+
+.card-container {
+  height: auto;
+  position: relative; }
+  .card-container .link {
+    box-sizing: border-box;
+    display: block;
+    height: 162px;
+    padding: 6px;
+    width: 100%; }
+
+.card-div {
+  width: 100%;
+  height: 100%; }
+
+.card-placeholder {
+  background: #000 center no-repeat;
+  background-size: cover;
+  display: block;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  box-shadow: 2px 3px 7px 0px black; }
+
+.card-cover {
+  position: absolute;
+  height: 100%;
+  left: 6px;
+  text-indent: -9999px;
+  top: 6px;
+  width: 100%; }
+
+.badge-container {
+  position: absolute;
+  top: 6px; }
+  .badge-container.left {
+    left: 6px;
+    right: auto; }
+  .badge-container.right {
+    left: auto;
+    right: 6px; }
+
+.card-title {
+  box-sizing: border-box;
+  padding: 4px 4px 0;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.card-label {
+  color: #aaa;
+  font-size: 14px;
+  text-align: center; }
+
+.card.double {
+  overflow: hidden;
+  margin-right: 24px; }
+  .card.double .placeholder-container {
+    display: inline-block;
+    margin-right: 16px;
+    padding: 6px;
+    position: relative;
+    vertical-align: top; }
+    .card.double .placeholder-container .sibling-wrapper {
+      background: #4A4A4A;
+      border-radius: 5px;
+      box-sizing: border-box;
+      height: 161px;
+      padding: 11px;
+      width: 115px; }
+    .card.double .placeholder-container .arrow-right {
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid #4A4A4A;
+      height: 0;
+      position: absolute;
+      right: -4px;
+      top: 73px;
+      width: 0; }
+    .card.double .placeholder-container .card-placeholder {
+      height: 139px;
+      position: absolute;
+      top: 17px;
+      width: 93px; }
+    .card.double .placeholder-container .card-cover {
+      display: block;
+      height: 139px;
+      left: 0;
+      position: relative;
+      top: 0;
+      width: 93px; }
+  .card.double .card-container {
+    display: inline-block; }
+
+.card.vod .card-labels-container {
+  width: 287px; }
+
+.card.epg_event {
+  width: auto; }
+  .card.epg_event .link {
+    height: 173px;
+    width: 299px; }
+  .card.epg_event .card-container a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 300; }
+    .card.epg_event .card-container a .channel-number {
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 6px;
+      position: relative;
+      padding: 3px 5px;
+      width: auto;
+      text-align: center;
+      position: absolute;
+      left: 6px;
+      height: 18px; }
+  .card.epg_event .card-cover {
+    height: 161px;
+    width: 287px;
+    background-size: 100% 100%, cover; }
+  .card.epg_event .inner-title {
+    width: 287px !important;
+    bottom: 5px !important;
+    left: 6px !important; }
+  .card.epg_event .background-transparent {
+    width: 287px; }
+  .card.epg_event .card-metadata.recording .inner-title {
+    bottom: 0 !important; }
+  .card.epg_event .card-metadata.recording .background-transparent {
+    background-color: rgba(0, 0, 0, 0.7); }
+  .card.epg_event .card-metadata.is-series .inner-title {
+    bottom: 5px !important;
+    width: 237px !important; }
+  .card.epg_event .card-metadata.is-recording .inner-title {
+    width: 237px !important; }
+  .card.epg_event .card-labels-container .card-title {
+    font-weight: 300;
+    text-align: left; }
+  .card.epg_event .card-labels-container .card-label {
+    color: aliceblue;
+    text-align: left;
+    padding-left: 4px; }
+
+.card.landscape,
+.card.vod {
+  width: auto; }
+  .card.landscape .link,
+  .card.vod .link {
+    height: 173px;
+    width: 299px; }
+  .card.landscape .card-cover,
+  .card.vod .card-cover {
+    height: 161px;
+    width: 287px;
+    background-size: 100% 100%, cover; }
+  .card.landscape .inner-title,
+  .card.vod .inner-title {
+    width: 287px !important;
+    bottom: 5px !important;
+    left: 6px !important; }
+  .card.landscape .background-transparent,
+  .card.vod .background-transparent {
+    width: 287px; }
+  .card.landscape .card-container a,
+  .card.vod .card-container a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 300; }
+    .card.landscape .card-container a .channel-number,
+    .card.vod .card-container a .channel-number {
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 6px;
+      position: relative;
+      padding: 3px 5px;
+      width: auto;
+      text-align: center;
+      position: absolute;
+      left: 6px;
+      height: 18px; }
+  .card.landscape .card-metadata.recording .inner-title,
+  .card.vod .card-metadata.recording .inner-title {
+    bottom: 0 !important; }
+  .card.landscape .card-metadata.recording .background-transparent,
+  .card.vod .card-metadata.recording .background-transparent {
+    background-color: rgba(0, 0, 0, 0.7); }
+  .card.landscape .card-metadata.is-series .inner-title,
+  .card.vod .card-metadata.is-series .inner-title {
+    bottom: 5px !important;
+    width: 237px !important; }
+  .card.landscape .card-metadata.is-recording .inner-title,
+  .card.vod .card-metadata.is-recording .inner-title {
+    width: 237px !important; }
+
+.card.portrait {
+  width: auto; }
+  .card.portrait .card-container a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 300; }
+    .card.portrait .card-container a .channel-number {
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 6px;
+      position: relative;
+      padding: 3px 5px;
+      width: auto;
+      text-align: center;
+      position: absolute;
+      left: 6px;
+      height: 18px; }
+  .card.portrait .link {
+    height: 252px;
+    width: 167px; }
+  .card.portrait .card-cover {
+    height: 240px;
+    width: 155px;
+    background-size: 100% 100%, cover; }
+
+.card.highlight {
+  width: auto; }
+  .card.highlight .card-container a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 300; }
+    .card.highlight .card-container a .channel-number {
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 6px;
+      position: relative;
+      padding: 3px 5px;
+      width: auto;
+      text-align: center;
+      position: absolute;
+      left: 6px;
+      height: 18px; }
+  .card.highlight .link {
+    height: 181px;
+    width: 459px; }
+  .card.highlight .card-cover {
+    height: 169px;
+    width: 447px;
+    background-size: 100% 100%, cover; }
+  .card.highlight .inner-title {
+    width: 448px !important;
+    bottom: 5px !important;
+    left: 5px !important; }
+  .card.highlight .background-transparent {
+    width: 448px; }
+
+.card.superhighlight_title {
+  width: auto; }
+  .card.superhighlight_title .card-container a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 300; }
+    .card.superhighlight_title .card-container a .channel-number {
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 6px;
+      position: relative;
+      padding: 3px 5px;
+      width: auto;
+      text-align: center;
+      position: absolute;
+      left: 6px;
+      height: 18px; }
+  .card.superhighlight_title .link {
+    height: 181px;
+    width: 459px; }
+  .card.superhighlight_title .card-cover {
+    height: 169px;
+    width: 447px;
+    background-size: 100% 100%, cover; }
+  .card.superhighlight_title .inner-title {
+    width: 448px !important;
+    bottom: 5px !important;
+    left: 5px !important; }
+  .card.superhighlight_title .background-transparent {
+    width: 448px; }
+
+.vcard-seasons-carousel .landscape .card-title {
+  width: 290px;
+  overflow: hidden;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis; }
+
+.card.user-info {
+  width: auto; }
+  .card.user-info .card-container a .card-div {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover; }
+  .card.user-info .card-labels-container {
+    position: relative;
+    left: 106px;
+    top: -110px;
+    width: 200px;
+    line-height: 23px; }
+    .card.user-info .card-labels-container .card-title {
+      text-align: left;
+      padding-left: 0px; }
+    .card.user-info .card-labels-container .card-label {
+      text-align: left;
+      padding-left: 2px; }
+      .card.user-info .card-labels-container .card-label .followers {
+        padding-left: 8px; }
+      .card.user-info .card-labels-container .card-label .level {
+        padding-left: 8px; }
+      .card.user-info .card-labels-container .card-label .levels-points_img {
+        width: 20px;
+        text-align: left;
+        float: left; }
+      .card.user-info .card-labels-container .card-label .points {
+        /*background-color: darkblue;*/
+        padding-left: 2px;
+        text-align: left; }
+  .card.user-info .link {
+    height: 115px;
+    width: 315px; }
+  .card.user-info .card-cover {
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px, cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    overflow: hidden; }
+  .card.user-info .inner-title {
+    width: 287px !important;
+    bottom: 5px !important;
+    left: 6px !important; }
+  .card.user-info .background-transparent {
+    width: 287px; }
+  .card.user-info .card-metadata.recording .inner-title {
+    bottom: 0 !important; }
+  .card.user-info .card-metadata.recording .background-transparent {
+    background-color: rgba(0, 0, 0, 0.7); }
+  .card.user-info .card-metadata.is-series .inner-title {
+    bottom: 5px !important;
+    width: 237px !important; }
+  .card.user-info .card-metadata.is-recording .inner-title {
+    width: 237px !important; }
+
+.card.user-profile {
+  width: auto; }
+  .card.user-profile .link {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px; }
+  .card.user-profile .card-div {
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%; }
+  .card.user-profile .card-placeholder {
+    border-radius: 50%; }
+  .card.user-profile .card-cover {
+    height: auto;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    left: 0px;
+    top: 0px; }
+  .card.user-profile .card-title {
+    width: 100px;
+    height: 60px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis; }
+  .card.user-profile .inner-title {
+    display: none !important; }
+
+.card.text {
+  width: auto; }
+  .card.text a {
+    color: #FFFFFF;
+    text-decoration: none; }
+  .card.text a.link {
+    /*border-radius: 50%;*/
+    height: 30px;
+    width: 500px; }
+    .card.text a.link .text {
+      font-weight: 300; }
+  .card.text .card-div {
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%; }
+  .card.text .card-placeholder {
+    border-radius: 50%; }
+  .card.text .card-cover {
+    height: auto;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    left: 0px;
+    top: 0px; }
+  .card.text .card-title {
+    width: 100px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis; }
+  .card.text .inner-title {
+    display: none !important; }
+
+.channel .inner-title {
+  display: none !important; }
+
+.card.talent {
+  width: auto; }
+  .card.talent .link {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px; }
+  .card.talent .card-placeholder {
+    border-radius: 50%; }
+  .card.talent .card-cover {
+    height: 88px;
+    width: 88px; }
+  .card.talent .card-title {
+    width: 100px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis; }
+  .card.talent img {
+    border-radius: 50%; }
+
+.card.producer {
+  width: auto; }
+  .card.producer .link {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px; }
+  .card.producer .card-placeholder {
+    border-radius: 50%; }
+  .card.producer .card-cover {
+    height: 88px;
+    width: 88px; }
+  .card.producer .card-title {
+    width: 100px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis; }
+  .card.producer img {
+    border-radius: 50%; }
+
+.card.circle {
+  width: 143px;
+  margin-right: 20px; }
+  .card.circle .card-container {
+    height: 143px;
+    width: 143px; }
+  .card.circle .card-focus-container {
+    border-radius: 50%; }
+  .card.circle img {
+    border-radius: 50%; }
+
+.card.cd {
+  width: auto; }
+  .card.cd .link {
+    height: 175px;
+    width: 175px; }
+  .card.cd .card-cover {
+    height: 163px;
+    width: 163px; }
+
+.card.channel {
+  padding: 0 9px;
+  width: auto; }
+  .card.channel .card-container a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 300; }
+    .card.channel .card-container a .channel-number {
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 6px;
+      position: relative;
+      padding: 3px 5px;
+      width: auto;
+      text-align: center;
+      position: absolute;
+      left: 6px;
+      height: 18px; }
+  .card.channel .link {
+    height: 114px;
+    width: 222px; }
+  .card.channel .card-cover {
+    height: 102px;
+    width: 210px;
+    background-size: cover; }
+
+/* .card.infinite {
+
+  .card-container {
+    a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-weight: 300;
+
+      .channel-number {
+        background-color: rgba(0,0,0,0.5);
+        top: 6px;
+        position: relative;
+        padding: 3px 5px;
+        width: auto;
+        text-align: center;
+        position: absolute;
+        left: 6px;
+        height: 18px;
+      }
+    }
+  }
+
+  .link {
+    height: 173px;
+    width: 299px;
+  }
+
+  .card-cover {
+    height: 161px;
+    width: 288px;
+    overflow: hidden;
+  }
+
+  .inner-title {
+    width: 288px !important;
+    bottom: 5px !important;
+    left: 6px !important;
+  }
+
+  .background-transparent {
+    width: 288px;
+  }
+} */
+.vcard-talents .ribbon-items {
+  white-space: normal; }

@@ -1,0 +1,106 @@
+.pip {
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  top: 50px;
+  right: 30px;
+  z-index: -1; /* epg is zindex 99 */
+  background: transparent;
+}
+
+.full {
+  position: absolute;
+  height: 100%;
+  width:100%;
+  top: 0px;
+  z-index: 3; // porque endplayer tiene zindex 3 :/
+}
+
+.vcontainer {
+  position: absolute;
+  width: 1280px;
+  height: 720px;
+  left: 0;
+  top: 0;
+  background: transparent;
+  background-color: transparent;
+}
+
+.end {
+  position: absolute;
+  top: 285px;
+  left: 57px;
+  height: 150px;
+  width: 265px;
+}
+
+.hide {
+  display: none;
+}
+
+.Html5PlayerContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.Html5Player {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.root-android .Html5Player
+{
+  background-color: transparent;
+  background:transparent;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+}
+
+.endplayer .card.landscape {
+  padding: 20px 0;
+}
+
+/*ORSAY PLAYER*/
+.orsayPlayerObject {
+  background: transparent;
+}
+
+.orsayFullContainer {
+  z-index: 4;
+}
+
+.ps4FullContainer,
+.tizenFullContainer {
+  z-index: 4;
+}
+
+.background-clear {
+  background: transparent;
+}
+
+.watch-movie-again{
+  background-size: cover !important;
+  &_layer{
+    background: linear-gradient(-90deg,  rgba(0,0,0,.5), transparent);
+    position: relative;
+    z-index: 3;
+    width:100%;
+    height: 100%;
+    bottom: 0px;
+    &--play{
+      position: absolute;
+      z-index: 4;
+      top: 30%;
+      left: 42%;
+      text-align: center;
+      color:white;
+      font-size: 45px;
+      text-decoration: none;
+      border: transparent;
+      border-radius: 50%;
+      }
+    }
+}

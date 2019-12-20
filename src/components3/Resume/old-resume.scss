@@ -1,0 +1,247 @@
+@import "./../../styles/vars.scss";
+
+$boxes-width: 286px;
+
+.resume {
+  overflow: hidden;
+  width: 100%;
+  min-height: 200px;
+}
+
+.resume-back {
+  padding: 8px 0;
+}
+
+.resume-container {
+  display: block;
+  margin: auto;
+  max-width: $container-limit;
+}
+
+.resume-data-container {
+  float: left;
+  width: 900px;
+}
+
+.resume-data {
+  float: left;
+  max-width: 65%;
+  width: calc(50% + #{$boxes-width});
+}
+
+.resume-data-large {
+  float: left;
+  max-width: 85%;
+  width: calc(50% + #{$boxes-width});
+}
+
+.resume-promo {
+  box-sizing: border-box;
+  float: left;
+  height: 136px;
+  width: $boxes-width;
+}
+
+.resume-info {
+  box-sizing: border-box;
+}
+
+.resume-promo img {
+  display: block;
+  width: 100%;
+}
+
+.resume-media {
+  float: left;
+  width: 25%;
+}
+
+.resume-media img {
+  display: block;
+  width: 100%;
+}
+
+.resume-title {
+  font-weight: 400;
+  color: $font-color-title;
+  font-size: $font-size-title;
+  margin: 0 0 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.resume-title.title-short {
+  width: calc(100% - #{$boxes-width});
+}
+
+.resume-title.title-short ~ .resume-promo {
+  position: relative;
+  top: -50px;
+}
+
+.resume-metadata {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 14px;
+  width: 100%;
+}
+
+.resume-meta {
+  margin-right: $margin-base;
+}
+
+.resume-tag {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: normal;
+  padding: 2px 4px;
+  vertical-align: middle;
+}
+
+.resume-badge {
+  display: inline-block;
+  vertical-align: bottom;
+
+  .icon {
+    height: 21px;
+    width: auto;
+  }
+}
+
+
+
+/* mixin for multiline */
+@mixin multiLineEllipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: white) {
+  overflow: hidden;
+  position: relative;
+  line-height: $lineHeight;
+  max-height: $lineHeight * $lineCount;
+  text-align: justify;
+  /*margin-right: -1em;*/
+  padding-right: 1em;
+  margin-top: 0px;
+
+  &:before {
+    content: " " attr(data-line) "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: $bgColor;
+  }
+}
+
+
+.resume-description {
+  font-size: 21px;
+  font-weight: 400!important;
+  line-height: 26px;
+  max-height: 104px;
+  overflow: hidden;
+  /*text-overflow: ellipsis;*/
+  text-shadow: 2px 2px black;
+}
+
+.block-with-text {
+  @include multiLineEllipsis($lineHeight: 26px, $lineCount: 4, $bgColor: transparent);
+}
+
+.resume-action-buttons {
+  margin: 20px;
+}
+
+.resume-action-buttons .text-button {
+  padding-left: 5px;
+}
+
+.purchase-btn-container {
+  margin-bottom: 8px;
+
+  .action {
+    display: block;
+    text-align: center;
+
+    &.large {
+      width: auto;
+      display: flex;
+      padding-left: 17px;
+    }
+  }
+}
+
+.resume-purchase-buttons {
+  @extend .resume-promo;
+  padding: 0 18px;
+  .promo-text {
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .purchase {
+    font-size: 16px;
+    margin: 4px 0;
+    .left-text-button {
+      text-align: left;
+      min-width: 70%;
+      max-width: 75%;
+      display: inline-block;
+    }
+
+    .right-text-button {
+      min-width: 25%;
+      max-width: 30%;
+      text-align: right;
+      float: right;
+    }
+  }
+}
+
+.resume-preview {
+  @extend .resume-promo;
+  min-height: 151px;
+  margin-left: 10px;
+  margin-top: 5px;
+  box-shadow: 2px 3px 7px 0px black;  
+
+  img {
+    height: 96%;
+  }
+
+  .resume-music-container {
+    @extend .resume-promo;
+    min-height: 151px;
+    margin-left: 10px;
+  }
+
+  .preview-progress {
+    display: block;
+    background: #25A4DA;
+    height: 4%;
+    bottom: 0;
+  }
+}
+
+
+
+
+.resume-preview.live {
+  @extend .resume-preview;
+  margin-top: 15px;
+  img {
+    height: 100%;
+  }
+  span {
+    height: 0%;
+  }
+}
+

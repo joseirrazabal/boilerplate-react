@@ -1,0 +1,360 @@
+@import "./../../styles/vars.scss";
+
+$boxes-width: 286px;
+
+.resume {
+  overflow: hidden;
+  width: 100%;
+  min-height: 200px;
+}
+
+.resume-back {
+  padding: 8px 0;
+}
+
+.resume-container {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: $container-limit;
+  /* height: 430px; */
+  height: 720px;
+
+  &.isLive{
+    height: 285px;
+    //background: red;
+
+    .resume-data-container{
+      height: 320px;
+    }
+  }
+}
+
+.resume-data-container {
+  width: calc( 100% - 60px );
+  position: absolute;
+  padding-left: 60px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* top: 120px; */
+  height: 400px;
+  margin: auto;
+
+  &.live{
+    align-items: flex-start!important;
+    padding-left: 20px;
+
+    .resume-data-large{
+      max-width:65%; 
+      h4{
+        font-size: 40px;
+      }
+    }
+
+  }
+
+  h4, h6{
+    color: white;
+  }
+}
+.resume-data {
+  float: left;
+  height: 220px;
+  max-width: 60%;
+  width: calc(60% + #{$boxes-width});
+}
+
+.resume-data-large {
+  float: left;
+  max-width: 85%;
+  width: calc(50% + #{$boxes-width});
+}
+
+.resume-promo {
+  box-sizing: border-box;
+  float: left;
+  height: 136px;
+  width: $boxes-width;
+}
+
+.resume-info {
+  box-sizing: border-box;
+}
+
+.resume-promo img {
+  display: block;
+  width: 100%;
+}
+
+.resume-media {
+  float: left;
+  width: 25%;
+}
+
+.resume-media img {
+  display: block;
+  width: 100%;
+}
+
+.resume-title {
+  font-weight: 400;
+  color: $font-color-title;
+  font-size: $font-size-title;
+  margin: 0 0 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.resume-title.title-short {
+  width: calc(100% - #{$boxes-width});
+}
+
+.resume-title.title-short ~ .resume-promo {
+  position: relative;
+  top: -50px;
+}
+
+.resume-metadata {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 14px;
+  width: 100%;
+}
+
+.resume-meta {
+  margin-right: $margin-base;
+
+  &.tag-netflex{
+    border: 1px solid white;
+    padding: 0 5px;
+    font-size: 13px;
+    color: white;
+    margin: 0 5px;
+    border-radius: 2px;
+  } 
+  &.tag-bold{
+    font-weight: 500;
+  }
+}
+
+.resume-tag {
+  //border: 1px solid #fff;
+  background: $primary-color;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: normal;
+  padding: 2px 4px;
+  vertical-align: middle;
+}
+
+.resume-badge {
+  display: inline-block;
+  vertical-align: bottom;
+
+  .icon {
+    height: 21px;
+    width: auto;
+  }
+}
+
+/* mixin for multiline */
+@mixin multiLineEllipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: white) {
+  overflow: hidden;
+  position: relative;
+  line-height: $lineHeight;
+  max-height: $lineHeight * $lineCount + 10;
+  text-align: justify;
+  /*margin-right: -1em;*/
+  padding-right: 1em;
+  margin-top: 0px;
+
+  &:before {
+    content: " " attr(data-line) "";
+    //content: " ...";
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: $bgColor;
+  }
+}
+
+.info-rented{
+  p{
+    color: $color-rented;
+  }
+}
+
+.resume-description {
+  font-weight: 400 !important;
+  max-height: 130px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 520px;
+}
+
+.block-with-text {
+  @include multiLineEllipsis($lineHeight: 30px, $lineCount: 4, $bgColor: transparent);
+}
+
+.resume-action-buttons {
+  margin: 0px;
+  margin-top: 25px;
+  a {
+    margin: 5px;
+    font-weight: 100;
+    /* background: rgba(71, 83, 107, 0.6) */
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+}
+
+.resume-action-buttons .text-button {
+  padding-left: 5px;
+}
+
+.resume-action-buttons a {
+  min-width: 60px;
+}
+
+.purchase-btn-container {
+  margin-bottom: 8px;
+
+  .action {
+    display: block;
+    text-align: center;
+
+    &.large {
+      width: auto;
+      display: flex;
+      padding-left: 17px;
+    }
+  }
+}
+
+.resume-purchase-buttons {
+  @extend .resume-promo;
+  padding: 0 18px;
+  .promo-text {
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .purchase {
+    font-size: 16px;
+    margin: 4px 0;
+    .left-text-button {
+      text-align: left;
+      min-width: 70%;
+      max-width: 75%;
+      display: inline-block;
+    }
+
+    .right-text-button {
+      min-width: 25%;
+      max-width: 30%;
+      text-align: right;
+      float: right;
+    }
+  }
+}
+
+.resume-preview {
+  @extend .resume-promo;
+  min-height: 151px;
+  margin-left: 10px;
+  margin-top: 5px;
+  box-shadow: 2px 3px 7px 0px black;
+
+  img {
+    height: 96%;
+  }
+
+  .resume-music-container {
+    @extend .resume-promo;
+    min-height: 151px;
+    margin-left: 10px;
+  }
+
+  .preview-progress {
+    display: block;
+    background: #25a4da;
+    height: 4%;
+    bottom: 0;
+  }
+}
+
+.resume-preview-fullwidth {
+  @extend .resume-promo;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 3px 7px 0px black;
+
+  img {
+    width: 100%;
+  }
+
+  .resume-music-container {
+    @extend .resume-promo;
+    min-height: 151px;
+    margin-left: 10px;
+  }
+
+  .preview-progress {
+    display: block;
+    background: #25a4da;
+    height: 4%;
+    bottom: 0;
+  }
+}
+
+.resume-preview.live {
+  @extend .resume-preview;
+  margin-top: 15px;
+  img {
+    height: 100%;
+  }
+  span {
+    height: 0%;
+  }
+}
+.background-gradient {
+  position: absolute;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgba(0, 0, 0, 1)
+  );
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+}
+.background-gradient-2 {
+  position: absolute;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(0, 0, 0, 1)
+  );
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+}

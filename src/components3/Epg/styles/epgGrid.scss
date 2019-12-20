@@ -1,0 +1,29 @@
+@import "../../../styles/vars.scss";
+
+$height: 397px;
+
+.channels-wrapper {
+  display: block;
+  height: $height;
+  width: 100%;
+}
+
+.channels-container {
+  display: block;
+  height: 100%;
+  margin: 18px auto 0;
+  overflow: hidden;
+  width: $container-limit;
+}
+
+.channels-row {
+  box-sizing: border-box;
+  //padding-bottom: 18px;
+  overflow: hidden;
+  width: 100%;
+}
+
+/*  se hace via Css dado que la modificacion javascript necestaria un refactor para el Homeuser TODO*/
+.channels-wrapper .card .card-title {
+  display: none;
+}

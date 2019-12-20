@@ -1,0 +1,36 @@
+.app-notification {
+  background: #cecece;
+  box-shadow: 22px 4px 12px 4px rgba(0, 0, 0, 0.5);
+  color: #333333;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  z-index: 6000; }
+  .app-notification.hide {
+    display: none; }
+  .app-notification .app-notification-wrapper {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 12px; }
+  .app-notification .app-notification-icon {
+    float: left;
+    text-align: center;
+    width: 70.6666px; }
+    .app-notification .app-notification-icon .fa {
+      margin-top: 14px;
+      font-size: 38px; }
+    .app-notification .app-notification-icon img {
+      margin: 15px 0; }
+  .app-notification .app-notification-body {
+    float: left;
+    width: 305.3333px; }
+  .app-notification .app-notification-title {
+    font-weight: bold;
+    font-size: 21.3333px;
+    line-height: 25.3333px;
+    margin-bottom: 2px; }
+  .app-notification .app-notification-message {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px; }

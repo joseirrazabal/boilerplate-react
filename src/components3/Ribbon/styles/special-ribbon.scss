@@ -1,0 +1,85 @@
+.special-ribbon {
+  overflow: hidden;
+
+  .special-ribbon-title {
+    font-size: 22px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    width: 100%;
+  }
+
+  .special-ribbon-sibling {
+    display: none;
+  }
+
+  .special-ribbon-carousel {
+    width: 100%;
+  }
+}
+
+// este cambio es importante para la vista de los recomendados
+.special-ribbon-sibling {
+  display: none;
+}
+
+
+.one-to-many {
+  display: none;
+  
+  .special-ribbon-carousel {
+    display: inline-block;
+    vertical-align: top;
+    width: 87.2%;
+
+    .ribbon-title {
+      display: none;
+    }
+    .card-cover{
+      background-size: cover!important;
+    }
+  }
+
+  .special-ribbon-sibling {
+    display: inline-block;
+    margin-right: 16px;
+    padding: 6px;
+    position: relative;
+    vertical-align: top;
+
+    .card {
+      .link,
+      .card-cover {
+        display: block;
+        height: 139px;
+        left: 0;
+        padding: 0;
+        top: 0;
+        width: 93px;
+      }
+
+      .card-cover {
+        position: absolute;
+      }
+    }
+  }
+
+  .special-ribbon-sibling-container {
+    background: #4A4A4A;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 161px;
+    padding: 11px;
+    width: 115px;
+  }
+
+  .arrow-right {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #4A4A4A;
+    height: 0;
+    position: absolute;
+    right: -4px;
+    top: 73px;
+    width: 0;
+  }
+}

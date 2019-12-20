@@ -1,0 +1,95 @@
+.root-hisense .invisible-scrollbar, .root-nagra .invisible-scrollbar, .root-samsung .invisible-scrollbar, .root-sony .invisible-scrollbar, .root-opera .invisible-scrollbar, .root-android .invisible-scrollbar, .root-worksation .invisible-scrollbar, .root-tizen .invisible-scrollbar, .root-web0s .invisible-scrollbar, .root-ps4 .invisible-scrollbar {
+  overflow: hidden; }
+
+.root-lg .invisible-scrollbar {
+  overflow: scroll; }
+  .root-lg .invisible-scrollbar::-webkit-scrollbar {
+    display: none; }
+
+.root-hisense .invisible-scrollbar, .root-nagra .invisible-scrollbar, .root-samsung .invisible-scrollbar, .root-sony .invisible-scrollbar, .root-android .invisible-scrollbar, .root-worksation .invisible-scrollbar, .root-tizen .invisible-scrollbar, .root-web0s .invisible-scrollbar, .root-ps4 .invisible-scrollbar {
+  overflow: hidden; }
+
+.root-lg .invisible-scrollbar, .root-opera .invisible-scrollbar {
+  overflow: scroll; }
+  .root-lg .invisible-scrollbar::-webkit-scrollbar, .root-opera .invisible-scrollbar::-webkit-scrollbar {
+    display: none; }
+
+/* FlexBox Variables */
+.flex {
+  display: flex; }
+  .flex.row {
+    flex-direction: row; }
+  .flex.column {
+    flex-direction: column; }
+  .flex.jc-center {
+    justify-content: center; }
+  .flex.ai-center {
+    align-items: center; }
+  .flex.ai-start {
+    align-items: flex-start; }
+  .flex.ai-end {
+    align-items: flex-end; }
+
+.btn-generic span {
+  font-size: 16px; }
+
+.action {
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+  background: none;
+  border: none;
+  border-radius: 18px;
+  padding: 6px 10px;
+  text-decoration: none; }
+  .action .back {
+    margin-right: 8px; }
+  .action .stars {
+    margin: 0 2px; }
+  .action .color-ball {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 25px;
+    margin-left: 5px;
+    margin-right: 5px; }
+  .action.large {
+    width: 100%; }
+  .action.active {
+    font-weight: 400; }
+  .action .icon-button i {
+    font-size: 20px; }
+
+.blue {
+  background: #007dff; }
+
+.green {
+  background: #00af1d; }
+
+.red {
+  background: red; }
+
+.yellow {
+  background: #ffe100; }
+
+.orange {
+  background: linear-gradient(to right, #ff9900 0%, #ffd400 100%); }
+
+/* Colores de botones para Pagos */
+.purchase-btn-container .purple {
+  background: #bc65df;
+  background: #ef98ff;
+  background: -webkit-linear-gradient(left, #ef98ff, #bc65df);
+  background: linear-gradient(to right, #ef98ff, #bc65df); }
+
+.purchase-btn-container .blue {
+  background: #5ea9cf;
+  background: #91dcff;
+  background: -webkit-linear-gradient(left, #91dcff, #5ea9cf);
+  background: linear-gradient(to right, #91dcff, #5ea9cf); }
+
+.purchase-btn-container .gold {
+  background: #ff9900;
+  background: #ffcc33;
+  background: -webkit-linear-gradient(left, #ffcc33, #ff9900);
+  background: linear-gradient(to right, #ffcc33, #ff9900); }

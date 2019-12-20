@@ -1,0 +1,240 @@
+@import "./../../../styles/vars.scss";
+@import "../../../styles/animations.scss";
+@import "./auth.scss";
+
+.login {
+  width: 520px;
+  height: 320px;
+
+  > * {
+   //margin-bottom: 25px !important;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .btn-group {
+    display: flex;
+    flex-direction: row;
+
+    .btn-login {
+      display: flex;
+      flex-grow: 1;
+      flex-basis: 0;
+      height: 20px;
+      background: #353c45;
+      justify-content: center;
+      margin-right: 10px;
+      border-radius: 4px;
+      padding: 10px 0 10px 0;
+      cursor: pointer;
+      color: $font-color-principal;
+      text-decoration: none;
+  
+      &:last-child {
+         margin-right: 0px;
+      }
+  
+      &:active, &:hover, &:focus {
+        color: $font-color-principal;  
+      }
+    }
+  }
+
+
+  .login-labels {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0 0 11px 0;
+  }
+
+  .login-password-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 25px;
+
+  
+    .password-input {
+      background-color: #353c45;
+      text-transform: lowercase !important;
+      border-radius: 4px;
+      padding: 9px 4px !important; 
+      top:37px; 
+      z-index: 9999;
+      
+  
+      &:hover, &:focus {
+        background: $primary-color;
+        @include btn-transition($primary-color);
+        font-size: 20px !important;
+      }
+    }
+  }
+
+  .password-reminder {
+    text-decoration: none;
+    float: right;
+    color: white;
+    padding: 10px;
+    margin: 0px !important;
+  }
+
+  .btn-vendor {
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 100px;
+    height: 45px;
+    //display: block;
+    display: none;
+
+    .btn {
+      display: inline-block; //The '<a></a>' elements need block properties.
+      width: 50%;
+      height: 100%;
+      background: transparent;
+      color: white;
+      border: none;
+      padding: 0px;
+      margin: 0px;
+
+      img {
+        padding: 0px;
+        margin: 0px;
+        vertical-align: middle;
+        //Align <img> elements
+        position: relative;
+        left: 60px;
+        top: 10px;
+      }
+    }
+
+    .btn.btn-selected {
+      background: #fff;
+      color: #010001;
+    }
+
+    .btn.btn-selected:nth-child(1),
+    .btn:nth-child(1):focus {
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+    }
+
+    .btn.btn-selected:nth-child(2),
+    .btn:nth-child(2):focus {
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+  }
+
+  .btn-vendor.net {
+    .btn {
+      width: 33.33%;
+    }
+
+    .btn.btn-selected:nth-child(2),
+    .btn:nth-child(2):focus {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+    .btn.btn-selected:nth-child(3),
+    .btn:nth-child(3):focus {
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+  }
+
+  .btn-group {
+    clear: both;
+    text-align: center;
+
+    .btn:nth-child(1) {
+      margin-right: 50px;
+    }
+  }
+
+  .captcha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 90px;
+    margin-top: 10px;
+   // background-color: rgba(0, 0, 0, 0.1);
+   // padding: 0px 10px;
+
+    .form-group-focus-text {
+      width: 317px;
+    }
+
+    .form-group {
+      margin-bottom: 0px;
+    }
+    
+    .div-captcha{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-right: 0;
+      padding-right: 1px;
+      img {
+        width: 143px;
+        height: 42px;
+      }
+    }
+
+    > span {
+      display: block;
+      //margin-left: 10px;
+      margin-bottom: 15px;
+    }
+
+    > div {
+      display: inline-block;
+      width: 50%;
+      margin-right: 15px;
+    }
+
+    > .refresh-btn {
+      color: #fff;
+      display: inline-block;
+      margin-left: 58px;
+      position: relative;
+      font-size: 30px;
+      text-decoration: none;
+    }
+  }
+
+  .netMessage {
+    width: 100%;
+    //display: inline-block;
+    display: none;
+
+    .net_client {
+      display: block;
+      width: 275px;
+      float: left;
+    }
+
+    .focusable.action.btn {
+      display: block;
+      width: 275px;
+      float: right;
+      text-align: center;
+      margin-right: 10px;
+      border: 2px solid rgba(255, 255, 255, 0.25);
+      background-color: rgba(70, 6, 6, 0.25);
+    }
+
+    .focusable.action.btn.checked {
+      background-color: #ffffff;
+      color: #000000;
+    }
+  }
+}
+
+.form-group__register-telcel {
+  bottom: 15px;
+}

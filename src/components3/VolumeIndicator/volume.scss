@@ -1,0 +1,57 @@
+$right-position-indicators: 43px;
+   //es 43 en lugar de 278
+$top-position-indicators: 78px;
+
+#volume-indicator {
+    display: none;
+    position: fixed;
+    color: #fff;
+    font-size: 50px;
+    top: $top-position-indicators;
+    right: $right-position-indicators;
+    z-index: 3;
+    opacity: 0.7;
+    text-align: center;
+    .bar-container {
+        display: table;
+        border: 2px solid #fff;
+        width: 35px;
+        height: 140px;
+        margin-left: 3.7px;
+        .bar {
+            display: table-cell;
+            vertical-align: bottom;
+            width: 30px;
+            height: 135px;
+            .fill {
+                background: #fff;
+                width: 100%;
+            }
+        }
+    }
+    span {
+        font-size: 25px;
+        position: relative;
+        top: -20px;
+    }
+}
+
+#mute-indicator {
+    display: none;
+    .close-icon {
+        font-size: 16px;
+        position: relative;
+        top: -13px;
+        left: -5px;
+    }
+}
+
+.show-vol {
+    display: block !important;
+    position: fixed;
+    color: #fff;
+    font-size: 50px;
+    top: $top-position-indicators;
+    right: $right-position-indicators;
+    z-index: 3;
+}

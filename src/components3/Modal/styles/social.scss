@@ -1,0 +1,27 @@
+.modal-social {
+	.modal-asset {
+		width: 30%;
+		margin: 0 auto;
+
+		img {
+			width: 100%;
+		}
+	}
+	.modal-buttons-horizontal {
+		
+		.modal-button {
+			display:inherit;
+			margin: auto;
+		}
+	}
+
+	modal-content {
+		width: 100%;
+		font-size: 18px;
+	}
+
+	.modal-content * {
+		 padding: 6px 0px;
+	}
+
+}

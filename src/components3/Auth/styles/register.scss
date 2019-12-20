@@ -1,0 +1,101 @@
+﻿@import "./../../../styles/vars.scss";
+
+// Variables
+$margin-top: 16px;
+
+.register {
+
+  > * {
+
+    .terms{ /*TODO mejorar implementacion*/
+      top: -55px;
+      left: 80px;
+    }
+
+    .tabcontent{
+      display: none;
+      margin-top: $margin-top;
+      .form-group-msg.error {
+        font-size: 11px;
+        width:545px;
+      }
+    }
+
+    .password,
+    .password-hiden {
+      float: left;
+    }
+
+    .show_pass div.form-group-value-text .form-group-placeholder{
+      font-size: 25px;
+      font-style: normal;
+      text-transform: uppercase;
+    }
+
+    .already_user{
+      font-size: 22px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+
+  .am_user {
+    float: left;
+    padding-top: 5%;
+  }
+
+  .resend_code {
+    float: left;
+    padding-top: 12%;
+  }
+
+  width: 85%;
+  margin-left: 5%;
+
+  >.form-group:nth-child(2), >.form-group:nth-child(3) {
+    width: calc(50% - 10px);
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  >.form-group:nth-child(2) {
+    margin-right: 20px;
+  }
+  .btn-group {
+    text-align: right;
+    height: 40px;
+    a.btn.focusable:nth-of-type(2) {
+      margin-left: 50px;
+    }
+  }
+
+  .secure-msg {
+    clear: both;
+    margin-top: 18px;
+    margin-left: 2px;
+
+    img {
+      width: 16px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 15px;
+    }
+    span {
+      vertical-align: middle;
+    }
+  }
+
+  .net_cpf {
+    h1 {
+      height: 30px;
+    }
+
+    .net_cpf_instrucciones {
+      margin-top: 50px;
+    }
+
+    .net_cpf_hint {
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+  }
+}

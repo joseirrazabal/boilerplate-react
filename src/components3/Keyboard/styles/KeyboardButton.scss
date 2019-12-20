@@ -1,0 +1,17 @@
+@import "./../../../styles/vars.scss";
+
+// BUTTON DEFAULT
+.kbd-btn {
+  background: transparent;
+  box-sizing: border-box;
+  color: $font-color-principal;
+  font-size: 25px;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+}
+
+// FOCUS
+.kbd-btn.focused {
+  box-shadow: 0 0 0 3px #fff inset;
+}

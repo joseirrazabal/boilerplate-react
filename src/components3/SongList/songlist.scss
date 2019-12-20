@@ -1,0 +1,117 @@
+.w_canciones {
+  margin: -11px 0 0 27px;
+  width: 80%;
+  height: 390px;
+  display: inline-block;
+  overflow: hidden;
+}
+.section_songs{
+  height: 320px;
+  overflow: hidden;
+  margin-top: 0px;
+}
+.menu_canciones {
+  height: 22px;
+  width: 910px;
+}
+
+.menu_canciones th {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.variousArtistSongs:before {
+  content: '\0000a0,\0000a0';
+}
+
+.variousArtistSongs:first-child:before {
+  content: normal;
+}
+
+.song-info {
+  height: 40px;
+  max-width: 1312px;
+  font-size: 17.33px;
+  font-weight: lighter;
+  line-height: 20px;
+  margin-bottom: 23.14px;
+  text-align: left;
+  padding: 10px 0 10px 10px;
+}
+
+.song-info:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+}
+
+.song-name {
+  width: 350px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 10px;
+
+}
+
+.song-artist {
+  width: 200px;
+  padding-right: 10px;
+}
+
+.song-artist div{
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.song-album {
+  width: 200px;
+  padding-right: 10px;
+}
+
+.song-album div{
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.song-duration {
+  width: 69.33px;
+}
+
+.song-duration-radio{
+  width: 200px;
+}
+
+.song-info.focusable{
+  font-weight: 300;
+}
+.focusable.song-selected{
+  border: 2px white;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.song-selected .Cell i {
+  margin: 0 10px 0 10px ;
+  display: inline;
+}
+.nonDisplay{
+  display: none;
+}
+
+.song-album, .song-artist, .song-duration, .song-duration-radio, .song-duration-title{
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.song-duration-title{
+  widht: 100px;
+}
+

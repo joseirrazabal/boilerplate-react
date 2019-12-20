@@ -1,0 +1,28 @@
+.modal-container.acceptTerms {
+  .modal-content {
+    display: inline-table;
+    text-align: center;
+
+    p {
+      width: 1000px;
+    }
+  }
+
+  .footer {
+    position: relative;
+    top: 150px;
+
+    span {
+      font-size: 23px;
+    }
+  }
+
+  .footer.g3 {
+    position: relative;
+    top: 10px;
+
+    span {
+      font-size: 23px;
+    }
+  }
+}

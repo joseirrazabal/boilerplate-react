@@ -1,0 +1,25 @@
+@import "./../../styles/vars.scss";
+
+.scroller-container {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  &.fixedContainer{
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    overflow: hidden;
+    height: 250px!important;
+  }
+
+  .scroll-children {
+    height: 100%;
+    width: calc( 100% - 60px );
+    //overflow: auto;
+    overflow: hidden;
+    padding-left: 60px;
+  }
+}

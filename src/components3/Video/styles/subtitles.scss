@@ -1,0 +1,43 @@
+.subtitles {
+  /*
+    height: 100%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+    */
+
+    bottom: 0;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    font-size: 42px;
+    height: 100%;
+    left: 0;
+    right: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 1);
+    width: 100%;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    
+    .subtitles-container {
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+    }
+}
+
+.subtitles.in-end-player {
+    width: 265px;
+    height: 150px;
+    font-size: 13px;
+}
+
+.subtitles.in-controls {
+    height: 85%;
+}

@@ -1,0 +1,906 @@
+@import "./../../styles/vars.scss";
+
+$font-title: 40px;
+$font-weight-title: 500;
+$font-subtitle: 30px;
+$font-special: 19px;
+$font-general: 20px;
+$font-placeholder:20px;
+$font-ss: 12px;
+$price-color: $font-color-title;
+
+#payment {
+  margin-top: 30px;
+  width: 95%;
+  height: 500px;
+  text-align: center;
+
+  #leftPayment {
+    width: 0%;
+    height: 100%;
+    float: left;
+  }
+
+  #leftPayment.half {
+    width: 50%;
+
+    .keyboard {
+      padding-top: 20px;
+      padding-left: 100px;
+    }
+
+    .payment-back {
+      position: absolute;
+      top: -30px;
+      left: 35px;
+    }
+  }
+
+  #rightPayment {
+    width: 100%;
+    height: 100%;
+    float: left;
+
+    .top {
+      width: 100%;
+      color: $font-color-title;
+
+      .rent {
+        height: 150px;
+
+        div.middle {
+          display: block;
+          float: left;
+          width: 50%;
+
+          img {
+            float: right;
+            margin-right: 50px;
+            display: block;
+            /*width: 290px;*/
+            height: 130px;
+          }
+
+          div {
+            text-align: left;
+            width: 100%;
+            height: 55px;
+            display: block;
+            float: left;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+
+          .title {
+            text-align: left;
+            height: 60px;
+
+            span {
+              font-size: $font-title;
+              font-weight: $font-weight-title;
+            }
+          }
+
+          .subtitle {
+            text-align: left;
+            height: 40px;
+
+            span {
+              font-size: $font-subtitle;
+            }
+          }
+
+          .special {
+            text-align: left;
+
+            span {
+              font-size: $font-special;
+            }
+          }
+        }
+      }
+
+      .subscription {
+        height: 30%;
+      }
+    }
+
+    hr {
+      border: 1px dashed #8c8b8b;
+    }
+
+    .row {
+      width: 100%;
+      height: 40px;
+    }
+
+    span.left {
+      text-align: left;
+    }
+
+    .price {
+      color: $price-color;
+      font-size: $font-title;
+      font-weight: $font-weight-title;
+      text-align: right;
+    }
+
+    .asterisk {
+      font-size: $font-subtitle;
+      color: $price-color;
+      text-align: left;
+      font-weight: 100;
+      position: relative;
+      top: 1px;
+      font-weight: $font-weight-title;
+    }
+
+    .plan {
+      font-size: $font-title;
+      font-weight: $font-weight-title;
+      text-align: left;
+    }
+
+    .note {
+      color: $font-color-title;
+      width: 300px;
+      font-size: $font-general;
+      font-weight: 200;
+    }
+
+    .paymentBody {
+
+      .title {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: $font-special;
+        font-weight: $font-weight-title;
+      }
+
+      .action {
+        padding: 15px 0px 15px 0px;
+      }
+
+      .row {
+        padding: 10px 0px 10px 0px;
+
+        a {
+          width: 300px;
+          padding: 5px 100px 5px 100px;
+          border: 2px solid #FFFFFF;
+          display: inline-block;
+
+          img.gateway {
+            height: 30px;
+          }
+        }
+
+        a.gateway:focus, a.gateway:hover {
+          background-color: #FFFFFF;
+        }
+      }
+    }
+
+    .button {
+      width: 500px;
+    }
+  }
+
+  #rightPayment.half {
+    width: 50%;
+
+    a.button {
+      width: 200px;
+      border: 2px solid #FFFFFF;
+    }
+
+    .gatewayTitle {
+      text-align: left;
+      padding: 9px 15px;
+      font-weight: $font-weight-title;
+
+      span {
+        font-size: $font-subtitle;
+      }
+
+      a {
+        span {
+          display: inherit;
+          text-align: center;
+          font-size: $font-general;
+        }
+      }
+
+      .button {
+        float: right;
+      }
+    }
+
+    .gatewayForm {
+      margin-top: 3px;
+
+      .row.gray {
+        background-color: #504f4f;
+        height: 50px;
+        width: 485px;
+        padding: 50px 50px 50px 50px;
+
+        span {
+          display: block;
+          width: 200px;
+          float: left;
+        }
+
+        a.focusable.action.button {
+          margin-left: 18px;
+          display: block;
+          width: 200px;
+          float: right;
+          text-align: center;
+        }
+      }
+
+      .row {
+        width: 100%;
+        height: 60px;
+        text-align: left;
+
+        .white-square {
+          background-color: white;
+          color: black;
+          float: left;
+          margin-top: 80px;
+          width: 380px;
+          text-align: center;
+
+          .highlight {
+            font-weight: $font-weight-title;
+            font-size: $font-subtitle;
+            display: block;
+          }
+
+          .cardNumber {
+            font-weight: 100;
+            font-size: $font-general;
+
+            .form-group-focus {
+              text-decoration: none;
+
+              .form-group-placeholder {
+                position: static;
+              }
+            }
+          }
+
+          .cardNumber.message {
+            clear: both;
+            display: block;
+          }
+        }
+
+        .normal-square {
+          float: right;
+          margin-top: 110px;
+          margin-left: 10px;
+
+          a {
+            span.text-button {
+              margin-left: 10px;
+              font-size: $font-general;
+            }
+          }
+        }
+
+        .focusable.action {
+          float: left;
+          height: 25px;
+          width: 350px;
+
+          > i {
+            margin-right: 10px;
+            float: right;
+            font-size: 20px;
+            position: relative;
+            top: 3px;
+          }
+        }
+
+        .focusable.action.error {
+          border: 2px solid #ff0000;
+        }
+
+        .form-group {
+          .form-group-focus {
+            .form-group-value {
+              .form-group-placeholder {
+                display: block
+              }
+            }
+
+            .form-group-value-password {
+              overflow: hidden !important;
+            }
+          }
+        }
+
+        .form-group.document {
+          float: right;
+          width: 200px;
+        }
+
+        .form-group.account {
+          width: 98%;
+
+          .form-group-focus.form-group-focus-text {
+            width: 100%;
+
+            .form-group-value {
+              width: 100%;
+            }
+          }
+        }
+
+        .form-group.CVV {
+          float: left;
+          width: 185px;
+
+          a {
+            width: 185px;
+          }
+        }
+
+        .form-group.CVV.security {
+          -webkit-text-security: disc;
+          -moz-text-security: disc;
+          text-security: disc;
+        }
+      }
+    }
+
+    .gatewayForm.clarocolombiagate {
+      .row {
+        height: 70px;
+      }
+    }
+
+    .gatewayForm.promoGate {
+      text-align: left;
+    }
+
+    .creditCardTitle, .claroPagoTitle {
+      text-align: left;
+      height: 60px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: $font-color-title;
+
+      span {
+        font-size: $font-title;
+      }
+
+      .credit-card-price {
+        color: #F5A623 !important;
+      }
+    }
+
+    .creditCardSubtitle, .claroPagoSubtitle {
+      text-align: left;
+      height: 40px;
+      color: $font-color-title;
+
+      span {
+        font-size: $font-subtitle;
+      }
+    }
+
+    .creditCardSpecial, .claroPagoSpecial {
+      text-align: left;
+      color: $font-color-title;
+
+      span {
+        font-size: $font-special;
+      }
+    }
+
+    .gatewayForm.creditCard {
+      height: 185px;
+      margin-top: 3px;
+
+      .row.thin {
+        height: 30px;
+      }
+
+      .row {
+        img.visamaster {
+          float: left;
+          margin-left: 5px;
+        }
+
+        .text {
+          display: block;
+          float: left;
+        }
+
+        .form-group.cardNumber {
+          width: 350px;
+          float: right;
+          position: relative;
+        }
+
+        span.cardNumber.label {
+          color: #aaa;
+          display: inline-block;
+          font-size: 20px;
+          font-style: italic;
+          font-weight: 300;
+          position: absolute;
+        }
+
+        span.cardNumber.info {
+          font-size: 28px;
+          font-weight: 300;
+          padding: 0px;
+        }
+
+        .cardType.claroPago.error {
+          border: 2px solid #ff0000;
+          color: $danger-color;
+          height: 34px;
+          height: 0px;
+          width: 320px;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          display: inline-block;
+        }
+
+        .cardType.error {
+          border: 2px solid #ff0000;
+          color: $danger-color;
+          ;
+          height: 34px;
+          width: 248px;
+          height: 33px;
+          width: 220px;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+        }
+
+        .form-group.cardType {
+          width: 50px;
+          float: left;
+          margin-bottom: -2px;
+        }
+
+        .form-group.city {
+          width: 290px;
+          float: left;
+        }
+
+        .focusable.action.select.states {
+          width: 260px;
+        }
+
+        .form-group.zipCode {
+          width: 290px;
+          float: left;
+        }
+
+        .form-group.telefono {
+          width: 290px;
+          float: right;
+        }
+
+        input[type=radio] {
+          visibility: hidden;
+        }
+
+        img {
+          width: 40px;
+        }
+
+        .radio {
+          label {
+            display: block;
+            position: relative;
+            font-weight: 300;
+            font-size: 1.35em;
+            padding: 25px 0px 25px 50px;
+            margin: 10px auto;
+            height: 0px;
+            width: 50px;
+            float: left;
+            cursor: pointer;
+            -webkit-transition: all 0.25s linear;
+          }
+
+          input[type=radio]:checked ~ .check {
+            border: 5px solid #d7d7d7;
+          }
+
+          input[type=radio]:checked ~ .check::before {
+            background: #d7d7d7;
+          }
+
+          input[type=radio]:checked ~ label {
+            color: #d7d7d7;
+          }
+
+          .imgVisa {
+            position: absolute;
+            top: 0px;
+            left: 50px;
+          }
+
+          .imgMastercard {
+            position: absolute;
+            top: 0px;
+            left: 50px;
+          }
+
+          .check {
+            display: block;
+            position: absolute;
+            border: 5px solid #d7d7d7;
+            border-radius: 100%;
+            height: 25px;
+            width: 25px;
+            top: 0px;
+            left: 5px;
+            transition: border .25s linear;
+            -webkit-transition: border .25s linear;
+          }
+
+          .check::before {
+            display: block;
+            position: absolute;
+            content: '';
+            border-radius: 100%;
+            height: 15px;
+            width: 15px;
+            top: 5px;
+            left: 5px;
+            margin: auto;
+            transition: background 0.25s linear;
+            -webkit-transition: background 0.25s linear;
+          }
+        }
+
+        :hover .check {
+          border: 5px solid #FFFFFF;
+        }
+
+        .securityCode {
+          width: 240px;
+          display: block;
+          float: left;
+        }
+
+        .securityCode.right {
+          float: right;
+        }
+
+        .securityCode.right.security {
+          -webkit-text-security: disc;
+          -moz-text-security: disc;
+          text-security: disc;
+        }
+
+        .select {
+          margin-left: 10px;
+          float: right;
+          width: 135px;
+          display: block;
+          border: 2px solid #FFFFFF;
+        }
+
+        .focusable.select.error {
+          border: 2px solid #ff0000;
+        }
+      }
+    }
+
+    .gatewayForm.creditCard.small {
+      height: 200px;
+    }
+
+    .gatewayForm.claroPago {
+      height: 185px;
+      margin-top: 3px;
+
+      .row.thin {
+        height: 30px;
+      }
+
+      .row {
+        img.visamaster {
+          float: left;
+          margin-left: 5px;
+        }
+
+        .text {
+          display: block;
+          float: left;
+        }
+
+        .form-group.cardNumber {
+          width: 350px;
+          float: right;
+          position: relative;
+        }
+
+        span.cardNumber.label {
+          color: #aaa;
+          display: inline-block;
+          font-size: 20px;
+          font-style: italic;
+          font-weight: 300;
+          position: absolute;
+        }
+
+        span.cardNumber.info {
+          font-size: 25px;
+          font-weight: $font-weight-title;
+          padding: 0px;
+        }
+
+
+        .cardType.error {
+          border: 2px solid #ff0000;
+          color: $danger-color;
+          height: 34px;
+          width: 248px;
+          height: 33px;
+          width: 220px;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+        }
+
+
+        .form-group.cardType {
+          width: 50px;
+          float: left;
+          margin-bottom: -2px;
+        }
+
+        .form-group.city {
+          width: 580px;
+          float: left;
+        }
+
+        .focusable.action.select.states_claropagos {
+          width: 260px;
+        }
+
+        .form-group.zipCode {
+          width: 290px;
+          float: left;
+        }
+
+        .form-group.telefono {
+          width: 580px;
+          float: left;
+        }
+
+        input[type=radio] {
+          visibility: hidden;
+        }
+
+        img {
+          width: 40px;
+        }
+
+        .radio {
+          label {
+            display: block;
+            position: relative;
+            font-weight: 300;
+            font-size: 1.35em;
+            padding: 25px 0px 25px 50px;
+            margin: 10px auto;
+            height: 0px;
+            width: 50px;
+            float: left;
+            cursor: pointer;
+            -webkit-transition: all 0.25s linear;
+          }
+
+          input[type=radio]:checked ~ .check {
+            border: 5px solid #d7d7d7;
+          }
+
+          input[type=radio]:checked ~ .check::before {
+            background: #d7d7d7;
+          }
+
+          input[type=radio]:checked ~ label {
+            color: #d7d7d7;
+          }
+
+          .imgVisa {
+            position: absolute;
+            top: 0px;
+            left: 50px;
+          }
+
+          .imgMastercard {
+            position: absolute;
+            top: 0px;
+            left: 50px;
+          }
+
+          .check {
+            display: block;
+            position: absolute;
+            border: 5px solid #d7d7d7;
+            border-radius: 100%;
+            height: 25px;
+            width: 25px;
+            top: 0px;
+            left: 5px;
+            transition: border .25s linear;
+            -webkit-transition: border .25s linear;
+          }
+
+          .check::before {
+            display: block;
+            position: absolute;
+            content: '';
+            border-radius: 100%;
+            height: 15px;
+            width: 15px;
+            top: 5px;
+            left: 5px;
+            margin: auto;
+            transition: background 0.25s linear;
+            -webkit-transition: background 0.25s linear;
+          }
+        }
+
+        :hover .check {
+          border: 5px solid #FFFFFF;
+        }
+
+        .securityCode {
+          width: 150px;
+          display: block;
+          float: left;
+        }
+
+        .securityCode.right {
+          float: right;
+        }
+
+        .securityCode.right.security {
+          -webkit-text-security: disc;
+          -moz-text-security: disc;
+          text-security: disc;
+        }
+
+        .select {
+          margin-left: 10px;
+          float: right;
+          width: 135px;
+          display: block;
+          border: 2px solid #FFFFFF;
+        }
+
+        .focusable.select.error {
+          border: 2px solid #ff0000;
+        }
+      }
+
+      .row.cardType {
+        text-align: center;
+
+        .option {
+          display: inline-block;
+          width: 100px;
+        }
+
+        .footer.error {
+          color: $danger-color;
+          height: 0px;
+          width: 320px;
+          border: 2px solid #ff0000;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          display: inline-block;
+          position: relative;
+          top: -10px;
+
+          .line {
+          }
+
+          .msg {
+            font-size: 14px;
+            font-style: italic;
+          }
+        }
+      }
+    }
+
+    .gatewayForm.claroPago.small {
+      height: 300px;
+    }
+
+    .gatewayForm.hubcorporativofijogate {
+      .row {
+        span.description {
+          margin-top: 50px;
+          display: inline-block;
+        }
+      }
+    }
+
+    .confirmButtons {
+      clear: both;
+
+      div {
+        padding: 30px 0px 0px 0px;
+        text-align: center;
+
+        div.space {
+          display: inline-block;
+          width: 50px;
+        }
+
+        a.focusable.action.button {
+          width: 230px;
+          margin: 0 auto;
+          display: inline-block;
+          text-align: center
+        }
+      }
+
+      .pay-sure {
+        padding-top: 22px;
+      }
+
+      .icon-shield {
+        width: 20px;
+        font-size: 15px;
+        float: left;
+        padding: 0px;
+        color: $price-color;
+        margin-right: 10px;
+        position: relative;
+        top: -1px;
+      }
+
+      span.ss {
+        font-size: $font-ss;
+        display: table-cell;
+      }
+    }
+  }
+}
+
+  .payment.spinner-container {
+    top: 260px;
+  }
+
+.payment-suscription {
+  font-size: 32px;
+
+  .note {
+    display: block !important;
+    color: $font-color-title;
+    font-size: 22px;
+    font-weight: normal;
+  }
+
+  .price {
+    color: #F5A623 !important;
+    font-weight: bold;
+  }
+
+  .text {
+    font-weight: bold;
+  }
+}

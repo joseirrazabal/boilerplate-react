@@ -1,0 +1,23 @@
+.modal-container-mrc {
+  p,
+  .asset-remote-control {
+    margin-right: 23px;
+  }
+
+  div {
+    display: inline-block;
+  }
+
+  .asset-remote-control {
+    background: #111;
+    border-radius: 40px;
+    height: 270px;
+    width: 140px;
+  }
+
+  .modal-container-title {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 54px;
+  }
+}

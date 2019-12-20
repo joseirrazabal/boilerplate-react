@@ -1,0 +1,88 @@
+@import "./../../../styles/vars.scss";
+
+.epg-header {
+  background: $epg-transparent-color;
+  border-bottom: solid #323232 1px;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 5px 10px;
+
+  &.transparent{
+    background: transparent;
+    border: none;
+
+  }
+  
+}
+.player-ui-channel-number{
+  display: none;
+}
+.epg-header-container {
+  display: block;
+  margin: auto;
+  max-width: $container-limit;
+}
+
+.epg-header-title {
+  float: left;
+  font-size: 18px;
+  font-weight: 400;
+  width: 20%;
+}
+
+.color-codes {
+  width: 100%;
+  list-style: none;
+  color: $font-color-principal;
+  font-size: $font-size-regular;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+
+
+  .color-code-item {
+    cursor: pointer;
+    display: inline-block;
+    top: 0;
+    padding: 4px 6px;
+    border-radius: 10px;
+    margin-left: 12px;
+    color: #fff;
+    text-decoration: none;
+
+    .tag {
+      border: 1px solid #fff;
+      border-radius: 3px;
+      float: left;
+      font-size: 11px;
+      margin-right: 5px;
+      padding: 3px;
+      text-transform: uppercase;
+    }
+
+    .color-ball {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 25px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    .blue {
+      background: $btn-blue-color;
+    }
+
+    .green {
+      background: $btn-green-color;
+    }
+
+    .red {
+      background: $btn-red-color;
+    }
+
+    .yellow {
+      background: $btn-yellow-color;
+    }
+  }
+}

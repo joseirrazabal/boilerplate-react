@@ -1,0 +1,33 @@
+@import url(../../styles/vars.css);
+.special {
+  position: relative; }
+
+.special-items {
+  overflow: hidden;
+  white-space: nowrap; }
+  .special-items .card {
+    width: 33%; }
+    .special-items .card.highlight .card-container {
+      height: 200px;
+      width: 100%; }
+    .special-items .card.highlight .card-cover {
+      width: 399px; }
+    .special-items .card.highlight .link {
+      width: 411px; }
+
+.special-arrow-left,
+.special-arrow-right {
+  background: blue;
+  border-radius: 50%;
+  height: 20px;
+  padding: 8px;
+  position: absolute;
+  top: 60px;
+  width: 20px;
+  z-index: 10; }
+
+.special-arrow-left {
+  left: 0; }
+
+.special-arrow-right {
+  right: 0; }

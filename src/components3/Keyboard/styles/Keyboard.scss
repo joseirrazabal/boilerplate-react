@@ -1,0 +1,155 @@
+@import "./../../../styles/vars.scss";
+
+$kbd-width: 1280px;
+
+// CONTAINERS
+.keyboard {
+  height: auto;
+  width: calc(#{$kbd-width} - 160px);
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.keyboard-row {
+  overflow: hidden;
+  width: 100%;
+
+  &.number{
+    display: flex;
+    justify-content: center;
+
+    .keyboard-letter {
+      border-radius: 50%;
+      height: 52px;
+      margin: 3px;
+      padding: 15px;
+      line-height: 20px;
+      width: calc(100% / 5);
+      max-width: 53px;
+    }
+
+  }
+}
+
+.keyboard-row-header{
+  display: none;
+}
+.keyboard-row-domains{
+  display: none;
+}
+// CONTROL BUTTONS
+.keyboard-layouts,
+.keyboard-layouts-first,
+.keyboard-layouts-last,
+.keyboard-domains,
+.keyboard-empty {
+  border: 1px solid #fff;
+  padding: 12px 32px;
+  font-weight: 100;
+  width: calc(100% / 5);
+  &:focus, &:hover{
+    font-weight: 900;
+  }
+}
+
+.keyboard-layouts-first {
+  border-radius: 22px 0 0 22px;
+  border-right: none;
+}
+
+.keyboard-layouts-last {
+  border-left: none;
+  border-radius: 0 22px 22px 0;
+}
+
+.keyboard-domains,
+.keyboard-empty {
+  border: none;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+
+.keyboard-row-footer{
+  .keyboard-empty{
+    border-radius: 6px;
+    width: auto;
+    padding: 8px 10px;
+    font-weight: 300;
+
+    &.focusable:focus{
+      font-weight: 900;
+    }
+
+    &.btn-espaco{
+      min-width: 260px;
+      background: $generic-color;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    &.btn-upper{
+      padding: 0 10px;
+    }
+    &.especial{
+      min-width: 60px;
+    }
+    &.borrar{
+      padding: 8px 0;
+    }
+  }
+}
+.keyboard-empty {
+  &.upper{
+    text-transform: uppercase;
+  }
+  //text-transform: uppercase;
+}
+
+// IMAGE BUTTON
+.keyboard-image {
+  display: block;
+  height: 19px;
+  padding: 5px 0;
+  margin: auto;
+  width: auto;
+}
+
+.keyboard-image-2 {
+  display: block;
+  height: 35px;
+  padding: 5px 0;
+  margin: auto;
+  width: auto;
+}
+
+// LETTER BUTTON
+.keyboard-letter {
+  border-radius: 50%;
+  font-weight: 300;
+  height: 50px;
+  line-height: 50px;
+  margin: 5px 0px;
+  width: calc(100% / 11);
+  max-width: 52px;
+
+  &:focus{
+    font-weight: 900;
+  }
+}
+
+
+.keyboard-header-horizontal{
+  //padding-left: 130px;
+  padding-left: 90px;
+
+  .keyboard-letter {
+    font-weight: 100;
+    border-radius: none;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    //margin: 5px;
+    width: calc(100% / 3);    
+    max-width: 230px;
+  }
+}

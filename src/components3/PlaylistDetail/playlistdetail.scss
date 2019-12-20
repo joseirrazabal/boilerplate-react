@@ -1,0 +1,75 @@
+.w_detail {
+  margin-left: 40px;
+  margin-top: 23px;
+  height: 378px;
+}
+.w_album {
+  width: 15%;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-filter: drop-shadow(3px 5px 4px black);
+  -moz-filter: drop-shadow(3px 5px 4px black);
+  -o-filter: drop-shadow(3px 5px 4px black);
+  filter: drop-shadow(3px 5px 4px black);
+}
+.album_container {
+  height: 85%;
+  width: 100%;
+}
+
+.album_resume_container{
+  height: 616px;
+}
+
+.portada-lista {
+  height: 100%;
+  width: 100%;
+}
+
+.w_album > div, .w_album .card-placeholder.square {
+  width: 180px;
+  height: 180px;
+}
+
+.Table
+{
+  width: 100%;
+}
+.album-title{
+  margin-top: 15px;
+  font-size: 21px;
+}
+.Heading {
+  position: relative;
+  display: inline-block;
+  height:50px;
+  width:100%;
+  min-width:300px;
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.Row
+{
+  display: inline-block;
+  height: 40px;
+}
+.Cell
+{
+  display: inline-block;
+  width: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+a.song-info{
+  text-decoration: none;
+  color: white;
+  height: 40px
+}
+
+.album_container .resume, .playlist-container .resume {
+  max-height: 200px;
+}

@@ -1,0 +1,17 @@
+.modal-container.acceptTerms .modal-content {
+  display: inline-table;
+  text-align: center; }
+  .modal-container.acceptTerms .modal-content p {
+    width: 1000px; }
+
+.modal-container.acceptTerms .footer {
+  position: relative;
+  top: 150px; }
+  .modal-container.acceptTerms .footer span {
+    font-size: 23px; }
+
+.modal-container.acceptTerms .footer.g3 {
+  position: relative;
+  top: 10px; }
+  .modal-container.acceptTerms .footer.g3 span {
+    font-size: 23px; }

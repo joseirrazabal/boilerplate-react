@@ -1,0 +1,33 @@
+.ribbongrid-wrapper {
+  display: block;
+  //width: calc(100% - 25px);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(0, 0, 0, 1)
+  );
+
+  .card .card-title {
+    display: none;
+  }
+}
+.ribongrid-container {
+  display: block;
+  height: 100%;
+  margin: 18px auto 0;
+  overflow: hidden;
+  width: 1200px; }
+
+.ribbongrid-row {
+  box-sizing: border-box;
+  height: 33.3333%;
+  padding-bottom: 18px;
+  overflow: hidden;
+  width: 100%; }
+

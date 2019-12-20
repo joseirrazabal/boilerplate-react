@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
 
-// import Menu from 'src/components/Menu/Menu'
+import Menu from 'src/components/Menu/Menu'
 
 const useStyles = makeStyles(theme => ({
 	root: {
@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
 
 	return (
 		<div className={classes.root}>
-			{/* <Menu /> */}
+			<Menu />
 			{children}
 		</div>
 	)

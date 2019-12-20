@@ -1,0 +1,17 @@
+.playlist-container .music-grid-container .card-labels-container {
+  display: none; }
+
+.playlist-container .music-grid-container .inner-title {
+  display: none; }
+
+.playlist-container .music-grid-container .card.circle {
+  height: 153px;
+  margin-bottom: 8px; }
+
+.playlist-container .music-grid-container .control-overlay {
+  display: inline-block;
+  margin: 60px 0 0 0px; }
+
+.playlist-container .music-grid-container .control-overlay span {
+  width: 13px;
+  height: 13px; }

@@ -1,0 +1,207 @@
+﻿.modal-container {
+  .modal-children {
+    #iptelmex {
+      width: 100%;
+      display: block;
+      position: absolute;
+      top: 20px;
+
+      .left {
+        float: left;
+        height: 100%;
+        width: 50%;
+        margin-top: 30px;
+
+        .keyboard {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+      .right {
+        float: right;
+        width: 50%;
+        text-indent: 5px;
+        text-align: left;
+        color: #c7c7c7;
+
+        .title {
+          font-size: 38px;
+          margin-bottom: 10px;
+          font-weight: bold;
+          margin-top: 100px;
+        }
+
+        .subtitle {
+          font-size: 25px;
+          margin-top: 50px;
+          margin-bottom: 50px;
+          text-align: center;
+        }
+
+        .text {
+          text-indent: 0px;
+          font-size: 20px;
+
+          .email {
+            text-align: center;
+            display: block;
+            margin-bottom: 10px;
+          }
+        }
+
+        .errors {
+          color: #ee3224;
+          font-size: 20px;
+          margin-top: 20px;
+        }
+      }
+    }
+
+    #pinKeyboard {
+      width: 100%;
+      display: block;
+      position: absolute;
+      top: 20px;
+
+      .left {
+        float: left;
+        height: 100%;
+        width: 50%;
+        margin-top: 30px;
+
+        .keyboard {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+      .right {
+        float: right;
+        width: 50%;
+        text-align: left;
+        color: #c7c7c7;
+
+        .title {
+          font-size: 38px;
+          margin-bottom: 10px;
+          font-weight: bold;
+          margin-top: 100px;
+          text-align: center;
+        }
+
+        .subtitle {
+          font-size: 25px;
+          margin-top: 50px;
+          margin-bottom: 50px;
+          text-align: center;
+        }
+
+        .text {
+          text-indent: 0px;
+          font-size: 20px;
+
+          .password {
+            text-align: center;
+            display: block;
+            margin-bottom: 10px;
+          }
+        }
+
+        .errors {
+          color: #ee3224;
+          font-size: 20px;
+          margin-top: 20px;
+        }
+      }
+    }
+
+    #updateEmailKeyboard {
+      width: 100%;
+      display: block;
+      position: absolute;
+      top: 20px;
+
+      .left {
+        float: left;
+        height: 100%;
+        width: 50%;
+        margin-top: 6%;
+
+        .keyboard {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+      .form-group-placeholder{
+        font-size: 18px
+      }
+
+      .right {
+        float: left;
+        width: 40%;
+        text-align: left;
+        color: #c7c7c7;
+
+        .title {
+          font-size: 30px;
+          margin-bottom: 10%;
+          font-weight: bold;
+          margin-top: 100px;
+        }
+
+        .btn{
+          padding-top: 20%;
+          float: right;
+        } 
+
+        .force_email{
+          padding-top: 12%
+        }
+
+        .buttonNext{
+          border: solid;
+          border-radius: 25px;
+          padding: 10px 60px;
+        }
+
+        .text {
+          text-indent: 0px;
+          font-size: 20px;
+        }
+
+        .errors {
+          color: #ee3224;
+          font-size: 20px;
+          margin-top: 30%;
+        }
+      }
+    }
+  }
+
+  .modal-buttons-horizontal.iptelmex {
+    width: 50%;
+    margin-left: 50%;
+    position: absolute;
+    top: 575px;
+
+    a {
+      width: 150px;
+    }
+  }
+  .modal-buttons-horizontal.pinKeyboard {
+    width: 50%;
+    margin-left: 50%;
+    position: absolute;
+    top: 575px;
+
+    a {
+      width: 150px;
+    }
+    a.disabled {
+      border: 2px solid rgb(100,100,100);
+      color: rgb(100,100,100);
+    }
+  }
+}

@@ -1,0 +1,45 @@
+#volume-indicator {
+  display: none;
+  position: fixed;
+  color: #fff;
+  font-size: 50px;
+  top: 78px;
+  right: 43px;
+  z-index: 3;
+  opacity: 0.7;
+  text-align: center; }
+  #volume-indicator .bar-container {
+    display: table;
+    border: 2px solid #fff;
+    width: 35px;
+    height: 140px;
+    margin-left: 3.7px; }
+    #volume-indicator .bar-container .bar {
+      display: table-cell;
+      vertical-align: bottom;
+      width: 30px;
+      height: 135px; }
+      #volume-indicator .bar-container .bar .fill {
+        background: #fff;
+        width: 100%; }
+  #volume-indicator span {
+    font-size: 25px;
+    position: relative;
+    top: -20px; }
+
+#mute-indicator {
+  display: none; }
+  #mute-indicator .close-icon {
+    font-size: 16px;
+    position: relative;
+    top: -13px;
+    left: -5px; }
+
+.show-vol {
+  display: block !important;
+  position: fixed;
+  color: #fff;
+  font-size: 50px;
+  top: 78px;
+  right: 43px;
+  z-index: 3; }

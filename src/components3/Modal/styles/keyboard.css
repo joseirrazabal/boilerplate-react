@@ -1,0 +1,142 @@
+.modal-container .modal-children #iptelmex {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 20px; }
+  .modal-container .modal-children #iptelmex .left {
+    float: left;
+    height: 100%;
+    width: 50%;
+    margin-top: 30px; }
+    .modal-container .modal-children #iptelmex .left .keyboard {
+      margin-left: auto;
+      margin-right: auto; }
+  .modal-container .modal-children #iptelmex .right {
+    float: right;
+    width: 50%;
+    text-indent: 5px;
+    text-align: left;
+    color: #c7c7c7; }
+    .modal-container .modal-children #iptelmex .right .title {
+      font-size: 38px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      margin-top: 100px; }
+    .modal-container .modal-children #iptelmex .right .subtitle {
+      font-size: 25px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      text-align: center; }
+    .modal-container .modal-children #iptelmex .right .text {
+      text-indent: 0px;
+      font-size: 20px; }
+      .modal-container .modal-children #iptelmex .right .text .email {
+        text-align: center;
+        display: block;
+        margin-bottom: 10px; }
+    .modal-container .modal-children #iptelmex .right .errors {
+      color: #ee3224;
+      font-size: 20px;
+      margin-top: 20px; }
+
+.modal-container .modal-children #pinKeyboard {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 20px; }
+  .modal-container .modal-children #pinKeyboard .left {
+    float: left;
+    height: 100%;
+    width: 50%;
+    margin-top: 30px; }
+    .modal-container .modal-children #pinKeyboard .left .keyboard {
+      margin-left: auto;
+      margin-right: auto; }
+  .modal-container .modal-children #pinKeyboard .right {
+    float: right;
+    width: 50%;
+    text-align: left;
+    color: #c7c7c7; }
+    .modal-container .modal-children #pinKeyboard .right .title {
+      font-size: 38px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      margin-top: 100px;
+      text-align: center; }
+    .modal-container .modal-children #pinKeyboard .right .subtitle {
+      font-size: 25px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      text-align: center; }
+    .modal-container .modal-children #pinKeyboard .right .text {
+      text-indent: 0px;
+      font-size: 20px; }
+      .modal-container .modal-children #pinKeyboard .right .text .password {
+        text-align: center;
+        display: block;
+        margin-bottom: 10px; }
+    .modal-container .modal-children #pinKeyboard .right .errors {
+      color: #ee3224;
+      font-size: 20px;
+      margin-top: 20px; }
+
+.modal-container .modal-children #updateEmailKeyboard {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 20px; }
+  .modal-container .modal-children #updateEmailKeyboard .left {
+    float: left;
+    height: 100%;
+    width: 50%;
+    margin-top: 6%; }
+    .modal-container .modal-children #updateEmailKeyboard .left .keyboard {
+      margin-left: auto;
+      margin-right: auto; }
+  .modal-container .modal-children #updateEmailKeyboard .form-group-placeholder {
+    font-size: 18px; }
+  .modal-container .modal-children #updateEmailKeyboard .right {
+    float: left;
+    width: 40%;
+    text-align: left;
+    color: #c7c7c7; }
+    .modal-container .modal-children #updateEmailKeyboard .right .title {
+      font-size: 30px;
+      margin-bottom: 10%;
+      font-weight: bold;
+      margin-top: 100px; }
+    .modal-container .modal-children #updateEmailKeyboard .right .btn {
+      padding-top: 20%;
+      float: right; }
+    .modal-container .modal-children #updateEmailKeyboard .right .force_email {
+      padding-top: 12%; }
+    .modal-container .modal-children #updateEmailKeyboard .right .buttonNext {
+      border: solid;
+      border-radius: 25px;
+      padding: 10px 60px; }
+    .modal-container .modal-children #updateEmailKeyboard .right .text {
+      text-indent: 0px;
+      font-size: 20px; }
+    .modal-container .modal-children #updateEmailKeyboard .right .errors {
+      color: #ee3224;
+      font-size: 20px;
+      margin-top: 30%; }
+
+.modal-container .modal-buttons-horizontal.iptelmex {
+  width: 50%;
+  margin-left: 50%;
+  position: absolute;
+  top: 575px; }
+  .modal-container .modal-buttons-horizontal.iptelmex a {
+    width: 150px; }
+
+.modal-container .modal-buttons-horizontal.pinKeyboard {
+  width: 50%;
+  margin-left: 50%;
+  position: absolute;
+  top: 575px; }
+  .modal-container .modal-buttons-horizontal.pinKeyboard a {
+    width: 150px; }
+  .modal-container .modal-buttons-horizontal.pinKeyboard a.disabled {
+    border: 2px solid #646464;
+    color: #646464; }

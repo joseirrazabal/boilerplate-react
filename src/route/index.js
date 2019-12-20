@@ -3,8 +3,9 @@ import { Route, Switch, Redirect } from 'react-router-dom'
 
 import Layout from 'src/components/Layout'
 
-import Home from 'src/containers/HomePrueba'
+import Home from 'src/containers/Home'
 import Email from 'src/containers/Email'
+import Player from 'src/components/Player'
 
 const routes = [
 	{
@@ -12,6 +13,12 @@ const routes = [
 		Component: Email, // pageNotFound
 		Props: { vert: 'air' },
 		useLayout: true,
+		isPrivate: false
+	},
+	{
+		path: '/drafts',
+		Component: Player,
+		useLayout: false,
 		isPrivate: false
 	},
 	{

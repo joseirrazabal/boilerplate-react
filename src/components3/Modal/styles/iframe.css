@@ -1,0 +1,84 @@
+.modal-container.iframe .modal-title {
+  display: none;
+  visibility: hidden; }
+
+.modal-container.iframe .modal-content * {
+  padding: 0px; }
+
+.modal-container.iframe .modal-content {
+  position: relative;
+  top: 50px;
+  text-align: center;
+  height: 400px;
+  overflow: hidden; }
+  .modal-container.iframe .modal-content p {
+    width: 1000px;
+    display: inline-block;
+    color: #cecece;
+    margin-top: 0px; }
+    .modal-container.iframe .modal-content p div#div_iframe {
+      border-style: inset;
+      border-color: #121212;
+      overflow: hidden;
+      height: 500px; }
+      .modal-container.iframe .modal-content p div#div_iframe #ifterms {
+        border: none;
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        box-shadow: 4px 4px 14px #000; }
+    .modal-container.iframe .modal-content p div {
+      text-align: left;
+      width: 100%; }
+      .modal-container.iframe .modal-content p div h2 {
+        margin-bottom: -10px;
+        color: #ffffff; }
+    .modal-container.iframe .modal-content p div.cuerpo * {
+      font-size: 15px; }
+
+.modal-container.iframe .modal-children .arrows {
+  font-size: 50px;
+  padding-top: 50px; }
+  .modal-container.iframe .modal-children .arrows a.focusable:hover, .modal-container.iframe .modal-children .arrows a.focusable:focus {
+    /*box-shadow: none;*/ }
+    .modal-container.iframe .modal-children .arrows a.focusable:hover .fa, .modal-container.iframe .modal-children .arrows a.focusable:focus .fa {
+      color: #ffffff; }
+  .modal-container.iframe .modal-children .arrows a.activated .fa {
+    color: #ffffff; }
+  .modal-container.iframe .modal-children .arrows .fa {
+    color: #808080; }
+  .modal-container.iframe .modal-children .arrows .input-up {
+    position: absolute;
+    top: 50px; }
+
+.modal-container.iframe .modal-buttons-horizontal {
+  padding-top: 40px; }
+
+.modal-resume-data .resume .resume-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left; }
+  .modal-resume-data .resume .resume-container .resume-preview-fullwidth {
+    display: none; }
+  .modal-resume-data .resume .resume-container .resume-action-buttons {
+    display: none !important; }
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .modal-content p {
+    max-width: 660px;
+    font-size: 32px; }
+
+.modal-buttons-horizontal {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  .modal-buttons-horizontal .modal-button {
+    margin: 10px 0; }

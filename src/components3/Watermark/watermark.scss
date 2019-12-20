@@ -1,0 +1,11 @@
+@import "./../../styles/vars.scss";
+
+
+.watermark
+{
+  display: none;
+  position: fixed;
+  color:gray;
+  top:0;
+  left:0;
+}

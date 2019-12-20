@@ -1,0 +1,1037 @@
+.root-hisense .invisible-scrollbar, .root-nagra .invisible-scrollbar, .root-samsung .invisible-scrollbar, .root-sony .invisible-scrollbar, .root-opera .invisible-scrollbar, .root-android .invisible-scrollbar, .root-worksation .invisible-scrollbar, .root-tizen .invisible-scrollbar, .root-web0s .invisible-scrollbar, .root-ps4 .invisible-scrollbar {
+  overflow: hidden; }
+
+.root-lg .invisible-scrollbar {
+  overflow: scroll; }
+  .root-lg .invisible-scrollbar::-webkit-scrollbar {
+    display: none; }
+
+.root-hisense .invisible-scrollbar, .root-nagra .invisible-scrollbar, .root-samsung .invisible-scrollbar, .root-sony .invisible-scrollbar, .root-android .invisible-scrollbar, .root-worksation .invisible-scrollbar, .root-tizen .invisible-scrollbar, .root-web0s .invisible-scrollbar, .root-ps4 .invisible-scrollbar {
+  overflow: hidden; }
+
+.root-lg .invisible-scrollbar, .root-opera .invisible-scrollbar {
+  overflow: scroll; }
+  .root-lg .invisible-scrollbar::-webkit-scrollbar, .root-opera .invisible-scrollbar::-webkit-scrollbar {
+    display: none; }
+
+/* FlexBox Variables */
+.flex {
+  display: flex; }
+  .flex.row {
+    flex-direction: row; }
+  .flex.column {
+    flex-direction: column; }
+  .flex.jc-center {
+    justify-content: center; }
+  .flex.ai-center {
+    align-items: center; }
+  .flex.ai-start {
+    align-items: flex-start; }
+  .flex.ai-end {
+    align-items: flex-end; }
+
+.channelBlock {
+  background-color: red; }
+
+.card {
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top; }
+
+.type-talent {
+  text-align: center; }
+  .type-talent span {
+    font-size: 13px !important; }
+
+.talent-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40px; }
+  .talent-name.hide {
+    display: none; }
+
+.talent-name-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 113px;
+  margin-top: 23px; }
+  .talent-name-search.hide {
+    display: none; }
+
+.name-episode {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35px; }
+  .name-episode span {
+    font-size: 13px; }
+    .name-episode span b {
+      font-weight: 300; }
+  .name-episode.hide {
+    display: none; }
+
+.background-transparent {
+  height: 48px;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background-image: url("/images/sombra_destacado.png"); }
+
+.placeholder-container {
+  display: none; }
+
+.card-container, .card-search-container {
+  height: auto;
+  position: relative; }
+  .card-container .link, .card-search-container .link {
+    box-sizing: border-box;
+    display: block;
+    /* height: 143px; */
+    height: 165px;
+    max-width: 300px;
+    padding: 6px;
+    width: 100%; }
+
+.card-container-search {
+  height: 244px;
+  position: relative; }
+  .card-container-search .link {
+    box-sizing: border-box;
+    display: block;
+    /* height: 143px; */
+    height: 165px;
+    max-width: 300px;
+    padding: 6px;
+    width: 100%; }
+
+.card-container-one {
+  height: 170px;
+  width: 100%;
+  margin-left: 5px; }
+  .card-container-one .link {
+    box-sizing: border-box;
+    display: block;
+    /* height: 143px; */
+    height: 163px;
+    max-width: 400px;
+    padding: 3px;
+    padding-bottom: 20spx;
+    width: 290px; }
+
+/* .card-div {
+  width: 100%;
+  height: 106%;
+  border-radius: 6px;
+} */
+.card-div-carrousel {
+  width: 100%;
+  height: 106%;
+  border-radius: 6px; }
+
+.card-div-search {
+  width: 131px;
+  height: 131px;
+  border-radius: 88px; }
+
+.card-div-search-div {
+  width: 100%;
+  height: 158px; }
+
+.card-placeholder {
+  background: #000 center no-repeat;
+  background-size: cover;
+  display: block;
+  height: 99%;
+  position: relative;
+  width: 99%; }
+
+.card-cover {
+  height: 100%;
+  left: 6px;
+  text-indent: -9999px;
+  top: 6px;
+  width: 100%; }
+
+.card-cover-search-movies {
+  height: 100%;
+  left: 6px;
+  text-indent: -9999px;
+  top: 6px;
+  width: 100%; }
+
+.badge-container {
+  background: transparent;
+  position: absolute;
+  top: 6px;
+  left: 6px; }
+  .badge-container.left {
+    left: 8px;
+    top: 8px; }
+  .badge-container.right {
+    right: 8px;
+    top: 8px; }
+
+.card-title {
+  box-sizing: border-box;
+  padding: 4px 4px 0;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.card-label {
+  color: #aaa;
+  font-size: 14px;
+  text-align: center; }
+
+.card.double {
+  overflow: hidden;
+  margin-right: 24px; }
+  .card.double .placeholder-container {
+    display: inline-block;
+    margin-right: 16px;
+    padding: 6px;
+    position: relative;
+    vertical-align: top; }
+    .card.double .placeholder-container .sibling-wrapper {
+      background: #4a4a4a;
+      border-radius: 5px;
+      box-sizing: border-box;
+      height: 161px;
+      padding: 11px;
+      width: 115px; }
+    .card.double .placeholder-container .arrow-right {
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid #4a4a4a;
+      height: 0;
+      position: absolute;
+      right: -4px;
+      top: 73px;
+      width: 0; }
+    .card.double .placeholder-container .card-placeholder {
+      height: 100%;
+      position: absolute;
+      top: 17px;
+      width: 93px; }
+    .card.double .placeholder-container .card-cover {
+      display: block;
+      height: 139px;
+      left: 0;
+      position: relative;
+      top: 0;
+      width: 93px; }
+    .card.double .placeholder-container .card-cover-search-movies {
+      display: block;
+      height: 139px;
+      left: 0;
+      position: relative;
+      top: 0;
+      width: 93px; }
+  .card.double .card-container, .card.double .card-search-container {
+    display: inline-block; }
+
+.card.vod .card-labels-container {
+  width: 365px; }
+
+.card.epg_event {
+  width: auto; }
+  .card.epg_event .link {
+    height: 143px;
+    width: 299px; }
+  .card.epg_event .card-container a, .card.epg_event .card-search-container a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300; }
+    .card.epg_event .card-container a .channel-number, .card.epg_event .card-search-container a .channel-number {
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 6px;
+      position: relative;
+      padding: 3px 5px;
+      width: auto;
+      text-align: center;
+      position: absolute;
+      left: 6px;
+      height: 18px; }
+  .card.epg_event .card-cover {
+    min-width: 307px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px; }
+  .card.epg_event .card-cover-search-movies {
+    min-width: 307px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px; }
+  .card.epg_event .inner-title {
+    width: 100% !important;
+    bottom: 0px !important;
+    left: 0px !important; }
+  .card.epg_event .card-metadata.recording .inner-title {
+    bottom: 0 !important; }
+  .card.epg_event .card-metadata.is-series .inner-title {
+    bottom: 5px !important;
+    width: 237px !important; }
+  .card.epg_event .card-metadata.is-recording .inner-title {
+    width: 237px !important; }
+  .card.epg_event .card-labels-container .card-title {
+    font-weight: 300;
+    text-align: left; }
+  .card.epg_event .card-labels-container .card-label {
+    color: aliceblue;
+    text-align: left;
+    padding-left: 4px; }
+
+.card.landscape,
+.card.vod {
+  width: 100%; }
+  .card.landscape .link,
+  .card.vod .link {
+    height: 163px;
+    width: 100%;
+    min-width: 300px; }
+  .card.landscape .card-cover,
+  .card.vod .card-cover {
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px; }
+  .card.landscape .card-cover-search-movies,
+  .card.vod .card-cover-search-movies {
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0; }
+  .card.landscape .card-cover-div,
+  .card.vod .card-cover-div {
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0; }
+  .card.landscape .inner-title,
+  .card.vod .inner-title {
+    width: 100% !important;
+    bottom: 5px !important;
+    left: 6px !important; }
+  .card.landscape .card-container a, .card.landscape .card-search-container a,
+  .card.vod .card-container a,
+  .card.vod .card-search-container a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300; }
+    .card.landscape .card-container a .channel-number, .card.landscape .card-search-container a .channel-number,
+    .card.vod .card-container a .channel-number,
+    .card.vod .card-search-container a .channel-number {
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 6px;
+      position: relative;
+      padding: 3px 5px;
+      width: auto;
+      text-align: center;
+      position: absolute;
+      left: 6px;
+      height: 18px; }
+  .card.landscape .card-metadata.recording .inner-title,
+  .card.vod .card-metadata.recording .inner-title {
+    bottom: 0 !important; }
+  .card.landscape .card-metadata.is-series .inner-title,
+  .card.vod .card-metadata.is-series .inner-title {
+    bottom: 5px !important;
+    width: 237px !important; }
+  .card.landscape .card-metadata.is-recording .inner-title,
+  .card.vod .card-metadata.is-recording .inner-title {
+    width: 237px !important; }
+
+.card.portrait {
+  width: auto; }
+  .card.portrait .card-container a, .card.portrait .card-search-container a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300; }
+    .card.portrait .card-container a .channel-number, .card.portrait .card-search-container a .channel-number {
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 6px;
+      position: relative;
+      padding: 3px 5px;
+      width: auto;
+      text-align: center;
+      position: absolute;
+      left: 6px;
+      height: 18px; }
+  .card.portrait .link {
+    height: 252px;
+    width: 167px; }
+  .card.portrait .card-cover {
+    height: 240px;
+    width: 155px;
+    background-size: 100% 100%, cover; }
+  .card.portrait .card-cover-search-movies {
+    height: 240px;
+    width: 155px;
+    background-size: 100% 100%, cover; }
+
+.card.alugados {
+  width: 100%; }
+  .card.alugados .link {
+    height: 225px;
+    width: 100%;
+    max-width: 290px;
+    border: 1px solid #272E35;
+    padding: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 5px; }
+    .card.alugados .link.focusable:focus {
+      border: 2px solid #272E35 !important;
+      height: 235px !important;
+      border-radius: 6px;
+      margin-top: 1px; }
+      .card.alugados .link.focusable:focus .card-cover:focus {
+        border: 1px solid #272E35;
+        border-radius: 6px 6px 0 0; }
+    .card.alugados .link .card-placeholder {
+      width: 100%;
+      height: 100%; }
+  .card.alugados .preview-progress {
+    display: none; }
+  .card.alugados .content-info-alugados {
+    width: 100%;
+    max-width: 298px !important;
+    height: 60px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 0 0 6px 6px;
+    display: flex;
+    flex-direction: column; }
+    .card.alugados .content-info-alugados .info-alugados {
+      width: 100%; }
+      .card.alugados .content-info-alugados .info-alugados p {
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+        line-height: 20px; }
+  .card.alugados .card-labels-container {
+    display: none; }
+  .card.alugados .card-cover {
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px !important; }
+  .card.alugados .card-cover-search-movies {
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0; }
+  .card.alugados .card-cover-div {
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0; }
+  .card.alugados .inner-title {
+    width: 100% !important;
+    bottom: 5px !important;
+    left: 6px !important; }
+  .card.alugados .card-container a, .card.alugados .card-search-container a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300; }
+    .card.alugados .card-container a .channel-number, .card.alugados .card-search-container a .channel-number {
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 6px;
+      position: relative;
+      padding: 3px 5px;
+      width: auto;
+      text-align: center;
+      position: absolute;
+      left: 6px;
+      height: 18px; }
+  .card.alugados .card-metadata.recording .inner-title {
+    bottom: 0 !important; }
+  .card.alugados .card-metadata.is-series .inner-title {
+    bottom: 5px !important;
+    width: 237px !important; }
+  .card.alugados .card-metadata.is-recording .inner-title {
+    width: 237px !important; }
+
+.card.search {
+  width: 100%; }
+  .card.search .link {
+    height: 225px;
+    width: 100%;
+    max-width: 290px;
+    border: 1px solid #272E35;
+    padding: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 8px; }
+    .card.search .link.focusable:focus {
+      border: 2px solid #272E35 !important;
+      height: 237px !important;
+      border-radius: 6px;
+      margin-top: 3px; }
+      .card.search .link.focusable:focus .card-cover:focus {
+        border: 1px solid #272E35;
+        border-radius: 6px 6px 0 0; }
+      .card.search .link.focusable:focus .card-search-box {
+        background: #47536b !important;
+        font-weight: 500;
+        height: 80px; }
+    .card.search .link .card-placeholder {
+      width: 100%;
+      height: auto !important; }
+    .card.search .link .card-search-box {
+      width: 100%;
+      height: 60px;
+      border-radius: 0 0 6px 6px;
+      background-color: #212224; }
+      .card.search .link .card-search-box .card-content {
+        font-weight: 500;
+        font-size: 14px;
+        margin: 0;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 274px;
+        padding: 10px 10px 0px 10px; }
+  .card.search .preview-progress {
+    display: none; }
+  .card.search .card-labels-container {
+    display: none; }
+  .card.search .card-cover {
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px !important; }
+  .card.search .inner-title {
+    width: 100% !important;
+    bottom: 5px !important;
+    left: 6px !important; }
+  .card.search .card-container a, .card.search .card-search-container a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300; }
+    .card.search .card-container a .channel-number, .card.search .card-search-container a .channel-number {
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 6px;
+      position: relative;
+      padding: 3px 5px;
+      width: auto;
+      text-align: center;
+      position: absolute;
+      left: 6px;
+      height: 18px; }
+
+.card.channel {
+  width: 270px;
+  margin: 14px; }
+  .card.channel .card-search-container .link {
+    height: 80px;
+    width: 100%;
+    max-width: 280px;
+    border-radius: 0px !important;
+    padding: 0;
+    overflow: hidden;
+    text-decoration: none; }
+    .card.channel .card-search-container .link .card-placeholder {
+      border-radius: 0px !important; }
+      .card.channel .card-search-container .link .card-placeholder .card-div {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        border: none;
+        box-sizing: border-box;
+        border-radius: 0px !important;
+        background: rgba(0, 0, 0, 0.4); }
+        .card.channel .card-search-container .link .card-placeholder .card-div .channel-number-grid {
+          text-align: center;
+          width: 120px; }
+          .card.channel .card-search-container .link .card-placeholder .card-div .channel-number-grid p {
+            font-size: 30px;
+            font-weight: 900;
+            text-decoration: none; }
+        .card.channel .card-search-container .link .card-placeholder .card-div .card-cover {
+          height: 60px;
+          width: 140px;
+          border-radius: 0px; }
+        .card.channel .card-search-container .link .card-placeholder .card-div .preview-progress {
+          display: none; }
+    .card.channel .card-search-container .link.focusable:focus .card-div {
+      border-radius: 0;
+      height: 80px !important;
+      background: #47536b; }
+      .card.channel .card-search-container .link.focusable:focus .card-div .card-cover:focus {
+        border: 1px solid #272E35;
+        border-radius: 6px 6px 0 0; }
+    .card.channel .card-search-container .link .card-placeholder {
+      width: 100%;
+      height: auto !important; }
+  .card.channel .card-labels-container {
+    display: none !important; }
+
+.card.highlight {
+  width: 100% !important; }
+  .card.highlight .card-container a, .card.highlight .card-search-container a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300; }
+    .card.highlight .card-container a .channel-number, .card.highlight .card-search-container a .channel-number {
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 6px;
+      position: relative;
+      padding: 3px 5px;
+      width: auto;
+      text-align: center;
+      position: absolute;
+      left: 6px;
+      height: 18px; }
+
+.card.superhighlight_title {
+  width: auto; }
+  .card.superhighlight_title .card-container a, .card.superhighlight_title .card-search-container a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300; }
+    .card.superhighlight_title .card-container a .channel-number, .card.superhighlight_title .card-search-container a .channel-number {
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 6px;
+      position: relative;
+      padding: 3px 5px;
+      width: auto;
+      text-align: center;
+      position: absolute;
+      left: 6px;
+      height: 18px; }
+  .card.superhighlight_title .link {
+    height: 181px;
+    width: 459px; }
+  .card.superhighlight_title .card-cover {
+    height: 200px;
+    /* width: 100%; */
+    background-size: 100% 100%, cover; }
+  .card.superhighlight_title .card-cover-search-movies {
+    height: 200px;
+    /* width: 100%; */
+    background-size: 100% 100%, cover; }
+  .card.superhighlight_title .inner-title {
+    width: 100%;
+    bottom: 0px !important;
+    left: 0px !important; }
+  .card.superhighlight_title .background-transparent {
+    width: calc(100% - 10px); }
+
+.vcard-seasons-carousel .landscape .card-title {
+  width: 290px;
+  overflow: hidden;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis; }
+
+.card.user-info {
+  width: auto; }
+  .card.user-info .card-container a .card-div, .card.user-info .card-search-container a .card-div {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover; }
+  .card.user-info .card-labels-container {
+    position: relative;
+    left: 106px;
+    top: -110px;
+    width: 200px;
+    line-height: 23px; }
+    .card.user-info .card-labels-container .card-title {
+      text-align: left;
+      padding-left: 0px; }
+    .card.user-info .card-labels-container .card-label {
+      text-align: left;
+      padding-left: 2px; }
+      .card.user-info .card-labels-container .card-label .followers {
+        padding-left: 8px; }
+      .card.user-info .card-labels-container .card-label .level {
+        padding-left: 8px; }
+      .card.user-info .card-labels-container .card-label .levels-points_img {
+        width: 20px;
+        text-align: left;
+        float: left; }
+      .card.user-info .card-labels-container .card-label .points {
+        /*background-color: darkblue;*/
+        padding-left: 2px;
+        text-align: left; }
+  .card.user-info .link {
+    height: 115px;
+    width: 315px; }
+  .card.user-info .card-cover {
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px, cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    overflow: hidden; }
+  .card.user-info .card-cover-search-movies {
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px, cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    overflow: hidden; }
+  .card.user-info .card-metadata.recording .inner-title {
+    bottom: 0 !important; }
+  .card.user-info .card-metadata.is-series .inner-title {
+    bottom: 5px !important;
+    width: 237px !important; }
+  .card.user-info .card-metadata.is-recording .inner-title {
+    width: 237px !important; }
+
+.card.user-profile {
+  width: auto; }
+  .card.user-profile .link {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px; }
+  .card.user-profile .card-div {
+    border-radius: 50%; }
+  .card.user-profile .card-placeholder {
+    border-radius: 50%; }
+  .card.user-profile .background-transparent {
+    display: none; }
+  .card.user-profile .card-cover {
+    width: 88px;
+    height: 90px;
+    border-radius: 50%;
+    left: 0px;
+    top: 0px; }
+  .card.user-profile .card-cover-search-movies {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    left: 0px;
+    top: 0px; }
+  .card.user-profile .card-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 60px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis; }
+  .card.user-profile .inner-title {
+    display: none !important; }
+
+.card.text {
+  width: auto; }
+  .card.text a {
+    color: #ffffff;
+    text-decoration: none; }
+  .card.text a.link {
+    height: 30px;
+    width: 500px; }
+    .card.text a.link .text {
+      font-weight: 300; }
+  .card.text .card-div {
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%; }
+  .card.text .card-placeholder {
+    border-radius: 50%; }
+  .card.text .card-cover {
+    height: auto;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    left: 0px;
+    top: 0px; }
+  .card.text .card-cover-search-movies {
+    height: auto;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    left: 0px;
+    top: 0px; }
+  .card.text .card-title {
+    width: 100px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis; }
+  .card.text .inner-title {
+    display: none !important; }
+
+.channel .inner-title {
+  display: none !important; }
+
+.card.talent {
+  width: auto; }
+  .card.talent .link {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px; }
+  .card.talent .card-placeholder {
+    border-radius: 50%; }
+  .card.talent .card-cover {
+    height: 88px;
+    width: 88px; }
+  .card.talent .card-cover-search-movies {
+    height: 88px;
+    width: 88px; }
+  .card.talent .card-title {
+    width: 100px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis; }
+  .card.talent img {
+    border-radius: 50%; }
+
+.card.circle {
+  width: 143px;
+  margin-right: 20px; }
+  .card.circle .card-container, .card.circle .card-search-container {
+    height: 143px;
+    width: 143px; }
+  .card.circle .card-focus-container {
+    border-radius: 50%; }
+  .card.circle img {
+    border-radius: 50%; }
+
+/*.card-logo {
+  width: 129px !important;
+  height: 125px;
+  border-radius: 94%;
+}*/
+.card-coner {
+  margin-left: 58px;
+  margin-top: -1px; }
+
+.card-labels-container-search {
+  margin-top: 5px;
+  margin-left: 70px;
+  margin-bottom: 15px; }
+
+.card.infinite .card-labels-container {
+  display: none; }
+
+.card.infinite .card-container, .card.infinite .card-search-container {
+  height: 163px;
+  width: 290px; }
+  .card.infinite .card-container .link, .card.infinite .card-search-container .link {
+    height: 155px;
+    width: 285px; }
+    .card.infinite .card-container .link .card-div, .card.infinite .card-search-container .link .card-div {
+      height: 155px;
+      width: 285px;
+      z-index: 2;
+      position: absolute;
+      margin-left: -4px; }
+      .card.infinite .card-container .link .card-div .card-cover, .card.infinite .card-search-container .link .card-div .card-cover {
+        height: 155px;
+        width: 285px;
+        background-size: 285px !important;
+        box-sizing: border-box; }
+      .card.infinite .card-container .link .card-div .card-cover-search-movies, .card.infinite .card-search-container .link .card-div .card-cover-search-movies {
+        height: 155px;
+        width: 285px;
+        background-size: 285px !important;
+        box-sizing: border-box; }
+    .card.infinite .card-container .link.focusable:focus, .card.infinite .card-search-container .link.focusable:focus {
+      /* height:  158px;
+        border-radius: 6px;
+        margin-top: -3px; */
+      height: 175px;
+      border-radius: 6px;
+      margin-top: -12px;
+      position: fixed;
+      overflow: visible;
+      z-index: 5;
+      width: 305px;
+      margin-left: -8px; }
+      .card.infinite .card-container .link.focusable:focus .card-div, .card.infinite .card-search-container .link.focusable:focus .card-div {
+        height: 175px;
+        width: 305px;
+        z-index: 2;
+        position: absolute;
+        margin-left: -6px; }
+        .card.infinite .card-container .link.focusable:focus .card-div .card-cover, .card.infinite .card-search-container .link.focusable:focus .card-div .card-cover {
+          height: 175px;
+          width: 305px;
+          border: 1px solid #47536b;
+          background-size: 311px !important;
+          box-shadow: 0 1px 6px 0 rgba(71, 83, 107, 0.5);
+          box-sizing: border-box; }
+  .card.infinite .card-container a, .card.infinite .card-search-container a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300; }
+    .card.infinite .card-container a .channel-number, .card.infinite .card-search-container a .channel-number {
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 6px;
+      position: relative;
+      padding: 3px 5px;
+      width: auto;
+      text-align: center;
+      position: absolute;
+      left: 6px;
+      height: 18px; }
+
+.card.infinite .inner-title {
+  width: 288px !important;
+  bottom: 5px !important;
+  left: 6px !important; }
+
+.card.infinite .background-transparent {
+  width: 288px; }
+
+.vcard-talents {
+  margin-top: 35px; }
+  .vcard-talents .ribbon-items {
+    white-space: normal; }
+  .vcard-talents .ribbon-title {
+    font-size: 18px;
+    margin-bottom: 10px; }
+
+.card-cover-search {
+  height: 138px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-radius: 88px; }
+  .card-cover-search:focus {
+    background: #47536b;
+    font-weight: 500; }
+
+.card-cover {
+  height: 163px;
+  border-radius: 6px; }
+
+.card-cover-search-movies {
+  height: 163px; }
+
+.slick-current .card.user-profile .card-container .focusable:focus.link, .slick-current .card.user-profile .card-search-container .focusable:focus.link {
+  width: 100px;
+  height: 100px !important;
+  box-shadow: none;
+  position: relative; }
+  .slick-current .card.user-profile .card-container .focusable:focus.link .card-placeholder, .slick-current .card.user-profile .card-search-container .focusable:focus.link .card-placeholder {
+    background-color: transparent !important;
+    height: 99%; }
+  .slick-current .card.user-profile .card-container .focusable:focus.link .card-div, .slick-current .card.user-profile .card-search-container .focusable:focus.link .card-div {
+    width: 88px;
+    height: 88px !important;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%; }
+    .slick-current .card.user-profile .card-container .focusable:focus.link .card-div .card-cover, .slick-current .card.user-profile .card-search-container .focusable:focus.link .card-div .card-cover {
+      width: 100%;
+      height: 100% !important;
+      border: 1px solid #47536b; }
+    .slick-current .card.user-profile .card-container .focusable:focus.link .card-div .card-cover-search-movies, .slick-current .card.user-profile .card-search-container .focusable:focus.link .card-div .card-cover-search-movies {
+      width: 100%;
+      height: 100% !important;
+      border: 1px solid #47536b; }
+
+.slick-current .card.alugados .focusable:focus {
+  border: none;
+  height: 225px; }
+
+.slick-current .card.alugados .content-info-alugados {
+  max-width: 300px !important; }
+
+.slick-current .card.alugados .card-search-container .focusable:focus {
+  box-shadow: none; }
+  .slick-current .card.alugados .card-search-container .focusable:focus.link {
+    height: 230px;
+    /* margin-top: -15px; */
+    padding: 0; }
+    .slick-current .card.alugados .card-search-container .focusable:focus.link .card-div {
+      height: 170px; }
+      .slick-current .card.alugados .card-search-container .focusable:focus.link .card-div .card-cover, .slick-current .card.alugados .card-search-container .focusable:focus.link .card-div .card-cover-search-movies {
+        height: 170px;
+        background-size: cover;
+        border-radius: 0px; }
+
+.slick-current .landscape .card-container .focusable:focus, .slick-current .highlight .card-container .focusable:focus {
+  box-shadow: none; }
+  .slick-current .landscape .card-container .focusable:focus.link, .slick-current .highlight .card-container .focusable:focus.link {
+    height: 172px;
+    margin-top: 0px;
+    padding: 0; }
+    .slick-current .landscape .card-container .focusable:focus.link .card-div, .slick-current .highlight .card-container .focusable:focus.link .card-div {
+      height: 172px; }
+      .slick-current .landscape .card-container .focusable:focus.link .card-div .card-cover, .slick-current .landscape .card-container .focusable:focus.link .card-div .card-cover-search-movies, .slick-current .highlight .card-container .focusable:focus.link .card-div .card-cover, .slick-current .highlight .card-container .focusable:focus.link .card-div .card-cover-search-movies {
+        height: 170px;
+        border: 2px solid #47536b;
+        background-size: cover; }
+    .slick-current .landscape .card-container .focusable:focus.link .card-div-search, .slick-current .highlight .card-container .focusable:focus.link .card-div-search {
+      width: 138px;
+      height: 138px; }
+      .slick-current .landscape .card-container .focusable:focus.link .card-div-search .card-cover-search, .slick-current .highlight .card-container .focusable:focus.link .card-div-search .card-cover-search {
+        border: 2px solid #47536b;
+        width: 137px;
+        height: 137px; }
+  .slick-current .landscape .card-container .focusable:focus .card-search-box, .slick-current .highlight .card-container .focusable:focus .card-search-box {
+    margin-top: -2px;
+    background-color: #47536b;
+    width: 297px;
+    border: 2px solid #47536b; }
+
+.slick-current .landscape .card-search-container .focusable:focus, .slick-current .highlight .card-search-container .focusable:focus {
+  box-shadow: none; }
+  .slick-current .landscape .card-search-container .focusable:focus.link, .slick-current .highlight .card-search-container .focusable:focus.link {
+    margin-top: 0px;
+    padding: 0; }
+    .slick-current .landscape .card-search-container .focusable:focus.link .card-div, .slick-current .highlight .card-search-container .focusable:focus.link .card-div {
+      height: 170px; }
+      .slick-current .landscape .card-search-container .focusable:focus.link .card-div .card-cover, .slick-current .landscape .card-search-container .focusable:focus.link .card-div .card-cover-search-movies, .slick-current .highlight .card-search-container .focusable:focus.link .card-div .card-cover, .slick-current .highlight .card-search-container .focusable:focus.link .card-div .card-cover-search-movies {
+        height: 170px;
+        border: 2px solid #47536b;
+        background-size: cover; }
+    .slick-current .landscape .card-search-container .focusable:focus.link .card-div-search, .slick-current .highlight .card-search-container .focusable:focus.link .card-div-search {
+      width: 138px;
+      height: 138px; }
+      .slick-current .landscape .card-search-container .focusable:focus.link .card-div-search .card-cover-search, .slick-current .highlight .card-search-container .focusable:focus.link .card-div-search .card-cover-search {
+        border: 2px solid #47536b; }
+  .slick-current .landscape .card-search-container .focusable:focus .card-search-box, .slick-current .highlight .card-search-container .focusable:focus .card-search-box {
+    margin-top: -2px;
+    width: 297px;
+    border: 2px solid #47536b; }
+
+.classCategory .card-container .link, .classCategory .card-search-container .link {
+  height: 105px !important;
+  margin-bottom: 10px; }
+  .classCategory .card-container .link .card-cover, .classCategory .card-container .link .card-cover-search-movies, .classCategory .card-search-container .link .card-cover, .classCategory .card-search-container .link .card-cover-search-movies {
+    height: 100px !important;
+    background-size: cover; }
+  .classCategory .card-container .link.focusable:focus, .classCategory .card-search-container .link.focusable:focus {
+    padding: 1px 3px;
+    height: 116px !important;
+    margin-bottom: 0px;
+    border-radius: 6px; }
+    .classCategory .card-container .link.focusable:focus .card-div, .classCategory .card-search-container .link.focusable:focus .card-div {
+      height: 76px !important; }
+    .classCategory .card-container .link.focusable:focus .card-placeholder, .classCategory .card-search-container .link.focusable:focus .card-placeholder {
+      height: 99% !important; }
+    .classCategory .card-container .link.focusable:focus .card-cover, .classCategory .card-container .link.focusable:focus .card-cover-search-movies, .classCategory .card-search-container .link.focusable:focus .card-cover, .classCategory .card-search-container .link.focusable:focus .card-cover-search-movies {
+      height: 110px !important;
+      background-size: cover; }
+
+.classCategory .card-labels-container {
+  display: none !important; }

@@ -1,0 +1,597 @@
+.root-hisense .invisible-scrollbar, .root-nagra .invisible-scrollbar, .root-samsung .invisible-scrollbar, .root-sony .invisible-scrollbar, .root-opera .invisible-scrollbar, .root-android .invisible-scrollbar, .root-worksation .invisible-scrollbar, .root-tizen .invisible-scrollbar, .root-web0s .invisible-scrollbar, .root-ps4 .invisible-scrollbar {
+  overflow: hidden; }
+
+.root-lg .invisible-scrollbar {
+  overflow: scroll; }
+  .root-lg .invisible-scrollbar::-webkit-scrollbar {
+    display: none; }
+
+.root-hisense .invisible-scrollbar, .root-nagra .invisible-scrollbar, .root-samsung .invisible-scrollbar, .root-sony .invisible-scrollbar, .root-android .invisible-scrollbar, .root-worksation .invisible-scrollbar, .root-tizen .invisible-scrollbar, .root-web0s .invisible-scrollbar, .root-ps4 .invisible-scrollbar {
+  overflow: hidden; }
+
+.root-lg .invisible-scrollbar, .root-opera .invisible-scrollbar {
+  overflow: scroll; }
+  .root-lg .invisible-scrollbar::-webkit-scrollbar, .root-opera .invisible-scrollbar::-webkit-scrollbar {
+    display: none; }
+
+/* FlexBox Variables */
+.flex {
+  display: flex; }
+  .flex.row {
+    flex-direction: row; }
+  .flex.column {
+    flex-direction: column; }
+  .flex.jc-center {
+    justify-content: center; }
+  .flex.ai-center {
+    align-items: center; }
+  .flex.ai-start {
+    align-items: flex-start; }
+  .flex.ai-end {
+    align-items: flex-end; }
+
+#payment {
+  margin-top: 30px;
+  width: 95%;
+  height: 500px;
+  text-align: center; }
+  #payment #leftPayment {
+    width: 0%;
+    height: 100%;
+    float: left; }
+  #payment #leftPayment.half {
+    width: 50%; }
+    #payment #leftPayment.half .keyboard {
+      padding-top: 20px;
+      padding-left: 100px; }
+    #payment #leftPayment.half .payment-back {
+      position: absolute;
+      top: -30px;
+      left: 35px; }
+  #payment #rightPayment {
+    width: 100%;
+    height: 100%;
+    float: left; }
+    #payment #rightPayment .top {
+      width: 100%;
+      color: #ffffff; }
+      #payment #rightPayment .top .rent {
+        height: 150px; }
+        #payment #rightPayment .top .rent div.middle {
+          display: block;
+          float: left;
+          width: 50%; }
+          #payment #rightPayment .top .rent div.middle img {
+            float: right;
+            margin-right: 50px;
+            display: block;
+            /*width: 290px;*/
+            height: 130px; }
+          #payment #rightPayment .top .rent div.middle div {
+            text-align: left;
+            width: 100%;
+            height: 55px;
+            display: block;
+            float: left;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
+          #payment #rightPayment .top .rent div.middle .title {
+            text-align: left;
+            height: 60px; }
+            #payment #rightPayment .top .rent div.middle .title span {
+              font-size: 40px;
+              font-weight: 500; }
+          #payment #rightPayment .top .rent div.middle .subtitle {
+            text-align: left;
+            height: 40px; }
+            #payment #rightPayment .top .rent div.middle .subtitle span {
+              font-size: 30px; }
+          #payment #rightPayment .top .rent div.middle .special {
+            text-align: left; }
+            #payment #rightPayment .top .rent div.middle .special span {
+              font-size: 19px; }
+      #payment #rightPayment .top .subscription {
+        height: 30%; }
+    #payment #rightPayment hr {
+      border: 1px dashed #8c8b8b; }
+    #payment #rightPayment .row {
+      width: 100%;
+      height: 40px; }
+    #payment #rightPayment span.left {
+      text-align: left; }
+    #payment #rightPayment .price {
+      color: #ffffff;
+      font-size: 40px;
+      font-weight: 500;
+      text-align: right; }
+    #payment #rightPayment .asterisk {
+      font-size: 30px;
+      color: #ffffff;
+      text-align: left;
+      font-weight: 100;
+      position: relative;
+      top: 1px;
+      font-weight: 500; }
+    #payment #rightPayment .plan {
+      font-size: 40px;
+      font-weight: 500;
+      text-align: left; }
+    #payment #rightPayment .note {
+      color: #ffffff;
+      width: 300px;
+      font-size: 20px;
+      font-weight: 200; }
+    #payment #rightPayment .paymentBody .title {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      font-size: 19px;
+      font-weight: 500; }
+    #payment #rightPayment .paymentBody .action {
+      padding: 15px 0px 15px 0px; }
+    #payment #rightPayment .paymentBody .row {
+      padding: 10px 0px 10px 0px; }
+      #payment #rightPayment .paymentBody .row a {
+        width: 300px;
+        padding: 5px 100px 5px 100px;
+        border: 2px solid #FFFFFF;
+        display: inline-block; }
+        #payment #rightPayment .paymentBody .row a img.gateway {
+          height: 30px; }
+      #payment #rightPayment .paymentBody .row a.gateway:focus, #payment #rightPayment .paymentBody .row a.gateway:hover {
+        background-color: #FFFFFF; }
+    #payment #rightPayment .button {
+      width: 500px; }
+  #payment #rightPayment.half {
+    width: 50%; }
+    #payment #rightPayment.half a.button {
+      width: 200px;
+      border: 2px solid #FFFFFF; }
+    #payment #rightPayment.half .gatewayTitle {
+      text-align: left;
+      padding: 9px 15px;
+      font-weight: 500; }
+      #payment #rightPayment.half .gatewayTitle span {
+        font-size: 30px; }
+      #payment #rightPayment.half .gatewayTitle a span {
+        display: inherit;
+        text-align: center;
+        font-size: 20px; }
+      #payment #rightPayment.half .gatewayTitle .button {
+        float: right; }
+    #payment #rightPayment.half .gatewayForm {
+      margin-top: 3px; }
+      #payment #rightPayment.half .gatewayForm .row.gray {
+        background-color: #504f4f;
+        height: 50px;
+        width: 485px;
+        padding: 50px 50px 50px 50px; }
+        #payment #rightPayment.half .gatewayForm .row.gray span {
+          display: block;
+          width: 200px;
+          float: left; }
+        #payment #rightPayment.half .gatewayForm .row.gray a.focusable.action.button {
+          margin-left: 18px;
+          display: block;
+          width: 200px;
+          float: right;
+          text-align: center; }
+      #payment #rightPayment.half .gatewayForm .row {
+        width: 100%;
+        height: 60px;
+        text-align: left; }
+        #payment #rightPayment.half .gatewayForm .row .white-square {
+          background-color: white;
+          color: black;
+          float: left;
+          margin-top: 80px;
+          width: 380px;
+          text-align: center; }
+          #payment #rightPayment.half .gatewayForm .row .white-square .highlight {
+            font-weight: 500;
+            font-size: 30px;
+            display: block; }
+          #payment #rightPayment.half .gatewayForm .row .white-square .cardNumber {
+            font-weight: 100;
+            font-size: 20px; }
+            #payment #rightPayment.half .gatewayForm .row .white-square .cardNumber .form-group-focus {
+              text-decoration: none; }
+              #payment #rightPayment.half .gatewayForm .row .white-square .cardNumber .form-group-focus .form-group-placeholder {
+                position: static; }
+          #payment #rightPayment.half .gatewayForm .row .white-square .cardNumber.message {
+            clear: both;
+            display: block; }
+        #payment #rightPayment.half .gatewayForm .row .normal-square {
+          float: right;
+          margin-top: 110px;
+          margin-left: 10px; }
+          #payment #rightPayment.half .gatewayForm .row .normal-square a span.text-button {
+            margin-left: 10px;
+            font-size: 20px; }
+        #payment #rightPayment.half .gatewayForm .row .focusable.action {
+          float: left;
+          height: 25px;
+          width: 350px; }
+          #payment #rightPayment.half .gatewayForm .row .focusable.action > i {
+            margin-right: 10px;
+            float: right;
+            font-size: 20px;
+            position: relative;
+            top: 3px; }
+        #payment #rightPayment.half .gatewayForm .row .focusable.action.error {
+          border: 2px solid #ff0000; }
+        #payment #rightPayment.half .gatewayForm .row .form-group .form-group-focus .form-group-value .form-group-placeholder {
+          display: block; }
+        #payment #rightPayment.half .gatewayForm .row .form-group .form-group-focus .form-group-value-password {
+          overflow: hidden !important; }
+        #payment #rightPayment.half .gatewayForm .row .form-group.document {
+          float: right;
+          width: 200px; }
+        #payment #rightPayment.half .gatewayForm .row .form-group.account {
+          width: 98%; }
+          #payment #rightPayment.half .gatewayForm .row .form-group.account .form-group-focus.form-group-focus-text {
+            width: 100%; }
+            #payment #rightPayment.half .gatewayForm .row .form-group.account .form-group-focus.form-group-focus-text .form-group-value {
+              width: 100%; }
+        #payment #rightPayment.half .gatewayForm .row .form-group.CVV {
+          float: left;
+          width: 185px; }
+          #payment #rightPayment.half .gatewayForm .row .form-group.CVV a {
+            width: 185px; }
+        #payment #rightPayment.half .gatewayForm .row .form-group.CVV.security {
+          -webkit-text-security: disc;
+          -moz-text-security: disc;
+          text-security: disc; }
+    #payment #rightPayment.half .gatewayForm.clarocolombiagate .row {
+      height: 70px; }
+    #payment #rightPayment.half .gatewayForm.promoGate {
+      text-align: left; }
+    #payment #rightPayment.half .creditCardTitle, #payment #rightPayment.half .claroPagoTitle {
+      text-align: left;
+      height: 60px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #ffffff; }
+      #payment #rightPayment.half .creditCardTitle span, #payment #rightPayment.half .claroPagoTitle span {
+        font-size: 40px; }
+      #payment #rightPayment.half .creditCardTitle .credit-card-price, #payment #rightPayment.half .claroPagoTitle .credit-card-price {
+        color: #F5A623 !important; }
+    #payment #rightPayment.half .creditCardSubtitle, #payment #rightPayment.half .claroPagoSubtitle {
+      text-align: left;
+      height: 40px;
+      color: #ffffff; }
+      #payment #rightPayment.half .creditCardSubtitle span, #payment #rightPayment.half .claroPagoSubtitle span {
+        font-size: 30px; }
+    #payment #rightPayment.half .creditCardSpecial, #payment #rightPayment.half .claroPagoSpecial {
+      text-align: left;
+      color: #ffffff; }
+      #payment #rightPayment.half .creditCardSpecial span, #payment #rightPayment.half .claroPagoSpecial span {
+        font-size: 19px; }
+    #payment #rightPayment.half .gatewayForm.creditCard {
+      height: 185px;
+      margin-top: 3px; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row.thin {
+        height: 30px; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row img.visamaster {
+        float: left;
+        margin-left: 5px; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row .text {
+        display: block;
+        float: left; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row .form-group.cardNumber {
+        width: 350px;
+        float: right;
+        position: relative; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row span.cardNumber.label {
+        color: #aaa;
+        display: inline-block;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 300;
+        position: absolute; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row span.cardNumber.info {
+        font-size: 28px;
+        font-weight: 300;
+        padding: 0px; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row .cardType.claroPago.error {
+        border: 2px solid #ff0000;
+        color: #ee3224;
+        height: 34px;
+        height: 0px;
+        width: 320px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        display: inline-block; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row .cardType.error {
+        border: 2px solid #ff0000;
+        color: #ee3224;
+        height: 34px;
+        width: 248px;
+        height: 33px;
+        width: 220px;
+        border-top: none;
+        border-left: none;
+        border-right: none; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row .form-group.cardType {
+        width: 50px;
+        float: left;
+        margin-bottom: -2px; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row .form-group.city {
+        width: 290px;
+        float: left; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row .focusable.action.select.states {
+        width: 260px; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row .form-group.zipCode {
+        width: 290px;
+        float: left; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row .form-group.telefono {
+        width: 290px;
+        float: right; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row input[type=radio] {
+        visibility: hidden; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row img {
+        width: 40px; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row .radio label {
+        display: block;
+        position: relative;
+        font-weight: 300;
+        font-size: 1.35em;
+        padding: 25px 0px 25px 50px;
+        margin: 10px auto;
+        height: 0px;
+        width: 50px;
+        float: left;
+        cursor: pointer;
+        -webkit-transition: all 0.25s linear; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row .radio input[type=radio]:checked ~ .check {
+        border: 5px solid #d7d7d7; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row .radio input[type=radio]:checked ~ .check::before {
+        background: #d7d7d7; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row .radio input[type=radio]:checked ~ label {
+        color: #d7d7d7; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row .radio .imgVisa {
+        position: absolute;
+        top: 0px;
+        left: 50px; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row .radio .imgMastercard {
+        position: absolute;
+        top: 0px;
+        left: 50px; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row .radio .check {
+        display: block;
+        position: absolute;
+        border: 5px solid #d7d7d7;
+        border-radius: 100%;
+        height: 25px;
+        width: 25px;
+        top: 0px;
+        left: 5px;
+        transition: border .25s linear;
+        -webkit-transition: border .25s linear; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row .radio .check::before {
+        display: block;
+        position: absolute;
+        content: '';
+        border-radius: 100%;
+        height: 15px;
+        width: 15px;
+        top: 5px;
+        left: 5px;
+        margin: auto;
+        transition: background 0.25s linear;
+        -webkit-transition: background 0.25s linear; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row :hover .check {
+        border: 5px solid #FFFFFF; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row .securityCode {
+        width: 240px;
+        display: block;
+        float: left; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row .securityCode.right {
+        float: right; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row .securityCode.right.security {
+        -webkit-text-security: disc;
+        -moz-text-security: disc;
+        text-security: disc; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row .select {
+        margin-left: 10px;
+        float: right;
+        width: 135px;
+        display: block;
+        border: 2px solid #FFFFFF; }
+      #payment #rightPayment.half .gatewayForm.creditCard .row .focusable.select.error {
+        border: 2px solid #ff0000; }
+    #payment #rightPayment.half .gatewayForm.creditCard.small {
+      height: 200px; }
+    #payment #rightPayment.half .gatewayForm.claroPago {
+      height: 185px;
+      margin-top: 3px; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row.thin {
+        height: 30px; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row img.visamaster {
+        float: left;
+        margin-left: 5px; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row .text {
+        display: block;
+        float: left; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row .form-group.cardNumber {
+        width: 350px;
+        float: right;
+        position: relative; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row span.cardNumber.label {
+        color: #aaa;
+        display: inline-block;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 300;
+        position: absolute; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row span.cardNumber.info {
+        font-size: 25px;
+        font-weight: 500;
+        padding: 0px; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row .cardType.error {
+        border: 2px solid #ff0000;
+        color: #ee3224;
+        height: 34px;
+        width: 248px;
+        height: 33px;
+        width: 220px;
+        border-top: none;
+        border-left: none;
+        border-right: none; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row .form-group.cardType {
+        width: 50px;
+        float: left;
+        margin-bottom: -2px; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row .form-group.city {
+        width: 580px;
+        float: left; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row .focusable.action.select.states_claropagos {
+        width: 260px; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row .form-group.zipCode {
+        width: 290px;
+        float: left; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row .form-group.telefono {
+        width: 580px;
+        float: left; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row input[type=radio] {
+        visibility: hidden; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row img {
+        width: 40px; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row .radio label {
+        display: block;
+        position: relative;
+        font-weight: 300;
+        font-size: 1.35em;
+        padding: 25px 0px 25px 50px;
+        margin: 10px auto;
+        height: 0px;
+        width: 50px;
+        float: left;
+        cursor: pointer;
+        -webkit-transition: all 0.25s linear; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row .radio input[type=radio]:checked ~ .check {
+        border: 5px solid #d7d7d7; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row .radio input[type=radio]:checked ~ .check::before {
+        background: #d7d7d7; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row .radio input[type=radio]:checked ~ label {
+        color: #d7d7d7; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row .radio .imgVisa {
+        position: absolute;
+        top: 0px;
+        left: 50px; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row .radio .imgMastercard {
+        position: absolute;
+        top: 0px;
+        left: 50px; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row .radio .check {
+        display: block;
+        position: absolute;
+        border: 5px solid #d7d7d7;
+        border-radius: 100%;
+        height: 25px;
+        width: 25px;
+        top: 0px;
+        left: 5px;
+        transition: border .25s linear;
+        -webkit-transition: border .25s linear; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row .radio .check::before {
+        display: block;
+        position: absolute;
+        content: '';
+        border-radius: 100%;
+        height: 15px;
+        width: 15px;
+        top: 5px;
+        left: 5px;
+        margin: auto;
+        transition: background 0.25s linear;
+        -webkit-transition: background 0.25s linear; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row :hover .check {
+        border: 5px solid #FFFFFF; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row .securityCode {
+        width: 150px;
+        display: block;
+        float: left; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row .securityCode.right {
+        float: right; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row .securityCode.right.security {
+        -webkit-text-security: disc;
+        -moz-text-security: disc;
+        text-security: disc; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row .select {
+        margin-left: 10px;
+        float: right;
+        width: 135px;
+        display: block;
+        border: 2px solid #FFFFFF; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row .focusable.select.error {
+        border: 2px solid #ff0000; }
+      #payment #rightPayment.half .gatewayForm.claroPago .row.cardType {
+        text-align: center; }
+        #payment #rightPayment.half .gatewayForm.claroPago .row.cardType .option {
+          display: inline-block;
+          width: 100px; }
+        #payment #rightPayment.half .gatewayForm.claroPago .row.cardType .footer.error {
+          color: #ee3224;
+          height: 0px;
+          width: 320px;
+          border: 2px solid #ff0000;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          display: inline-block;
+          position: relative;
+          top: -10px; }
+          #payment #rightPayment.half .gatewayForm.claroPago .row.cardType .footer.error .msg {
+            font-size: 14px;
+            font-style: italic; }
+    #payment #rightPayment.half .gatewayForm.claroPago.small {
+      height: 300px; }
+    #payment #rightPayment.half .gatewayForm.hubcorporativofijogate .row span.description {
+      margin-top: 50px;
+      display: inline-block; }
+    #payment #rightPayment.half .confirmButtons {
+      clear: both; }
+      #payment #rightPayment.half .confirmButtons div {
+        padding: 30px 0px 0px 0px;
+        text-align: center; }
+        #payment #rightPayment.half .confirmButtons div div.space {
+          display: inline-block;
+          width: 50px; }
+        #payment #rightPayment.half .confirmButtons div a.focusable.action.button {
+          width: 230px;
+          margin: 0 auto;
+          display: inline-block;
+          text-align: center; }
+      #payment #rightPayment.half .confirmButtons .pay-sure {
+        padding-top: 22px; }
+      #payment #rightPayment.half .confirmButtons .icon-shield {
+        width: 20px;
+        font-size: 15px;
+        float: left;
+        padding: 0px;
+        color: #ffffff;
+        margin-right: 10px;
+        position: relative;
+        top: -1px; }
+      #payment #rightPayment.half .confirmButtons span.ss {
+        font-size: 12px;
+        display: table-cell; }
+
+.payment.spinner-container {
+  top: 260px; }
+
+.payment-suscription {
+  font-size: 32px; }
+  .payment-suscription .note {
+    display: block !important;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: normal; }
+  .payment-suscription .price {
+    color: #F5A623 !important;
+    font-weight: bold; }
+  .payment-suscription .text {
+    font-weight: bold; }

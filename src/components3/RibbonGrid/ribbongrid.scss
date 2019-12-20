@@ -1,0 +1,33 @@
+.ribbongrid-wrapper {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  //padding-left: 20px;
+
+  .card .card-title {
+    display: none;
+  }
+}
+
+.vcard-recommendations {
+  .card .card-title {
+    display: none;
+  }
+}
+
+.ribongrid-container {
+  display: block;
+  height: 100%;
+  margin: 18px auto 0;
+  overflow: hidden;
+  width: 1200px; 
+}
+
+.ribbongrid-row {
+  box-sizing: border-box;
+  height: 33.3333%;
+  padding-bottom: 18px;
+  overflow: hidden;
+  width: 100%; 
+}

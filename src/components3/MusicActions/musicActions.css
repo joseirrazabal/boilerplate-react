@@ -1,0 +1,11 @@
+.music-actions {
+  position: absolute;
+  top: 130px;
+  left: 30px; }
+
+.music-actions > div > a {
+  font-size: 23px;
+  font-weight: 300; }
+
+.music-actions-hidden {
+  display: none; }

@@ -1,0 +1,91 @@
+﻿@import "./../../styles/vars.scss";
+
+$font-title: 40px;
+$font-weight-title: 500;
+$font-subtitle: 30px;
+$font-general: 20px;
+$font-placeholder:20px;
+$font-ss: 12px;
+$font-color: #e9e2e2;
+
+
+#planSelector {
+  width: 100%;
+  height: 555px;
+  display: flex;
+
+  .container {
+    width: 1000px;
+    justify-content: center;
+    margin: 0 auto;
+
+    .title {
+      text-align: center;
+      font-weight: $font-weight-title;
+      color: $font-color;
+      display: inline-block;
+      width: 100%;
+      font-size: $font-title;
+    }
+
+    .row {
+      width: 100%;
+
+      .col {
+        float: left;
+        width: 33%;
+        height: 250px;
+
+        .item {
+          width: 100%;
+          height: 100%;
+          padding: 1em;
+
+          .link:focus {
+            text-decoration: none;
+
+            .card-placeholder {
+              z-index: 2;
+              opacity: 0.8;
+            }
+
+            .card-placeholder:after {
+              display: block;
+              position: relative;
+              top: 60px;
+              content: "ⓘ Mas información";
+              text-align: center;
+              font-size: $font-subtitle;
+              color: white;
+            }
+          }
+
+          .text-span-content{
+            display: block;
+            .text{
+              float: left;
+            }
+            .price{
+              float: right;
+            }
+          }
+
+          .focusable.action.button {
+            float: left;
+            color: #000000;
+            margin-left: 4px; 
+            width: 270px;
+            background: rgba(245,144,36,1);
+            background: -moz-linear-gradient(left, rgba(245,144,36,1) 0%, rgba(241,231,101,1) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(245,144,36,1)), color-stop(100%, rgba(241,231,101,1)));
+            background: -webkit-linear-gradient(left, rgba(245,144,36,1) 0%, rgba(241,231,101,1) 100%);
+            background: -o-linear-gradient(left, rgba(245,144,36,1) 0%, rgba(241,231,101,1) 100%);
+            background: -ms-linear-gradient(left, rgba(245,144,36,1) 0%, rgba(241,231,101,1) 100%);
+            background: linear-gradient(to right, rgba(245,144,36,1) 0%, rgba(241,231,101,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f59024', endColorstr='#f1e765', GradientType=1 );
+          }
+        }
+      }
+    }
+  }
+}

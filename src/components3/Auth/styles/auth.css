@@ -1,0 +1,110 @@
+.margin-bottom--10 {
+  margin-bottom: 10px; }
+
+.margin-bottom--20 {
+  margin-bottom: 20px; }
+
+.form-group__tab_email {
+  padding: 10px 16px !important; }
+  .form-group__tab_email-fa {
+    font-size: 27px; }
+
+.float--right {
+  float: right;
+  margin: 0 !important; }
+
+.title_yellow {
+  color: #ECAF2A; }
+
+.form-group__container {
+  height: 563px;
+  margin-left: 5%;
+  position: relative;
+  width: 85%; }
+
+.form-group__input-password {
+  float: left;
+  width: 80%; }
+
+.form-group__register-telcel {
+  bottom: 0;
+  position: absolute;
+  width: 100%; }
+
+.form-group__title {
+  font-size: 22px; }
+  .form-group__title.bold {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+.form-group__space-between {
+  position: absolute;
+  top: -40px; }
+
+.form-group__button-show-password {
+  color: #fff;
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1px 4px;
+  width: 18%; }
+  .form-group__button-show-password:focus {
+    padding: 1px 4px;
+    text-align: center; }
+
+.form-group__input-tab-sesion {
+  display: none;
+  padding-bottom: 12%;
+  width: 100%; }
+  .form-group__input-tab-sesion .tablinks {
+    background-color: inherit;
+    float: left;
+    border: 1px solid #fff;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    text-align: center;
+    transition: 0.3s;
+    width: 43.5%; }
+  .form-group__input-tab-sesion .tablinks--asset {
+    padding: 0.5% 16px; }
+    .form-group__input-tab-sesion .tablinks--asset img {
+      max-height: 40px; }
+  .form-group__input-tab-sesion .once {
+    background-color: inherit !important;
+    color: #fefefe !important;
+    border-radius: 25px !important;
+    width: 100%; }
+    .form-group__input-tab-sesion .once .tablinks--asset {
+      padding: 0.5% 0; }
+    .form-group__input-tab-sesion .once a {
+      border-radius: 25px !important;
+      width: 100%; }
+  .form-group__input-tab-sesion .first {
+    border-radius: 25px 0 0 25px; }
+  .form-group__input-tab-sesion .seconds {
+    border-radius: 0 25px 25px 0; }
+  .form-group__input-tab-sesion .center {
+    border-radius: 0 !important; }
+  .form-group__input-tab-sesion .third_tab {
+    float: left;
+    width: 33% !important; }
+    .form-group__input-tab-sesion .third_tab a {
+      width: 82% !important;
+      padding-top: 6px;
+      padding-bottom: 6px; }
+    .form-group__input-tab-sesion .third_tab .seconds {
+      border-radius: 0 !important; }
+    .form-group__input-tab-sesion .third_tab .third {
+      border-radius: 0 25px 25px 0; }
+    .form-group__input-tab-sesion .third_tab .tablinks img {
+      max-height: 33px !important; }
+  .form-group__input-tab-sesion a.active {
+    color: #212121;
+    background-color: #fefefe;
+    border: 1px solid #fefefe; }

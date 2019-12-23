@@ -1,44 +1,51 @@
 import React from 'react'
+// import 'video-react/dist/video-react.css' // import css
+// import 'video-react/styles/scss/video-react.scss'
 
-// const DUMMY_STREAM_URL = 'https://mnmedias.api.telequebec.tv/m3u8/29880.m3u8'
-const DUMMY_STREAM_URL = 'https://www.w3schools.com/tags/movie'
+import { Player, ControlBar } from 'video-react'
+import Prueba from './control'
 
-const styles = {
-	content: {
-		flexDirection: 'column',
-		display: 'flex',
-		flex: 1,
-		backgroundColor: '#fafafa'
-	},
-	playerWrapper: {
-		flexDirection: 'column',
-		display: 'flex',
-		height: 600,
-		alignItems: 'center',
-		justifyContent: 'space-around'
-	},
-	playerText: {
-		color: 'white'
-	},
-	player: {
-		width: 320,
-		height: 240
-	},
-	channelsWrapper: {
-		maxHeight: 150
-	}
+const sources = {
+	sintelTrailer: 'http://media.w3.org/2010/05/sintel/trailer.mp4',
+	bunnyTrailer: 'http://media.w3.org/2010/05/bunny/trailer.mp4',
+	bunnyMovie: 'http://media.w3.org/2010/05/bunny/movie.mp4',
+	test: 'http://media.w3.org/2010/05/video/movie_300.webm'
 }
 
-const Player = () => {
+const AppPlayer = () => {
+	let objPlayer
+
+	const play = () => {
+		objPlayer.play()
+	}
+	const pause = () => {
+		objPlayer.pause()
+	}
+
 	return (
 		<div>
-			<video style={styles.player} controls autoPlay>
-				<source src={`${DUMMY_STREAM_URL}.mp4`} type='video/mp4' />
-				<source src={`${DUMMY_STREAM_URL}.ogg`} type='video/ogg' />
-				Your browser does not support the video tag.
-			</video>
+			<Player
+				ref={player => {
+					objPlayer = player
+				}}
+				// playsInline
+				// autoPlay
+			>
+				<source src='https://media.w3.org/2010/05/sintel/trailer_hd.mp4' />
+				<ControlBar>
+					<Prueba order={7} />
+				</ControlBar>
+			</Player>
+			<div className='py-3'>
+				<button onClick={play} className='mr-3'>
+					play
+				</button>
+				<button onClick={pause} className='mr-3'>
+					pause
+				</button>
+			</div>
 		</div>
 	)
 }
 
-export default Player
+export default AppPlayer

@@ -1,33 +1,9 @@
 import React from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
 
-import Layout from 'src/components/Layout'
-
 import Home from 'src/containers/Home'
-import Email from 'src/containers/Email'
-import Player from 'src/components/Player'
 
 const routes = [
-	{
-		path: '/email',
-		Component: Email, // pageNotFound
-		Props: { vert: 'air' },
-		useLayout: true,
-		isPrivate: false
-	},
-	{
-		path: '/drafts',
-		Component: Player,
-		useLayout: false,
-		isPrivate: false
-	},
-	{
-		path: '/search',
-		Component: Home, // pageNotFound
-		Props: { vert: 'air' },
-		useLayout: true,
-		isPrivate: false
-	},
 	{
 		path: '*',
 		Component: Home, // pageNotFound
@@ -38,16 +14,7 @@ const routes = [
 ]
 
 const AppRoute = ({ path, props: props01, component: Component, isPrivate }) => {
-	return (
-		<Route
-			path={path}
-			render={props => (
-				<Layout>
-					<Component {...props} {...props01} />
-				</Layout>
-			)}
-		/>
-	)
+	return <Route path={path} render={props => <Component {...props} {...props01} />} />
 }
 
 export const MainRoutes = () => (

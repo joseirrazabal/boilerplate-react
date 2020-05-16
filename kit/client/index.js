@@ -28,7 +28,7 @@ const render = Component => {
 
 loadableReady(() => {
 	render(App)
-	initializeServiceWorkers()
+	// initializeServiceWorkers()
 })
 
 if (module.hot) {

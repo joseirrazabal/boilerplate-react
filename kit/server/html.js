@@ -12,8 +12,6 @@ const Html = ({ html, head, material, loadableState, apolloState }) => {
 				{head.meta.toComponent()}
 				{head.link.toComponent()}
 
-				<link rel='stylesheet' href='https://video-react.github.io/assets/video-react.css' />
-
 				{/* font-awesome */}
 				<style
 					dangerouslySetInnerHTML={{

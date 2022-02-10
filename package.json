@@ -105,7 +105,7 @@
 		"mini-css-extract-plugin": "^0.8.2",
 		"node-noop": "1.0.0",
 		"node-notifier": "^6.0.0",
-		"node-sass": "^4.13.0",
+		"node-sass": "^7.0.0",
 		"prettier": "^1.19.1",
 		"progress-bar-webpack-plugin": "^1.12.1",
 		"sass-loader": "^8.0.0",
